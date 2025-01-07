@@ -1,0 +1,78 @@
+1. open https://www.github.com
+2. Enter your email id in signup box
+3. Enter password
+4. Enter unique username (anugit2024)
+5. click on submit.
+6. verify account by following steps given on UI.
+7. enter verification received on mail.
+8. Re-login with credentials provided.
+9. Create a public repository with unique name e.g. AutomationCode
+
+Git CLIENT
+
+1.  Download git from given location https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe
+
+2.  Once it is downloaded we have to install git on windows/mac
+3.  Install the git successfully on our machine.
+4.  Create a folder in any driver C:\PythonAutomation
+5.  Open folder and right click inside the folder 
+    -> click on show more option
+    -> click "Open git bash here" option
+    -> It will open the git bash terminal.
+6.  run git --help command : all available git commands should be visible
+7.  Now go to GitHub server and get repository URL.
+8.  again come to git terminal
+9.  Run this command 
+    -> git clone https://github.com/singhanu07/Anu_AutomationCode.git
+
+10.  Once the clone is successful, then we will see a folder with repository name in local folder.
+     e.g. Anu_AutomationCode
+
+11.  Go inside the repo folder and create one test file e.g. test_file.txt
+    -> add some random content to the file
+
+12. Go to git terminal and navigate inside the repo folder using below command
+    ->  cd Anu_AutomationCode
+
+13.  Run command to check newly added file status
+    -> git status : newly added file will show in red color.
+
+14.  Run command to add file in git 
+     ->  git add <filename>
+
+15.  Run command to check the status again
+     ->  git status :  newly added file will show in green color.
+
+16.  Run command to initiate the git commit 
+     -> git commit -m "msg"
+
+17.  To initiate commit the server need authentication\
+      git config --global user.email "singhanu07@gmail.com"
+      git config --global user.name "singhanu07"
+
+18. re-initiate the commit with below command
+     -> git commit -m "msg"
+     -> commit will be successful
+
+19. Initiate the push command to send data to the server
+     -> git push
+     -> it will launch authentication popup
+     -> click on sign in with browser
+     -> provide git credential on browser login
+     -> click on Authorize git ecosystem.
+
+20.  Push will be successful
+
+21.  file will be visible on git server.
+
+Now try add new file with below command
+
+i).    add new file in report folder
+ii).   use git status command int git terminal: it will show in red color
+iii).  git add filename
+iv).   git status : filename will show in green color
+v).    git commit -m "commit msg"
+vi).   git push
+vii).  New file will be available on server.
+
+
