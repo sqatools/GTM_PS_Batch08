@@ -11,6 +11,8 @@ Math Operation
 != :  not equal to operator
 """
 
+
+print("_"*50)
 # plus operator
 n1 = 40
 n2 = 50
@@ -19,6 +21,7 @@ n3 = n1 + n2
 print("addition of values :", n3)
 print(n1+n2)
 
+print("_"*50)
 
 # add two strings with plus operator #
 
