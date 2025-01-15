@@ -30,7 +30,7 @@ R = 4
 6.  Calculate simple interest
 7.  Calculate compound interest
 """
-#print("_"*100)
+print("_"*100)
 #1) (a+b)^3 = a^3 + b^3 + 3ab(a+b)
 a=10
 b=20
@@ -40,5 +40,10 @@ LHS=(a+b)**3
 RHS= a**3 + b**3 + 3*a*b*(a+b)
 print("LHS :", LHS)
 print("RHS :",RHS)
+
+print("_"*100)
+
+#2. (a-b)(a+b)= a^2 - b^2
+print(((a-b)*(a+b)), "=", (a**2)-(b**2))
 
 
