@@ -38,7 +38,7 @@ b=20
 #print((a+b)***3=, a***3 + b***3 + 3*a*b*(a+b))
 LHS=(a+b)**3
 RHS= a**3 + b**3 + 3*a*b*(a+b)
-print(LHS)
-print(RHS)
+print("LHS :", LHS)
+print("RHS :",RHS)
 
 
