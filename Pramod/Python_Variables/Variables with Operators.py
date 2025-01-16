@@ -64,6 +64,33 @@ R=2
 print("Area of circle:", PI*R**2)
 print("_"*100)
 
+#6.  Calculate simple interest
+P=10
+T=20
+R=30
+
+print ("Simple interest =", (P*T*R)//(100))
+print("_"*100)
+
+#7. Calculate compound interest
+'''
+A=P(1+(R/n)**n*T
+A = Total amount (Principal + Interest)
+P = Principal amount (initial amount of money)
+R = Annual interest rate (in decimal or percentage)
+n = Number of times the interest is compounded per year
+T = Time (in years)
+To find the Compound Interest (CI):
+CI=A−P
+'''
+A,P,R,n,T=100,10,2,12,25
+print("A=", P*(1+(R//n)**(n*T)))
+A=100
+print("CI=", A-P)
+print("_"*100)
+
+
+
 
 
 
