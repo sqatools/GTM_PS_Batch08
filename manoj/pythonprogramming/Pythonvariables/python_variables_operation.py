@@ -87,7 +87,7 @@ print("rhs output :", rhs)# rhs output : 3136
 # use == operator two compare 2 values
 print(lhs == rhs)
 
-# homework #
+# homework # 15-1-2025x
 """"
 1.(a+b)^3 = a^3 + b^3 + 3ab(a+b)
 2. (a-b)(a+b) = a^2 - b^2
