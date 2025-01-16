@@ -1,7 +1,15 @@
-print("Hello World")
+A = 10
+B = 20
 
-print("Good Morning")
+print (A*B-A)
 
-print("Good evening")
+print("The value of A:", id(A))
 
-print("HI SASHI")
+print("The value of B:", id(B))
+
+if A == 10:
+    print ("The Vale is True")
+else:
+    print ("The Value is false")
+
+    print (A*B)

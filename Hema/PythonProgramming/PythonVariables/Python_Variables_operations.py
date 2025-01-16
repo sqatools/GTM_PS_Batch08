@@ -1,19 +1,17 @@
 """
-Math Operation
+Variabke: Math Operation
 + : plus operator
 - :  subtraction'
 * : multiplication
 / :  divide with single /
-// : divide with double //
-% :  remainder operator
+// : divide with double // (floor division)
+% :  remainder operator (Modulus operator)
 ** :  power operator
 == :  equal to operator
 != :  not equal to operator
 """
 
-
-print("_"*50)
-# plus operator
+# plus operator (Addition)
 n1 = 40
 n2 = 50
 print("addition :", n1+n2)
@@ -21,7 +19,6 @@ n3 = n1 + n2
 print("addition of values :", n3)
 print(n1+n2)
 
-print("_"*50)
 
 # add two strings with plus operator #
 
@@ -120,6 +117,4 @@ R = 4
 6.  Calculate simple interest
 7.  Calculate compound interest
 """
-
-
 
