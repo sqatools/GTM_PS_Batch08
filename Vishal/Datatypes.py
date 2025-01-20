@@ -38,3 +38,47 @@ C3 = 'A'
 C4 = 'Python'
 print(C2, C3, C4)
 
+z1 = "Python"
+print(z1[1])
+print(len(z1))
+
+#List datatype
+
+list1 = [1, 2, 'three', 'four', [5, 6], 'seven']
+print(list1)
+
+print(list1[4])
+
+print(list1[2], list1[5])
+
+#Tuple data type
+tup1 = (11, 12, 13, 'Forteen', [15, 16, 17],)
+print(tup1)
+
+print(dir(tup1))
+
+print(tup1[-1])
+print(tup1.count(5))
+print(tup1.count([15, 16, 17]))
+
+#dicstionary data type
+
+dic1 = {'a': 123, 'b': 456, 'c': 789, 'd': [1, 2, 3], 'e': (4, 'five', 'six')}
+print(dic1)
+
+dic2 = {'name': 'vishal',
+        'age': 31,
+        'email': 'abc@outlook.com'}
+print(dic2)
+
+dic2['phone'] = 1234567890
+print(dic2)
+
+dic2.popitem()
+print(dic2)
+from pprint import pprint
+
+dic3 = {'a': dic2, 'b': dic1}
+pprint(dic3)
+
+pprint(dic2)
