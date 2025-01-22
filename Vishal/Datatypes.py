@@ -82,3 +82,16 @@ dic3 = {'a': dic2, 'b': dic1}
 pprint(dic3)
 
 pprint(dic2)
+
+#Sets data type
+set1 ={1,2,3.5,6.7,8,8,3.5,100, 1000, 103}
+print(set1)
+
+#Boolean data type
+
+# It contains only two values - Tre and False
+var1 = True
+print(var1)
+
+
+
