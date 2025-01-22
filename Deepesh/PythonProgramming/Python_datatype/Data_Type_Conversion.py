@@ -166,14 +166,199 @@ list_a = list(str_a)
 print(list_a, type(list_a), list_a[2])
 # ['H', 'i', ' ', 'P', 'y', 't', 'h', 'o', 'n', ' ', '3'] <class 'list'>
 
-list_a.append(30)
-print(list_a)
-str1 = "Hello"
-print(str1.upper())
+
+
+print("_"*50)
+### string -> tuple ###
+str_b = "Good Morning"
+tup1 = tuple(str_b)
+print(tup1, type(tup1), tup1[3])
+# ('G', 'o', 'o', 'd', ' ', 'M', 'o', 'r', 'n', 'i', 'n', 'g') <class 'tuple'> d
+
+
+print("_"*50)
+### string -> dictionary ###
+"""
+str_c = "Good Evening"
+dict_c = dict(str_c)
+print(dict_c)
+# ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"""
+
+# If string follows the dict rules and pattern than the string to dictionary conversion
+# possible with the help json module.
+import json
+str_d = '{"a": 123, "b": 456, "c": 789}'
+#str_d = "{'a': 123, 'b': 456, 'c': 789}"
+
+print(str_d, type(str_d))
+# {"a": 123, "b": 456, "c": 789} <class 'str'>
+
+result = json.loads(str_d)
+print(result, type(result))
+# {'a': 123, 'b': 456, 'c': 789} <class 'dict'>
+print(result["b"]) # 456
+
+
+print("_"*50)
+### string -> set ###
+str_e = "Good Morning"
+set_e = set(str_e)
+print(set_e, type(set_e))
+# {'i', 'M', 'G', 'o', 'r', 'd', 'n', 'g', ' '} <class 'set'>
+
+
+print("_"*50)
+### string -> boolean ###
+
+str_f = ""
+b1 = bool(str_f)
+print(b1, type(b1))
+# False <class 'bool'>
+
+str_g = "Hello"
+b2 = bool(str_g)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+######################################## List Data Type Conversion ###############################
+
+print("_"*50)
+### list -> int ### conversion is not possible
+### list -> float ### conversion is not possible
+### list -> complex ### conversion is not possible
+
+print("_"*50)
+### list -> string ###
+list1 = [4, 6, 7, 1]
+str_a = str(list1)
+print(str_a, type(str_a))
+# [4, 6, 7, 1] <class 'str'>
+print(str_a[0], str_a[3], str_a[1], str_a[2], str_a[-1])
+# [   4 , ]
+print(str_a[0], str_a[7], str_a[2], str_a[-1])
+# [ 7 , ]
 
 
 
+print("_"*50)
+### list -> tuple ###
+list2 = ['a', 3.5, [4, 6, 7], (3, 6)]
+tup2 = tuple(list2)
+print(tup2, type(tup2))
+# ('a', 3.5, [4, 6, 7], (3, 6)) <class 'tuple'>
+print(tup2[-2]) # [4, 6, 7]
+
+
+print("_"*50)
+### list -> dictionary ###
+"""
+list3 = [5, 7, 2, 8]
+dict3 = dict(list3)
+print(dict3)
+"""
+# TypeError: cannot convert dictionary update sequence element #0 to a sequence
+
+# If we have two list and wants to convert into dictionary thn we can user zip function
+
+list_a = ['a', 'b', 'c', 'd', 'e']
+list_b = [23, 454, 67, 89, 90]
+
+result = dict(zip(list_a, list_b))
+print(result, type(result))
+# {'a': 23, 'b': 454, 'c': 67, 'd': 89, 'e': 90} <class 'dict'>
+print(result['d']) # 89
+
+
+list_e = ('a', 'b', 'c', 'd', 'e')
+list_f = [23, 454, 67, 89, 90]
+result2 = dict(zip(list_f, list_e))
+print(result2)
+# {'a': 23, 'b': 454, 'c': 67, 'd': 89, 'e': 90}
 
 
 
+print("_"*50)
+### list -> set ###
+list1 = [4, 6, 8, 2, 5, 7, 2, 6, 7]
+set1 = set(list1)
+print(set1, type(set1))
+# {2, 4, 5, 6, 7, 8} <class 'set'>
 
+
+print("_"*50)
+### list -> boolean ###
+
+list_a = []
+b1 = bool(list_a)
+print(b1, type(b1))
+# False <class 'bool'>
+
+list_b = [5, 6]
+b2 = bool(list_b)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+########################### Tuple Data Type Conversion ###################
+# tuple -> int # conversion is not possible
+# tuple -> float # conversion is not possible
+# tuple -> complex # conversion is not possible
+
+print("_"*50)
+### tuple ->  string ###
+tup_a = (5, 7, 9, 2)  # "(5, 7, 9, 2)"
+str_a = str(tup_a)
+print(str_a, type(str_a), str_a[0])
+# (5, 7, 9, 2) <class 'str'> (
+
+
+print("_"*50)
+### tuple ->  list ###
+tup_b = (5, 7, 9, 2, 5, 6)
+list_b = list(tup_b)
+print(list_b, type(list_b), list_b[0])
+# [5, 7, 9, 2, 5, 6] <class 'list'> 5
+
+
+print("_"*50)
+### tuple ->  dictionary ### conversion it not possible
+# only we can convert 2 tuple into dict using zip function as discussed.
+
+
+tup_e = ('a', 'b', 'c', 'd', 'e')
+tup_f = (23, 454, 67, 89, 90)
+result2 = dict(zip(tup_e, tup_f))
+print(result2)
+# {'a': 23, 'b': 454, 'c': 67, 'd': 89, 'e': 90}
+
+
+print("_"*50)
+### tuple ->  set ###
+tup_h = (5, 8, 22, 8, 1, 6, 5)
+set_h = set(tup_h)
+print(set_h, type(set_h))
+# {1, 5, 6, 8, 22} <class 'set'>
+
+
+print("_"*50)
+### tuple ->  boolean ###
+tup_j = tuple()
+b1 = bool(tup_j)
+print(b1, type(b1))
+# False <class 'bool'>
+
+tup_k = (4, 7, 8)
+b2 = bool(tup_k)
+print(b2, type(b2))
+#True <class 'bool'>
+
+tup2 = (b1, b2)
+print(tup2) # (False, True)
+
+
+# var1 = "Hello"
+# var2 = "(5, 6, 8)"
+# print(var1)
+# print(var2)
