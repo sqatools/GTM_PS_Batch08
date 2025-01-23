@@ -362,3 +362,167 @@ print(tup2) # (False, True)
 # var2 = "(5, 6, 8)"
 # print(var1)
 # print(var2)
+
+##################################### Dictionary Data Type Conversion ###################
+
+### dict -> int #### conversion is not possible
+### dict -> float #### conversion is not possible
+### dict -> complex #### conversion is not possible
+
+print("_"*50)
+### dict -> string ####
+
+dict1 = {'a': 123, 'b' : 456, 'c': 789}
+print(dict1)
+str1 = str(dict1)
+print(str1, type(str1))
+# {'a': 123, 'b': 456, 'c': 789} <class 'str'>
+print(str1[0], str1[2])
+# { a
+
+
+print("_"*50)
+### dict -> list ####
+dict2 = {'a': 123, 'b' : 456, 'c': 789}
+list2 = list(dict2)
+print(list2, type(list2))
+# ['a', 'b', 'c'] <class 'list'>
+
+print(list(dict1.items()))
+# [('a', 123), ('b', 456), ('c', 789)]
+
+print("_"*50)
+### dict -> tuple ####
+dict_a = {'a': 123, 'b' : 456, 'c': 789}
+tup_a = tuple(dict_a)
+print(tup_a, type(tup_a))
+# ('a', 'b', 'c') <class 'tuple'>
+
+print(tuple(dict1.items()))
+# (('a', 123), ('b', 456), ('c', 789))
+
+
+print("_"*50)
+### dict -> set ####
+dict_b = {'a': 123, 'b' : 456, 'c': 789}
+set_b = set(dict_b)
+print(set_b, type(set_b))
+
+# {'a', 'c', 'b'} <class 'set'>
+
+
+print("_"*50)
+### dict -> boolean ####
+
+dict_c = {}
+b1 = bool(dict_c)
+print(b1, type(b1))
+# False <class 'bool'>
+
+dict_d = {'a': 345, 'b' : 899}
+b2 = bool(dict_d)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+###################################### Set data type conversion ############################
+### set -> int ## conversion is not possible
+### set -> float ### conversion is not possible
+### set -> complex ### conversion is not possible
+
+print("_"*50)
+### set -> string ###
+set1 = {15, 27, 9, 3, 'a', 6, 17, 7, 17}
+str1 = str(set1)
+print(str1, type(str1), str1[1])
+# {3, 6, 7, 9, 15, 17, 27, 'a'} <class 'str'> 3
+
+
+
+print("_"*50)
+### set -> list ###
+set2 = {15, 27, 9, 3, 'a', 6, 17, 7, 17}
+list2 = list(set2)
+print(list2, type(list2))
+# [3, 6, 7, 9, 15, 17, 'a', 27] <class 'list'>
+print(list2[3]) # 9
+
+
+print("_"*50)
+### set -> tuple ###
+set2 = {15, 27, 9, 3, 'a', 6, 17, 7, 17}
+tup2 = tuple(set2)
+print(tup2, type(tup2), tup2[4])
+# (3, 'a', 6, 7, 9, 15, 17, 27) <class 'tuple'> 9
+
+
+print("_"*50)
+### set -> dict ### conversion is possible
+# set3 = {15, 27, 9, 3, 'a', 6, 17, 7, 17}
+# dict3 = dict(set3)
+# print(dict3)
+# cannot convert dictionary update sequence element #0 to a sequence
+
+
+print("_"*50)
+### set -> boolean ###
+
+set1 = set()
+b1 = bool(set1)
+print(b1, type(b1))
+# False <class 'bool'>
+
+set2 = {5, 6, 7}
+b2 = bool(set2)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+################ Boolean Data Type Conversion ##############
+## bool -> int ##
+b1 = False
+n1 = int(b1)
+print(n1, type(n1))
+
+# 1 <class 'int'> : for True
+# 0 <class 'int'> : for False
+
+print("_"*50)
+## bool -> float ##
+a1 = True
+b1 = float(a1)
+print(b1, type(b1))
+
+# 1.0 <class 'float'> : True
+# 0.0 <class 'float'> : False
+
+
+print("_"*50)
+### bool -> complex ###
+c1 = False
+b1 = complex(c1)
+print(b1, type(b1))
+
+# (1+0j) <class 'complex'> : True
+# 0j <class 'complex'> : False
+
+
+print("_"*50)
+### bool -> string ###
+d = True
+s1 = str(d)
+print(s1, type(s1), s1[1])
+# True <class 'str'> r
+
+
+print("_"*50)
+### bool -> list ###  Conversion is not possible
+# e = True
+# l1 = list(e)
+# print(l1)
+# TypeError: 'bool' object is not iterable
+
+print("_"*50)
+### bool -> tuple ###  Conversion is not possible
+### bool -> dict ###  Conversion is not possible
+### bool -> set ###  Conversion is not possible
