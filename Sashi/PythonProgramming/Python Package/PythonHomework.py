@@ -81,7 +81,7 @@ SI= (P*R*T)/100
 
 print ("The Value of SI:", SI)
 
-#####7) Compound Interest calculation : A = P(1+r/n)^nt
+#####7) Compound Interest calculation : A = P(1+r/n)^nt (doubt)
 ##A= Final amount
 ##P=initial principal balance
 ##r=interest rate
@@ -89,6 +89,13 @@ print ("The Value of SI:", SI)
 ##t=number of time periods elapsed
 
 print ("--"*50)
+
+s= "2string"
+print(s , type(s))
+
+print ("--"*50)
+
+print(dir(tuple))
 
 
 
