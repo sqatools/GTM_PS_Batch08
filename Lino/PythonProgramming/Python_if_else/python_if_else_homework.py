@@ -43,8 +43,7 @@ else:
 
 print("_"*50)
 
-#4)Check given number is divisible by 7 then add 50 in the number else subtraction 50 from the
-number
+#4)Check given number is divisible by 7 then add 50 in the number else subtraction 50 from the number
 
 num4=int(input("Please enter value :"))
 var1=7
