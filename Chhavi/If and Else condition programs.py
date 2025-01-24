@@ -58,16 +58,17 @@ else:
 
 Num1 = int(input("Please enter any number:"))
 Num2 = Num1 % 7
-Num3 = add(Num1 + 50)
-Num4 = sub(Num1 - 50)
-
+Num3 = Num1 + 50
+Num4 = Num1 - 50
 print("condition output:", Num2)
 
 if Num2 == 0:
-    print("This is divisible  by number 7", Num1,)
+
+    print("This is divisible  by number 7")
     print("the new number is :", Num3)
 else:
-    print("This is not divisible  by number 7", Num1, )
+
+    print("This is not divisible  by number 7")
     print("the new number is :", Num4)
 
 
