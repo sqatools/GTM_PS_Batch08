@@ -11,13 +11,13 @@ var = int(input("Enter number with which you want to divide : "))
 if num%var == 0:
 	print(f"Number", {num} , " is divisible by : ", {var})
 else:
-	print(f"Number", {num} , " is divisible by :", {var})
+	print(f"Number", {num} , " is not divisible by :", {var})
 
 
 ###### If Number is even then find the Square and if number is odd then find it is Cube ########
 
-num = int(input("Enter a number: "))
-var = int(input("Enter number with which you want to divide : "))
+#num = int(input("Enter a number: "))
+#var = int(input("Enter number with which you want to divide : "))
 
 if num%var == 0:
 	print(f"Number", {num} , " is an even number")
@@ -31,7 +31,7 @@ else:
 
 ####### Check given no. is +ve or -ve if +ve add 50 else sub 50 #######
 
-num = int(input("Enter a number: "))
+#num = int(input("Enter a number: "))
 
 if num > 0:
 	print(f"Number", {num}, " is a positive number")
@@ -40,7 +40,7 @@ else:
 	print(f"Number", {num}, " is negative number")
 
 
-num = int(input("Enter a number: "))
+#num = int(input("Enter a number: "))
 var = 7
 
 if num%var == 0:
