@@ -152,15 +152,21 @@ print("-"*50)
 print("\n")
 ###### Question 3 ###########
 ###3. a^3-b^3= (a - b) * (a**2 + a*b + b**2) ###
+a = 12
+b = 15
 
 lhs = a**3-b**3
 rhs = (a - b) * (a**2 + a*b + b**2)
+
+##rhs = (a-b)**3 + 3**a**b**(a-b)
 
 print("LHS:", lhs)
 print("RHS:", rhs)
 print("Equality Check for a^3-b^3: ", lhs == rhs)
 
 print("-"*50)
+
+
 print("\n")
 ###### Question 4 ###########
 ###4. h2 = l2 + b2 ###
@@ -214,3 +220,10 @@ CI = P * (1 + (R/100)) **T - P
 print("Compound Interest for " + str(T) + " years is  = ", CI)
 
 print("-"*50)
+
+
+p2 = 3.4 + 4.5j
+p3 = "Hello **Hello*#*"
+print(p3)
+
+
