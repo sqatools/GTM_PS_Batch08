@@ -378,11 +378,65 @@ print(set1, type(set1))
 
 """
 # Properties of Set Data Type:
-1. 
+1. Set is a mutable data type, it can be modified at at any point of time.
+2. Set only stores unique values, duplicates are eliminated automatically
+3. Set stores data in random order and prints also in random order
+4. Set contains only immutable data type values
+    int, float, String, tuple, boolean
+5. Set does not follow indexing or key value format
 
 """
 
+set2 = {44, 77, 22, 'Hello', (4, 6, 7, 6), True, 44, (4, 6, 6, 7)}
+print(set2) # {True, (4, 6, 7, 6), 'Hello', 22, (4, 6, 6, 7), 44, 77}
+
+# add value to set
+set2.add(100)
+print("Set after adding value: \n", set2)
+# Set after adding value:
+#  {True, (4, 6, 7, 6), 100, 'Hello', 22, (4, 6, 6, 7), 44, 77}
+set2.add(100) # It won't through error if we try to add same value again.
+print(set2)
+# {True, (4, 6, 7, 6), 100, 'Hello', 22, (4, 6, 6, 7), 44, 77}
 print("_"*80)
+
+print(dir(set))  # dir return list of method belongs to specific data type
+"""
+'add', 'clear', 'copy', 'difference', 'difference_update',
+ 'discard', 'intersection', 'intersection_update', 'isdisjoint', 
+ 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference',
+  'symmetric_difference_update', 'union', 'update'
+"""
+
+# set3 = {4, 5, 6, [4, 5, 7]}
+# print(set3)
+# TypeError: unhashable type: 'list'
+# can not add list/dict/set as member of set
+# list/dict/set is mutable datatype which is not allowed in the set.
+
+
+print("_"*80)
+
+####################### Boolean Data Type #############################
+
+print("Examples of Boolean Data Type\n")
+
+var1 = True
+print(var1, type(var1))  #True <class 'bool'>
+
+var2 = False
+print(var2, type(var2))
+
+print(dir(bool))
+# 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag',
+# 'is_integer', 'numerator', 'real', 'to_bytes']
+
+n1 = 500
+n2 = 600
+print(n1+n2)
+print(n1.__add__(n2))
+
+
 
 
 
