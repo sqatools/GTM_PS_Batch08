@@ -36,9 +36,10 @@ else:
 if num > 0:
 	print(f"Number", {num}, " is a positive number")
 
-else:
+elif num < 0:
 	print(f"Number", {num}, " is negative number")
-
+else:
+	print(f"Number", {num}, " is a zero number")
 
 #num = int(input("Enter a number: "))
 var = 7
