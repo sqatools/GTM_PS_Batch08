@@ -7,6 +7,9 @@ Home Work.
 #4).  Check given number is divisible by 7 then add 50 in the number else subtraction 50 from the
 number
 
+
+
+
 """
 
 #1). write a python program to check given number is divisible by 3 or not
