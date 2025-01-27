@@ -28,7 +28,8 @@ print("_"*50)
 #
 # input function accepts the values in string format, we have to convert as per requirements
 """
-num1 = int(input("Please enter value :"))
+
+
 var1 = 2
 print("condition output :", num1%var1)
 
