@@ -42,12 +42,23 @@ if decision ==2 : sub num1, num2
 if decision ==3 : multi num1, num2
 if decision ==4 : division num1, num2
 if decision > 4 : invalid input
+"""
 
-
-num1 = float(input("please enter 1st Number"))
-num2 = float(input("please enter 2nd Number:"))
-decision = int(input("Please enter your choice 1: Add, 2: Subtract, 3: Multiply, 4: Divide))
+num1 = float(input("please enter 1st Number: "))
+num2 = float(input("please enter 2nd Number: "))
+decision = int(input("Please enter your choice 1: Add, 2: Subtract, 3: Multiply, 4: Divide " ))
 
 if decision == 1:
-print("Addition:", int(num1 + num2))
-
+    result = num1 + num2
+    print("The result of addition is:", result)
+elif decision == 2:
+    result = num1 - num2
+    print("The result of subtraction is:", result)
+elif decision == 3:
+    result = num1 * num2
+    print("The result of multiplication is:", result)
+elif decision == 4:
+    result = num1 / num2
+    print("The result of division is:", result)
+else:
+    print("Invalid input! Please enter a choice between 1 to 4.")
