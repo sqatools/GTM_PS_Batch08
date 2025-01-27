@@ -10,7 +10,7 @@ if decision > 4 : invalid input
 """
 num1 =10
 num2 =20
-decision=5
+decision=2
 
 if decision ==1:
     print ("adding two numbers 10+20=", num1+num2)
@@ -25,4 +25,4 @@ else:
     decision >4
     print("invalid output")
 
-
+## Output: subtraction two numbers 10-20= -10
