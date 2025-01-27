@@ -1,23 +1,8 @@
-# write a python program to check greater number among three values
 
 """
-a = int(input("Please enter value of a :"))
-b = int(input("Please enter value of b :"))
-c = int(input("Please enter value of c :"))
-
-
-if a > b and a > c:
-    print("A is greatest among all,", a)
-elif b > c and b > a:
-    print("B is greatest among all,", b)
-elif c > a and c > a:
-    print ("C is the greatest among all,",c)
-"""
-
-
 # write a python program to provide the grade to the students as per the marks obtained.
 
-""" 
+
 marks = int(input("please enter your marks:"))
 
 if marks >= 35 and marks < 50:
@@ -43,9 +28,9 @@ if decision ==3 : multi num1, num2
 if decision ==4 : division num1, num2
 if decision > 4 : invalid input
 """
-
-num1 = float(input("please enter 1st Number: "))
-num2 = float(input("please enter 2nd Number: "))
+print("_____CALCULATOR_____")
+num1 = float(input("please enter 1st Number : "))
+num2 = float(input("please enter 2nd Number : "))
 decision = int(input("Please enter your choice 1: Add, 2: Subtract, 3: Multiply, 4: Divide " ))
 
 if decision == 1:
