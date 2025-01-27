@@ -1,56 +1,35 @@
 """
-if condition:
+if Condition:
     code
 else:
     code
 """
-"""
-print("_"*50)
-# check given numbers are equal or not
+
+print("If Else Basics")
+print("-"*30)
+#1. Check if the numbers are equal or not
+print("1. Program to check if the numbers are equal")
 a = 40
-b = 50
+b = 55
 
 if a == b:
-    # if condition is True
-    print("Numbers are equal:", a, b)
+    print("a and b are equal")
 else:
-    # if condition is False
-    print("Numbers are not equal :", a, b)
+    print("Numbers are not equal")
 
+print("-"*80)
 
-print("condition output:", a == b)
-
-"""
-
-print("_"*50)
 # write a program to check given number is even or odd
-# if any number can be divisible by 2 than it is even or odd number
-#
-# input function accepts the values in string format, we have to convert as per requirements
-"""
+print("2. Program to check if a number is even or odd")
 
+num1 = int(input("Please enter a number"))
 
-var1 = 2
-print("condition output :", num1%var1)
-
-if (num1%var1) == 0:
-    print("This is even number :", num1)
+if num1 % 2 == 0:
+    print("Number is even")
 else:
-    print("This is odd number :", num1)
-"""
-"""
-Home Work.
+    print("Number is odd")
 
-#1). write a python program to check given number is divisible by 3 or not
-#2). write a python print square(n**2) if number is even or print cube(n**3) if number is odd
-#3). write a python program to check given positive or negative.
-#4).  Check given number is divisible by 7 then add 50 in the number else subtraction 50 from the
-number
-
-"""
-
-
-
+print("_"*80)
 
 """
 Logical Operators
@@ -63,19 +42,19 @@ Logical Operators
  in : in operator
  is : is operator
  is not : is operator
- 
+
  AND Logic
  True and False : False
  False and True : False
  False and False : False
  True and True : True
- 
+
  OR Logic
  True or False : True
  False or True : True
  True or True : True
  False or False : False
- 
+
 """
 
 """
@@ -90,15 +69,15 @@ else:
 """
 
 # write a python program to check greater number among three values
-"""
-a = 200
-b = 200
-c = 20
+
+a = 25
+b = 36
+c = 12
 
 if a > b and a > c:
-    print("A has greater value :", a)
+    print("a is the greatest of all 3 numbers")
 elif b > a and b > c:
-    print("B has greater value :", b)
+    print("b is the greatest of all 3 numbers")
 elif c > a and c >  b:
     print("C has greate value :", c)
 elif a == b == c:
@@ -108,13 +87,11 @@ elif a == b != c:
 else:
     print("No one has greater value")
 
-"""
+print("_"*80)
 
-
-
-print("_"*50)
 # write a python program to provide the grade to the students as per marks obtained.
-marks = -20
+
+marks = int(input("Please enter marks"))
 
 if 35 < marks <= 50:
     print("Passed with C grade")
@@ -131,27 +108,14 @@ elif marks < 0:
 else:
     print("Failed in Exam, better luck next time")
 
+print("_"*80)
 
-
-
-print("_"*50)
 # write a python program to check the given number is divisible by 3 or 7
-A = 30
-if (A%3 == 0 or A%7 == 0)  and A%5 == 0:
+A = 50
+if A%3 == 0 or A%7 == 0:
     print("A is divisible by 3 or 7")
 else:
     print("A is not divisible by 3 or 7")
 
+print("_"*80)
 
-
-
-# Home : Write a python program to create a calculator
-"""
-Take three input user, num1, num2, decision
-if decision ==1 : add num1, num2
-if decision ==2 : sub num1, num2
-if decision ==3 : multi num1, num2
-if decision ==4 : division num1, num2
-if decision > 4 : invalid input
-
-"""

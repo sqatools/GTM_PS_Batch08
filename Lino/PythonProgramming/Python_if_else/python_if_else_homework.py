@@ -51,3 +51,28 @@ if (num4%var1) == 0:
     print("Entered number is divisible by 7 :", num4+50)
 else:
     print("Entered number is odd  :", num4-50)
+
+#Home: Write a python program to create a calculator
+"""
+Take three input user, num1, num2, decision
+if decision ==1 : add num1, num2
+if decision ==2 : sub num1, num2
+if decision ==3 : multi num1, num2
+if decision ==4 : division num1, num2
+if decision > 4 : invalid input
+
+"""
+num1=int(input("Enter the first number: "))
+num2=int(input("Enter the second number: "))
+decision=int(input("Enter the decision"))
+
+if decision==1:
+    print(num1+num2)
+elif decision==2:
+    print(num1 - num2)
+elif decision==3:
+    print(num1*num2)
+elif decision==4:
+    print(num1 / num2)
+else:
+    print("Invalid input")
