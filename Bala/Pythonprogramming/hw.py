@@ -13,7 +13,7 @@ elif userinput==1:
     print("output",num3)
 
 else:
-    print("invalid input value")
+    print("invalid input value, Hello Python")
 
 
 
