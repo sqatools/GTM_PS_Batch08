@@ -52,8 +52,8 @@ number2=float(input("please enter First Number2:"))
 decision = int(input("Please enter your choice 1: Add, 2: Subtract, 3: Multiply, 4: Divide " ))
 
 if decision == 1:
-   # Add == number1+number2
-    print("The result of Addition is:", number1+number2)
+  # Add =int (number1+number2)
+    print("The result of Addition is:", number1 + number2)
 elif decision == 2:
   #  Sub == number1 - number2
     print("The result of Substraction is:", number1 - number2)
