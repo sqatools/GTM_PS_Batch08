@@ -143,6 +143,6 @@ print(var2, type(var2))
 print(dir(bool))
 # 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'is_integer', 'numerator', 'real', 'to_bytes']
 
-#print(var1.to_bytes()) # b'\x01'
+#print(var1.to_bytes()) # b'\x01';
 """
 
