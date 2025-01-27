@@ -1,4 +1,4 @@
-"""
+
 # Date : 23/ 01/ 2025
 
 #1). write a python program to check given number is divisible by 3 or not
@@ -53,7 +53,6 @@ else:
     print("Entered number is not divisible by 7 so subtracting 50 from it: ",num4-50)
 
 print("_"*80)
-"""
 
 ##################### Home work - Date : 24/01/2025  ####################
 
