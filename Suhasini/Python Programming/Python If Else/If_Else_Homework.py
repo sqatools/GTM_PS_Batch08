@@ -66,9 +66,9 @@ if decision ==4 : division num1, num2
 if decision > 4 : invalid input
 """
 
-num1 = int(input("Enter first number"))
-num2 = int(input("Enter second number"))
-dec = int(input("Enter your decision"))
+num1 = float(input("Enter first number"))
+num2 = float(input("Enter second number"))
+dec = float(input("Enter your decision: 1.Add 2.Subtract 3.Multiply 4.Divide"))
 
 if dec == 1:
     result = num1+num2
