@@ -95,7 +95,7 @@ print(tup1, type(tup1))
     int, float, string, list, tuple, dict, set, boolean
 -> Tuple follows positive and negative indexing as like string, list
 -> Tuple defined with round bracket.
-
+j
 """
 ################################# Tuple datatype ###############################
 
