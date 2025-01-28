@@ -15,7 +15,7 @@ b = int(input("integer value of b: "))
 cal= (a**2) - (b**2)
 print("Answer for (a-b)(a+b) =", cal)
 
-#**** a3-b3 = (a-b)^3 + 3ab(a-b)
+print("**** a3-b3 = (a-b)^3 + 3ab(a-b)")
 print("Calculate answer for a^3-b^3" )
 a = int(input("Integer value of a: "))
 b = int(input("integer value of b: "))

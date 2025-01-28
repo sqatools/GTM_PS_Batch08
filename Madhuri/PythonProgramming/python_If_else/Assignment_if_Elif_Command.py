@@ -66,6 +66,15 @@ elif decision == 4:
 else:
     print("Invalid input! Please enter a choice between 1 to 4.")
 
+"""
+Output:
+please enter First Number1:34
+please enter First Number2:3
+Please enter your choice 1: Add, 2: Subtract, 3: Multiply, 4: Divide 3
+The result of Multiplication is: 102.0
+
+
+"""
 
 
 
