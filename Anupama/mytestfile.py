@@ -1,25 +1,18 @@
-"""s1= "hello"
-list1=[5,7,6,"gut","hy","it"]
-print(list1, type(list1))
-print(list1[3])
-print(list1[2:4])"""
+print ("*"*10,"Program to print O","*"*10)
+for row in range(0, 7):
+        for column in range(0, 7):
+            if (row == 0 or row == 6) and (1 < column < 5) :
+                print("*", end=' ')
+            elif (0 < row <= 5) and (column ==1 or column ==5):
+                print("*", end=' ')
+            else:
+                print(" ", end=' ')
+        print()
 
 
+#write a program to calculatr the bill amount on basis of units consumed
 
-"""tup1= (5,6,7,[56, 3.5],92,6,("tup"))
-print(tup1, type(tup1))
-
-print(tup1[5])
-print(tup1.count(5))"""
-
-"""dict1= {'a': 'Rahul', 'b':'shahul', 'c':'fahul'}
-print(dict1['a'])
-dict1['d']= 678905
-print(dict1)"""
-
-"""str1 =("good morning")
-set_e=set(str1)
-print(set_e, type(set_e))"""
-
-
-
+unit = 155
+total_bill=0
+if unit<=100:
+    total_bill= total_bill+ unit*20
