@@ -64,13 +64,15 @@ Logical operators
  
  """
 
-
+"""
 if cond1:
    cond1
 elif cond2:
     cond2
 elif cond3:
     cond3
+else:
+    code
 """
 
 # write a python program to check greater number among three values
@@ -84,7 +86,7 @@ elif b >a and b > c :
     print("B has greater value :" , b)
 elif c > a and c > b :
     print("C has greater value :" , c)
-elif a == b == c
+elif a == b == c:
     print("A,B has equal values")
 else:
     print("No one has greater value")
@@ -124,11 +126,12 @@ else:
 #homework:
 
 1)write a python program to create a calculator
-"""
+
 Take three input user,num1,num2,decision
 if decision ==1: add num1,num2
 if decision ==2 : sub num1,num2
 if decision ==3 : multi num1,num2
 if decision ==4 : division num1,num2
 if decision > 4 : invalid input
+
 """
