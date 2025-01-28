@@ -155,16 +155,16 @@ else:
     print("Num is not available in the list",num) #Num is not available in the list 35
 
 """
-
+"""
 #14). Python program to find the largest number among three numbers.
 
 num1 = int(input("Enter 1st number: "))
 num2 = int(input("Enter 2nd number: "))
 num3 = int(input("Enter 3rd number: "))
-
-
-
 """
+
+
+
 #15)Python program to check any person eligible to vote or not
 # age > 18+ : eligible
 # age < 18: not eligible
@@ -174,5 +174,4 @@ if age >= 18:
     print("Eligible",age) #Eligible 23
 else:
     print("Not Eligible",age) #Not Eligible 12
-"""
 
