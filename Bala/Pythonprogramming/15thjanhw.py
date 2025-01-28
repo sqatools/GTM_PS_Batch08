@@ -6,7 +6,7 @@ lhs=(a+b)**3
 rhs=(a**3)+(b**3)+3*a*b*(a+b)
 print(lhs==rhs)
 
-#########Task2##########
+###Task2##########
 
 lhs=(a-b)*(a+b)
 rhs=(a**2)-(b**2)
