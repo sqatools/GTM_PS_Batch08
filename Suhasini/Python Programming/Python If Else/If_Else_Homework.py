@@ -1,4 +1,4 @@
-"""
+
 # Date : 23/ 01/ 2025
 
 #1). write a python program to check given number is divisible by 3 or not
@@ -57,13 +57,14 @@ print("_"*80)
 ##################### Homework - Date : 24/01/2025  ####################
 
 # Home : Write a python program to create a calculator
-
+"""
 Take three input from user: num1, num2, decision
 if decision ==1 : add num1, num2
 if decision ==2 : sub num1, num2
 if decision ==3 : multi num1, num2
 if decision ==4 : division num1, num2
 if decision > 4 : invalid input
+"""
 
 num1 = float(input("Enter first number"))
 num2 = float(input("Enter second number"))
@@ -153,7 +154,6 @@ if num in num_ls:
 else:
     print("Entered number is not present in the list")
 print("_"*80)
-"""
 
 # Python program to check if a number is prime
 print("Program to check if a number is prime")
