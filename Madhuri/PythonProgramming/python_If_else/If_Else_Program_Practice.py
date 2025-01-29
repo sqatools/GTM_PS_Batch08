@@ -159,7 +159,7 @@ num3 = int(input("Enter 3rd number: "))
 """
 
 
-
+"""
 #15)Python program to check any person eligible to vote or not
 # age > 18+ : eligible
 # age < 18: not eligible
@@ -169,4 +169,87 @@ if age >= 18:
     print("Eligible",age) #Eligible 23
 else:
     print("Not Eligible",age) #Not Eligible 12
+"""
+"""
+#16). Python program to check whether any given number is a palindrome.
+# Input: 121
+# Output: palindrome
+"""
+"""
+
+#17). Python program to check if any given string is palindrome or not.
+Input: ‘jaj’
+output = palindrome
+"""
+
+
+"""
+#18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
+# Input = Enter marks: 45
+# Output = Pass
+
+marks = int(input("Enter marks of a student: "))
+
+if marks>=45:
+    print("Pass")
+else:
+    print("Fail"
+"""
+
+
+"""
+#19). Python program to check whether the given number is positive or not.
+#Input = 20
+#Output = True
+
+num1 = 20
+if num1 > =0:
+    print("True")
+else:
+    print("False")  
+
+"""
+
+"""
+#20). Python program to check whether the given number is negative or not.
+#Input = -45
+#Output = True
+
+num1 = -45
+if num1 >=0:
+    print("true")
+else:
+    print("False")
+"""
+"""
+# 21). Python program to check whether the given number is positive or negative and even or odd.
+#Input = 26
+#Output = The given number is positive and even
+
+num= -13
+if num>=0:
+    if num%2==0:
+        print("The given number is positive and even")
+    else:
+        print("The given number is positive and odd")
+else:
+    if num%2 == 0:
+        print("The given number is negative and even")
+    else:
+        print("The given number is negative and odd")
+"""
+
+"""
+#22). Python program to print the largest number from two numbers.
+#Input: 25, 63
+#Output = 63
+
+no1=25
+no2=63
+
+if no1>no2:
+    print("no1 Is the largest number from the given number")
+else:
+    print("no2 is the largest number from the given number")
+"""
 
