@@ -1,9 +1,10 @@
 print("*"*15,"print a string five times", "*"*15)
-a = str(input("Sting to print: "))
+a = str(input("String to print: "))
 t=1
 while t < 6:
     print(a)
     t=t+1
+print()
 #***************************************************************************
 print("*"*15,"Program to find even and odd numbers form a given series", "*"*15)
 bucket = (1,3,2,4,6,7,8,9,12,54,31)
@@ -17,6 +18,7 @@ for i in bucket:
         odd=odd+1
 print("No. of even:",eve)
 print("No. of odd:", odd)
+print()
 
 
 #*******************************************************************************
@@ -37,3 +39,13 @@ elif((Tot_marks/500)*100)<60 and ((Tot_marks/500)*100)>=40:
     print("Second Division")
 else:
     print("Fail")
+print()
+#*******************************************************************************
+print("*"*15,"Print * in a pyramid shape", "*"*15)
+n = int(input("number of lines for pyramid: "))
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        print("*",end="")
+    print()
