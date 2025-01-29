@@ -27,6 +27,14 @@ elif  100 > marks<0:
     print("the grade is Fail")
 else:
     print("the grade is invalid")
+print("_"*50)
+
+# 4) Python program to check the given number divided by 3 and 5.
+a=int((input("Enter the number:")))
+if a%3==0  and a%5==0:
+    print("the given number is divisible by 3 and 5")
+else:
+    print("the given number is not divisible by 3 and 5")
 
 
 
