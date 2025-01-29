@@ -1,0 +1,1 @@
+#1)Python program to check given number is divided by 3 or not.
