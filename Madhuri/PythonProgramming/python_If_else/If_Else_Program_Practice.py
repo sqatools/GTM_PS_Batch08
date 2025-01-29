@@ -84,11 +84,6 @@ else:
 # 9). Python program to check authentication with the given username and password. ?????
 
 
-
-
-
-
-
 """
 #10) Python program to validate user_id in the list of user_ids.
 
