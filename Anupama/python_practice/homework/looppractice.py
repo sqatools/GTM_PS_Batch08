@@ -67,3 +67,24 @@ while t < 6:
     print(a)
     t=t+1
 print()
+
+#****check if the number is prime or not***
+num =  int(input("Enter a number: "))
+count = 0
+for i in range(2,num):
+    if num%i == 0:
+        count += 1
+if count > 0:
+    print("It is not a prime number")
+else:
+    print("It is a prime number")
+    print()
+
+#****** check if the given number is in the list*****
+list1 = [44,77,56,97,45,65,67,64,31,23]
+num = int(input("Enter a number: "))
+
+if num in list1:
+    print(f"{num} is available in the list")
+else:
+    print(f"{num} is not available in the list")
