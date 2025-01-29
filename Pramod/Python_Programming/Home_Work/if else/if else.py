@@ -40,5 +40,5 @@ c=4
 if c%7==0:
     print ("The number is divisible by 7, so adding 50", c+50)
 else:
-    print("The number is not divisible by 7, so substract 50",c-50)
-
+    print("The number is not divisible by 7, so substract 50. ","=", c-50)
+#The number is not divisible by 7, so substract 50.  = -46

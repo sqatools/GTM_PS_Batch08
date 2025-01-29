@@ -150,11 +150,51 @@ elif programNo == 10:
 
 
 elif programNo == 11:
-    print("Program #11: ")
+    print("Program #11: Verify string is palindrome or not")
+
+    str1 = input("Enter string : ")
+    list1 = list(str1)
+    list2 = []
+    length = len(list1)
+    print(length)
+
+    for i in range(-1, -(length+1), -1):
+        list2.append(list1[i])
+
+    print(list1, list2)
+    if list1 == list2:
+        print("string is palindrome")
+    else:
+        print("string is not palindrome")
+
+
+#------------------------------------------------------------------------------------------
+
 
 
 elif programNo == 12:
-    print("Program #12:")
+    print("Program #12: Print vowels and consonants in the string")
+    str1 = input("Enter String : ")
+    list1 = ['a','e','i','o','u']
+    str2=str1.lower()
+    length = len(str1)
+
+    vowels=[]
+    consonants=[]
+
+    for i in range (0, length):
+        if str2[i] in list1:
+            vowels.append(str2[i])
+        else:
+            consonants.append(str2[i])
+
+    print("vowels = ",vowels, len(vowels))
+
+    print("Consonants = ", consonants, len(consonants))
+
+
+#------------------------------------------------------------------
+
 
 elif programNo == 13:
     print("Program #13:")
