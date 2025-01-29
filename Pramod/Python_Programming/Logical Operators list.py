@@ -6,7 +6,7 @@ Logical Operators
  <= : less than equal
  != : not equal
  == : equal to operator
- in : in operator
+ in : in operator  >> Range method
  is : is operator
  is not : is operator
 

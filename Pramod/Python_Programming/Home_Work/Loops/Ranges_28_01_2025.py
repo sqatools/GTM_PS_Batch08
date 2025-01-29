@@ -19,5 +19,5 @@ for p in range (1,20,1):
     if p%2==0:
         print("the even nulmbers = ", p**2)
     else:
-        print("the odd numbers =",p**3)
+        print("the odd numbers=",p**3)
 
