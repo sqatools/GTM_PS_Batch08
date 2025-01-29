@@ -85,5 +85,5 @@ list_len = len(list1)
 for i in range(-list_len, 0, 1):
     print(i, list1[i])
 
-# 1)write a python program to print value which re dividible 5 and 7 from 1 to 50
-# 2) write a python print square of even number and cube of odd from 1 to 20
+
+
