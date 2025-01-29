@@ -12,6 +12,7 @@ Output = Science
 '''
 
 print("#"*50)
+print("Program 1")
 ch = input("Do you want to proceed to check stream allocation based on marks, please type (Yes/No): ")
 
 if ch == 'y' or ch =='yes' or ch == 'Y' or ch == 'Yes' or ch == 'YES':
@@ -41,6 +42,7 @@ Output = Saturday
 
 '''
 print("="*50)
+print("Program 2")
 print("To check which day according to the given number")
 user_input_2 = int(input("Please enter any number between 1 to 7: "))
 print("The number is: ", user_input_2)
@@ -73,13 +75,14 @@ Output = 0
 
 '''
 print("="*50)
+print("Program 3")
 print("Program to display 1/0, if the user gives Hello/Bye as output")
 
 user_input_3 = input("Enter your choice (Hello or Bye): ")
 print("Your choice is: ", user_input_3)
-if user_input_3 == 'Hello' or 'hello' or 'HELLO':
+if user_input_3 == 'Hello' or user_input_3 == 'hello' or user_input_3 == 'HELLO':
     print("The choice is Hello, hence value is: ", 1)
-elif user_input_3 == 'Bye' or 'bye' or 'BYE':
+elif user_input_3 == 'Bye' or user_input_3 == 'bye' or user_input_3 == 'BYE':
     print("The choice is Bye, hence value is: ", 0)
 else:
     print("Invalid choice entered")
@@ -95,6 +98,7 @@ Output = Discount amount: 150
 
 '''
 print("="*50)
+print("Program 4")
 print("Program to calculate the discount based on bill")
 
 bill_amt = int(input("Enter the bill amount: "))
@@ -124,17 +128,20 @@ Output = You are eligible for a bonus
 
 '''
 print("="*50)
+print("Program 5")
 print("To check employees eligible for bonus")
 
-years_served = float(input("Enter the employee has served in the company: "))
+years_served = int(input("Enter the years served by the employee in the company: "))
 print("The employee has served ", years_served, " years")
 
-if years_served >= 4:
+if years_served >= 4 and years_served <80:
     print("Congratulations!!!, You are eligible for the 10% bonus")
 elif years_served > 0 and years_served < 4:
     print("Better luck next time, Since you are served ", years_served , "which is not eligible for bonus")
+elif years_served < 0:
+    print('Since there is no experience, there is No bonus')
 else:
-    print("Invalid value")
+    print("Invalid served experience is entered")
 
 '''
 Program 6:
@@ -144,6 +151,7 @@ Input= 36
 Output = The given number belongs to 4th group
 '''
 print("="*50)
+print("Program 6")
 print("To create 10 groups of number between 1 to 100")
 group_num = int(input("Please Enter any number from 1-100: "))
 print("The number is: ", group_num)
@@ -183,6 +191,7 @@ A={‘name’:’Virat’,’sport’:’cricket’}
 Output = True
 '''
 print("="*50)
+print("Program 7")
 print("To check whether given input is dictionary")
 A={'name':'Virat','sport':'cricket'}
 print("The given input is: ", type(A))
@@ -204,6 +213,7 @@ C=10
 Output = True
 '''
 print("="*50)
+print("Program 8")
 print("To check whether a triangle is isosceles or not")
 
 num1 = int(input("Enter the first length of the side of the triangle: "))
@@ -236,6 +246,7 @@ Input = 6
 Output = FizzBuzz
 '''
 print("="*50)
+print("Program 9")
 print("To check whether the i/p number is multiples of 2 (or) multiples of 3 (or) multiples of 3 and 2")
 num4 = int(input("Enter the input number: "))
 print("The input number is: ", num4)
@@ -266,13 +277,14 @@ HINT:
 conditions to check whether a year is a leap or not. a)year%100 != 0 or year%400 == 0, b) year%4 == 0.
 '''
 print("="*50)
+print("Program 10")
 print("To check whether given year is leap or not")
 
 year = int(input("Enter the year: "))
 
 if year > 0:
     print("The year is: ", year)
-    if year%100 != 0 or year%400 == 0 and year%4 ==0:
+    if (year%100 != 0 or year%400 == 0) and year%4 ==0:
         print("Its the leap year")
     else:
         print("Its not a leap year")
@@ -288,13 +300,16 @@ Input: ‘jaj’
 output = palindrome
 '''
 print("="*50)
+print("Program 11")
 print("To check whether given string is palindrome")
 input_value = input("Enter the string to check palindrome: ")
 reverse_string= input_value[::-1]
+print("input value: ", input_value)
+print("reverse string: ", reverse_string)
 if input_value == reverse_string:
     print("palindrome", input_value == reverse_string)
 else:
-    print("not a palindrome", input_value !=reverse_string)
+    print("not a palindrome", input_value != reverse_string)
 
 '''
 Program 12:
@@ -304,6 +319,7 @@ Program 12:
 fib = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 '''
 print("="*50)
+print("Program 12")
 print("To check number is part of Fibonacci series 1 to 10")
 fib = [0,1,1,2,3,5,8,13,21,34]
 print("The fibonacci series are: ", fib)
@@ -317,6 +333,7 @@ Program 13:
 10). Python program to validate user_id in the list of user_ids.
 '''
 print("="*50)
+print("Program 13")
 user_ids = [10,20,30,40,50,60,70]
 print("To validate user id in the list of user ids: ", user_ids)
 #for l in range(10, 100):
@@ -329,46 +346,36 @@ else:
 '''
 Program 14:
 
-29). Python program to find the electricity bill. According to the following conditions:
-Up to 50 units rs 0.50/unit
-Up to 100 units rs 0.75/unit
-Up to 250 units rs 1.25/unit
-above 250 rs 1.50/unit
-an additional surcharge of 17% is added to the bill
-Input = 350
-Output = 438.75
-
+57). Python program to accept the car price of a car and display the road tax to be paid according to the
+following criteria:
+Cost price<500000 –> tax:15000
+Cost price<1000000 –> tax:50000
+Cost price<1500000 –> tax:80000
+Input = Car Price: 1200000
+Output = Tax payable: 50000
 
 '''
 print("="*50)
-print("Program to find Electricity bill")
-ch = input("Do you want to view Rupees for each units, type (yes/no): ")
-charge = 0
-if ch == 'y' or 'yes' or 'Y' or 'Yes' or 'YES':
-    print("Following are the rate for different units")
-    print("1.Up to 50 units rs 0.50/unit")
-    print("2.Up to 100 units rs 0.75/unit")
-    print("3.Up to 250 units rs 1.25/unit")
-    print("4.above 250 rs 1.50/unit")
-    print("An additional surcharge of 17% is added to the bill")
-    units = int(input("Please enter the units spemd: "))
+print("Program 14")
+print("Program to display road tax based on car price")
+car_price = int(input("Enter the car price: "))
 
-    if units <=50:
-        bill = units * 0.50
-    elif units >=51 and units <=100:
-        bill = (50 * 0.50) + (units-50) * 0.75
-    elif units >=101 and units <=250:
-        bill = (50 * 0.50) + (50 * 0.75) + (units-100) * 1.25
-    elif units >=251:
-        bill = (50 * 0.50) + (50 * 0.75) + (150 * 1.25) + (units-250) * 1.50
-    else:
-        print("invalid input")
+print("The car price is: ", car_price)
 
-    surcharge = bill * (17/100)
-    total_bill = bill + surcharge
-    print("The total bill for, ", units, " units is Rs ", total_bill)
+if car_price <= 500000:
+    tax = 15000
+    print("Tax payable is: ", tax)
+elif car_price>500000 and car_price <=1000000:
+    tax = 50000
+    print("Tax payable is: ", tax)
+elif car_price>1000000 and car_price <=1500000:
+    tax = 80000
+    print("Tax payable is: ", tax)
+elif car_price<0:
+    print("Invalid amount")
 else:
-    print("Thank you")
+    print("Tax is not available for this ", car_price, " amount")
+
 '''
 Program 15:
 
@@ -377,6 +384,7 @@ Input = A
 Output = True
 '''
 print("="*50)
+print("Program 15")
 print("Program to check whether entered alphabet is a vowel")
 vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
@@ -395,6 +403,7 @@ Input = February
 Output = 28/29 days
 '''
 print("="*50)
+print("Program 16")
 print("To convert the month name to number of days")
 month_name = input("Enter any month name: ")
 print("The month name is: ", month_name)
@@ -447,6 +456,7 @@ Input = 15
 Output = You are eligible
 '''
 print("=" * 50)
+print("Program 17")
 print("To check the eligibility of a person to sit on a roller coaster ride")
 age = int(input("Enter your age: "))
 print("Your age is: ", age)
@@ -465,6 +475,7 @@ Input = Enter attendance: 78
 Output = You are eligible
 '''
 print("="*50)
+print("Program 18")
 print("To check student eligibilty to attend exam based on attendance")
 
 attendance = input("Enter the student attendance: ")
@@ -487,6 +498,7 @@ C=68
 Output = 23
 '''
 print("="*50)
+print("Program 19")
 print("To find the lowest number between three numbers")
 A = 45
 B = 23
@@ -509,6 +521,7 @@ o/p: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
 
 '''
 print("="*50)
+print("Program 20")
 print("Check whether given number is prime number or not")
 num = int(input("Enter any number: "))
 n = 2
@@ -521,3 +534,49 @@ elif num%n != 0:
     print("It is a Prime number", num%n)
 else:
     print("Its Not a prime number", num%n)
+
+'''
+Program 21:
+
+29). Python program to find the electricity bill. According to the following conditions:
+Up to 50 units rs 0.50/unit
+Up to 100 units rs 0.75/unit
+Up to 250 units rs 1.25/unit
+above 250 rs 1.50/unit
+an additional surcharge of 17% is added to the bill
+Input = 350
+Output = 438.75
+
+'''
+print("="*50)
+print("Program 21")
+print("Program to find Electricity bill")
+ch = input("Do you want to view Rupees for each units, type (yes/no): ")
+charge = 0
+if ch == 'y' or ch == 'yes' or ch == 'Y' or ch == 'Yes' or ch =='YES':
+    print("Following are the rate for different units")
+    print("1.Up to 50 units rs 0.50/unit")
+    print("2.Up to 100 units rs 0.75/unit")
+    print("3.Up to 250 units rs 1.25/unit")
+    print("4.above 250 rs 1.50/unit")
+    print("An additional surcharge of 17% is added to the bill")
+    units = int(input("Please enter the units spemd: "))
+
+    if units <=50:
+        bill = units * 0.50
+    elif units >=51 and units <=100:
+        bill = (50 * 0.50) + (units-50) * 0.75
+    elif units >=101 and units <=250:
+        bill = (50 * 0.50) + (50 * 0.75) + (units-100) * 1.25
+    elif units >=251:
+        bill = (50 * 0.50) + (50 * 0.75) + (150 * 1.25) + (units-250) * 1.50
+    else:
+        print("invalid input")
+
+    surcharge = bill * (17/100)
+    total_bill = bill + surcharge
+    print("The total bill for, ", units, " units is Rs ", total_bill)
+elif ch == 'n' or ch == 'no' or ch == 'N' or ch == 'No' or ch == 'No':
+    print("Since you typed 'No' the Rate for different units is not displayed")
+else:
+    print("Thank you")
