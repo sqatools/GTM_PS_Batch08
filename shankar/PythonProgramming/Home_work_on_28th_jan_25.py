@@ -13,6 +13,6 @@ print("-" * 60)
 
 for num in range(1, 20 + 1):
     if num % 2 == 0:
-        print("even number square:", num * num)
+        print("even number square:", num ** 2)
     else:
-        print("odd number cube:", num * num * num)
+        print("odd number cube:", num ** 3)

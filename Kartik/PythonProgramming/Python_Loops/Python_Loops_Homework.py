@@ -15,9 +15,9 @@ print("_" * 50)
 """
 2. Write a python program to print square of even number and cube of odd number from 1 to 20.
 """
-for i in range(1, 21, 1):
+for j in range(1, 21, 1):
 
-    if (i % 2) != 0:
-        print(i ** 3)
-    else:
+    if (j % 2) == 0:
         print(i ** 2)
+    else:
+        print(i ** 3)
