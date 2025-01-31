@@ -77,9 +77,60 @@ for w in range(4, -1, -1):
     print(w*"* ")
 
 # 2nd way
-print("_" * 50)
-for z in range(6, 1):
+print("_" * 50, "ppppp")
+for z in range(6, 1, -1):
     for y in range(z):
         print("*", end=" ")
 
-    print("\n")
+    print()
+
+# 30/01/2025
+num = 11
+# count = 0
+prime = True
+for i in range(2, num):
+    if num % i == 0:
+        prime = False
+        # count += 1
+        # count = count + 1
+
+
+    # print("count value :", count)
+    #     if count == 0:
+if prime:
+    print("This is prime number:", num)
+else:
+    print("This is not prime number: ", num)
+
+print("_"*60)
+# prime all prime number from 1 to 100
+for num in range(2, 101): #2, 3, 4, 5, 6
+    prime = True
+    for i in range(2, num//2+1): # no |2|2,3|,2,3,4|2,3,4,5
+        if num % i == 0:
+            prime = False
+
+    if prime:
+        print(num, end=" ")
+
+"""
+# # @ # #
+# @ # @ #
+@ # # # @
+# @ # @ #
+# # @ # #
+"""
+
+for i in range(1, 6):
+    for j in range(1, 6):
+        if i == 1 and j == 3:
+            print("@,", end=" ")
+        elif (i == 2 and j == 2) or (i == 2 and j == 4):
+            print("@", end=" ")
+        elif (i == 2 and j == 2) or (i == 2 and j == 4):
+            print("@", end=" ")
+        else:
+            print("#", end=" ")
+        print("#", end=" ")
+
+    print()
