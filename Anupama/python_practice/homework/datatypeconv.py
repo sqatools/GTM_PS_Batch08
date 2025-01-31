@@ -510,8 +510,8 @@ print("_"*50)
 
 
 ********adding a string and integer*********
-num_string = '12'
-num_integer = 23
+num_string = '10'
+num_integer = 44
 
 print("Data type of num_string before Type Casting:",type(num_string))
 
