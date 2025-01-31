@@ -326,3 +326,65 @@ Output:
    ***  
 
     '''
+elif ch ==17:
+    '''
+    55). Write a program to construct the following pattern, using a nested for loop in Python.
+Output :
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+    '''
+    print("#"*50)
+    for i in range(1, 6):
+        for j in range(i):
+            print(i, end=" ")
+        print()
+elif ch ==18:
+    '''
+    54). Write a program to construct the following pattern, using a for loop in Python.
+Output :
+* * * * *
+* * * *
+* * *
+* *
+*
+    '''
+    print("#"*50)
+    for i in range(5, 0, -1):
+        print(i*" *")
+    print()
+
+elif ch ==19:
+    '''
+    53). Write a program to construct the following pattern, using a for loop in Python.
+Output :
+*
+* *
+* * *
+* * * *
+* * * * *
+    '''
+    print("#"*50)
+    for i in range(1, 6):
+        print(i*" *")
+    print()
+
+elif ch ==20:
+    '''
+    48). Write a program to get input from the user if it is a string insert it into an empty list using Python Loops.
+Input :
+L=[]
+‘sqatools007’
+Output = [‘s’,’q’,’a’,’t’,’o’,’o’,’l’,’s’]
+    '''
+    print("#"*50)
+    L=[]
+    str = 'sqatools007'
+    list_str = list(str)
+    for i in range(0,len(list_str)-3):
+        #print(list_str[i])
+        L.append(list_str[i])
+
+    print(L)
