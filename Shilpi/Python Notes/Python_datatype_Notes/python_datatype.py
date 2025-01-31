@@ -276,10 +276,10 @@ print("length of tuple :", length_tup)
 tup5 = tuple()
 print(tup5, type(tup5))  # () <class 'tuple'>
 
-print("_" * 50)
+print("_"*50)
 #################################### Dictionary Data Type ###################
 
-dict1 = {'a': 345, 'b': 678, 'c': 123}
+dict1 = {'a' : 345, 'b': 678, 'c': 123}
 print(dict1, type(dict1))
 # {'a': 345, 'b': 678, 'c': 123} <class 'dict'>
 
@@ -299,7 +299,7 @@ print(dict1, type(dict1))
 """
 
 # get value from dictionary
-dict2 = {'Name': 'Rahul', 'Age': 25, 'City': 'Mumbai', 'Email': 'rahul@gmail.com'}
+dict2 = {'Name': 'Rahul', 'Age' : 25, 'City' : 'Mumbai', 'Email' : 'rahul@gmail.com'}
 print(dict2['Email'])
 
 # add data to dictionary
@@ -309,39 +309,40 @@ print(dict2)
 dict2.pop('City')
 print(dict2)
 
-print("_" * 50)
+print("_"*50)
 var1 = 1000
-val2 = {'em_name': 'Vishal', 'emp_salary': 500000, 'designation': 'software engineer'}
+val2 = {'em_name' : 'Vishal', 'emp_salary': 500000, 'designation': 'software engineer'}
 dict3 = {
-    123: 3.5,
-    3.5: 'Hello',
-    'Python': [5, 6, 8, 9],
-    # [1, 3, 4] : (4, 5, 6)  #   TypeError: unhashable type: 'list'
-    (4, 7, 1): {'a': 123, 'b': 456},
-    # 123 : 500  # duplicate are not allowed
-    var1: 'Programming',
-    'emp_details': val2,
+         123: 3.5,
+         3.5 : 'Hello',
+         'Python' : [5, 6, 8, 9],
+          # [1, 3, 4] : (4, 5, 6)  #   TypeError: unhashable type: 'list'
+         (4, 7, 1) : {'a' : 123, 'b' : 456},
+         # 123 : 500  # duplicate are not allowed
+         var1 : 'Programming',
+         'emp_details' : val2,
 }
 
 from pprint import pprint
 
-# print(dict3)
+#print(dict3)
 pprint(dict3)
 
+
 dict4 = {3.5: 'Hello',
-         123: 3.5,
-         1000: 'Programming',
-         'Python': [5, 6, 8, 9],
-         'emp_details': {'designation': 'software engineer',
-                         'em_name': 'Vishal',
-                         'emp_salary': 500000},
-         (4, 7, 1): {'a': 123, 'b': 456}}
+ 123: 3.5,
+ 1000: 'Programming',
+ 'Python': [5, 6, 8, 9],
+ 'emp_details': {'designation': 'software engineer',
+                 'em_name': 'Vishal',
+                 'emp_salary': 500000},
+ (4, 7, 1): {'a': 123, 'b': 456}}
 
-print(dict4['emp_details']['em_name'])  # Vishal
+print(dict4['emp_details']['em_name']) # Vishal
 
-print("_" * 50)
+print("_"*50)
 #################################### Python Sets #############################
-set1 = {55, 12, 3, 5.5, 6, 7, 3, 7, 2, 7}
+set1  = {55, 12, 3, 5.5, 6, 7, 3, 7, 2, 7}
 
 print(set1, type(set1))
 # {2, 3, 5.5, 6, 7} <class 'set'>
@@ -363,11 +364,11 @@ print(set2)
 tup1 = (4, 6, 6, 6, 6, 6, 9)
 print(tup1)
 
-print("_" * 50)
+print("_"*50)
 # add value to the set
 set2.add(100)
 print(set2)
-set2.add(100)  # It won't through error if we try to add same value again.
+set2.add(100) # It won't through error if we try to add same value again.
 print(set2)
 # {True, (4, 6, 7, 6), 100, 'Hello', 22, (4, 6, 6, 7), 44, 77}
 
@@ -386,11 +387,11 @@ print(dir(set))  # dir return list of method belongs to specific data type
 # list/dict/set is mutable datatype which is not allowed in the set.
 
 
-print("_" * 50)
+print("_"*50)
 ##################### Boolean ######################
 # boolean data type only contains 2 values True and False
 var1 = True
-print(var1, type(var1))  # True <class 'bool'>
+print(var1, type(var1))  #True <class 'bool'>
 
 var2 = False
 print(var2, type(var2))
@@ -398,10 +399,13 @@ print(var2, type(var2))
 print(dir(bool))
 # 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'is_integer', 'numerator', 'real', 'to_bytes']
 
-# print(var1.to_bytes()) # b'\x01'
+#print(var1.to_bytes()) # b'\x01'
 
 
 n1 = 500
 n2 = 600
-print(n1 + n2)
+print(n1+n2)
 print(n1.__add__(n2))
+
+
+
