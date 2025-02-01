@@ -8,9 +8,15 @@ if decision ==4 : division num1, num2
 if decision > 4 : invalid input
 
 """
+"""
 num1 =10
 num2 =20
 decision=2
+"""
+num1=int(input("Enter the num1 value"))
+num2=int(input("Enter the num2 value"))
+decision= int(input("Enter the value"))
+
 
 if decision ==1:
     print ("adding two numbers 10+20=", num1+num2)

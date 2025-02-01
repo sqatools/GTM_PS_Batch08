@@ -173,4 +173,79 @@ elif Descision==4:
    print("The Division of Num1 by Num2 is:", Num1//Num2)
 elif Descision==5:
    print("The Entered descision Value is incorrect,Please Enter Correct descision Value")
+   
+"""
+
+#SQA TOOLS PYTHON BASIC PROGRAMS, EXCERCISE
+#1) Sum of two integer
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+Num2 = int(input("Please Enter Num2 Value:"))
+Result = Num1+Num2
+
+print("The Sum of Num1 and Num2 is:", Result)
+"""
+
+#2) Substraction of two integer
+
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+Num2 = int(input("Please Enter Num2 Value:"))
+Result = Num1-Num2
+
+print("The Sum of Num1 and Num2 is:", Result)
+"""
+
+#3) Multiplication of two integer
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+Num2 = int(input("Please Enter Num2 Value:"))
+Result = Num1*Num2
+
+print("The Sum of Num1 and Num2 is:", Result)
+"""
+
+#4) Repeat a given string 5 times
+"""
+Str1 = "SQATOOLS"
+print(Str1*5,"\n")
+"""
+#5). Python program to get the Average of given numbers.
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+Num2 = int(input("Please Enter Num2 Value:"))
+Num3 = int(input("Please Enter Num3 Value:"))
+AVG = (Num1+Num2+Num3)//3
+
+print("The average of the given number is:", AVG)
+"""
+
+#5). Python program to get the square,cube, Squareroot and Cuberoot of a number
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+
+print("The Square of the given number is:", Num1**2)
+print("The Cube of the Number is:", Num1**3)
+print("The Square root of the Number is:", Num1**0.5)
+print("The Cube root of the Number is", Num1**(1/3))
+"""
+
+#6). Python program to interchange two values
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+Num2 = int(input("Please Enter Num2 Value:"))
+
+Num1,Num2 = Num2, Num1
+
+print("The value of Num1 is:", Num1)
+print("The Value of Num1 is:", Num2)
+"""
+
+#7). Python program to find area of square
+"""
+Num1 = int(input("Please Enter Num1 Value:"))
+Num2 = int(input("Please Enter Num2 Value:"))
+Area=Num1*Num2
+
+print("The Area of Square is:", Area)
 """
