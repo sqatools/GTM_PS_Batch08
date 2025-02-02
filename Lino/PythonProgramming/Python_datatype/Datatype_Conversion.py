@@ -1,109 +1,126 @@
-# Integer data type
-
-n1 = 30
-print(n1, type(n1))
-
 """
-1.Numbers
- - Integer
- - Float
- -Complex number
+Types of Python data types.
+1. Numbers
+   i). Integer :  Immutable
+   ii). Float : Immutable
+   iii). Complex number  : Immutable
 
- 2.Sequential
- - String
- - List
- - Tuple
+2. Sequential
+   i). String : Immutable
+   ii). List :  mutable
+   iii). Tuple : Immutable
 
- 3.Dictionary
- 4.Set
- 5.Boolean
-
+3. Dictionary : mutable
+4. Set : mutable
+5. Boolean : Immutable
 """
 
-# Float
+#################### Int #######################
 
-a1 = 10.45
-print(a1, type(a1))
+print("_"*50)
+### Int -> float ###
+n1 = 55
+f1 = float(n1)
+print(f1, type(f1))  # 55.0 <class 'float'>
 
-# complex
-b1 = 10 + 20j
-print(b1, type(b1))
-
-# String data type
-c1 = "Hello"
-print(c1, type(c1))
-
-C2 = " "
-C3 = 'A'
-C4 = 'Python'
-print(C2, C3, C4)
-
-z1 = "Python"
-print(z1[1])
-print(len(z1))
-
-# List datatype
-
-list1 = [1, 2, 'three', 'four', [5, 6], 'seven']
-print(list1)
-
-print(list1[4])
-
-print(list1[2], list1[5])
-
-# Tuple data type
-tup1 = (11, 12, 13, 'Forteen', [15, 16, 17],)
-print(tup1)
-
-print(dir(tup1))
-
-print(tup1[-1])
-print(tup1.count(5))
-print(tup1.count([15, 16, 17]))
-
-# dictionary data type
-
-dic1 = {'a': 123, 'b': 456, 'c': 789, 'd': [1, 2, 3], 'e': (4, 'five', 'six')}
-print(dic1)
-
-dic2 = {'name': 'Anu',
-        'age': 31,
-        'email': 'anu@abc.com'}
-print(dic2)
-
-dic2['phone'] = 1234567890
-print(dic2)
-
-dic2.popitem()
-print(dic2)
-from pprint import pprint
-
-dic3 = {'a': dic2, 'b': dic1}
-pprint(dic3)
-
-pprint(dic2)
-
-# Sets data type
-set1 = {1, 2, 3.5, 6.7, 8, 8, 3.5, 100, 1000, 103}
-print(set1)
-
-# Boolean data type
-
-# It contains only two values - True and False
-var1 = True
-print(var1)
-
-n2 = 123
-f1 = float(n2)
-print(f1, type(f1))
-
-b1 = bool(n2)
-print(b1, type(b1))
-
+print("_"*50)
+### Int -> string ###
+n2 = 67878
 s1 = str(n2)
-print(s1, type(s1))
+print(s1, type(s1), s1[2])
+# 67878 <class 'str'> 8
 
-#********************************************************** data type conversion
+
+print("_"*50)
+### Int -> list ### Conversion is not possible
+"""
+n3 = 567
+l3 = list(n3)
+print(l3)
+"""
+# TypeError: 'int' object is not iterable
+
+
+print("_"*50)
+### Int -> tuple ### Conversion is not possible
+### Int -> dict ### Conversion is not possible
+### Int -> set ### Conversion is not possible
+"""
+b1 = 5
+set1 = set(b1)
+print(set1, type(set1))
+#TypeError: 'int' object is not iterable
+"""
+
+### Int -> complex ### x+yj
+a1 = 500
+c1 = complex(a1)
+print(c1, type(c1))
+# (500+0j) <class 'complex'>
+# default imaginary value will be zero
+
+print("_"*50)
+### int -> boolean ###
+a2 = 0
+b2 = bool(a2)
+print(b2, type(b2)) # False <class 'bool'>
+
+a3 = -4455
+b3 = bool(a3)
+print(b3, type(b3)) # True <class 'bool'>
+
+
+################################# Float data type conversion ###################
+
+print("_"*50)
+### Float -> Int ###
+f1 = 55.45
+n1 = int(f1)
+print(n1, type(n1))
+# 55 <class 'int'>
+
+
+print("_"*50)
+### Float -> string ###
+f2 = 57.345
+s2 = str(f2)
+print(s2, type(s2), s2[-2], s2[2])
+# 57.345 <class 'str'> 4 .
+
+
+print("_"*50)
+### Float -> complex ###
+f3 = 78.89
+c3 = complex(f3)
+print(c3, type(c3))
+# (78.89+0j) <class 'complex'>
+
+print("_"*50)
+### Float -> list ### conversion is not possible
+### Float -> tuple ### conversion is not possible
+### Float -> dict ### conversion is not possible
+### Float -> set ### conversion is not possible
+
+print("_"*50)
+### Float -> Boolean ###
+v1 = 0.0000
+b1 = bool(v1)
+print(b1, type(b1))
+# False <class 'bool'>
+
+v2 = 4.56
+b2 = bool(v2)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+########################### String ###########################
+
+print("_"*50)
+### string -> int ###
+"""
+str1 = "Hello"
+num1 = int(str1)
 print(num1)
 # invalid literal for int() with base 10: 'Hello'
 """
@@ -140,7 +157,9 @@ c7 = complex(str7)
 print(c7, type(c7), c7.real,  c7.imag) # 80j
 # 80j <class 'complex'> 0.0 80.0
 
-rint("_"*50)
+
+
+print("_"*50)
 ### string -> list ###
 str_a = "Hi Python 3"
 list_a = list(str_a)
@@ -507,19 +526,3 @@ print("_"*50)
 ### bool -> tuple ###  Conversion is not possible
 ### bool -> dict ###  Conversion is not possible
 ### bool -> set ###  Conversion is not possible
-
-
-********adding a string and integer*********
-num_string = '10'
-num_integer = 44
-
-print("Data type of num_string before Type Casting:",type(num_string))
-
-num_string = int(num_string)
-
-print("Data type of num_string after Type Casting:",type(num_string))
-
-num_sum = num_integer + num_string
-
-print("Sum:",num_sum)
-print("Data type of num_sum:",type(num_sum))

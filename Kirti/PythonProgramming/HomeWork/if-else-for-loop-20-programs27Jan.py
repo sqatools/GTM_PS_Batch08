@@ -197,13 +197,145 @@ elif programNo == 12:
 
 
 elif programNo == 13:
-    print("Program #13:")
+    print("Program #13: Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python.")
+
+    for i in range(0, 7):
+        if i == 3:
+            print(end = "")
+        elif  i == 6:
+            print(end = "")
+        else:
+            print(i, end = " ")
+
+
+
+#-----------------------------------------------------------------------------------
+
+
 
 elif programNo == 14:
-    print("Program #20:")
+    print("Program #14: Write a program that iterates the integers from 1 to 30 using python. For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”." +
+"For numbers that are multiples of both three and five print “FizzBuzz”. ")
+
+    for i in range(1, 31):
+        if i%3==0 and i%5 ==0:
+            print("FizzBuzz", end= " ")
+        elif i%3==0:
+            print("Fizz", end=" ")
+        elif i%5==0:
+            print("Buzz", end = " ")
+        else:
+            print(i, end=" ")
+
+
+#----------------------------------------------------------------------------------------
+
+
+elif programNo == 15:
+    print("Program #15: Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.")
+
+    word = input("Enter the word : ")
+
+    for char in word:
+        if char.upper() == char:
+            print(char.lower(), end="")
+        else:
+            print(char, end="")
+
+
+#----------------------------------------------------------------------------------------
+
+
+elif programNo == 16:
+    print("Program #16:  Python program to determine whether a given number is available in the list of numbers or not.")
+    num_list = [1,34, 5, 67, 6,67, 78, 34, 5, 4,45,8,78,79,60,23,12,65,98,102]
+
+    num1 = int(input("Enter Number : "))
+    if num1 in num_list:
+        print("Number is in the list")
+    else:
+        print("Number is not in the list")
+
+
+#------------------------------------------------------------------------
+
+
+
+elif programNo == 17:
+    print("Program #17:Python program to describe the interview process")
+    round1='fail'
+    round2='pass'
+    round3='pass'
+
+    if round1 == 'pass':
+        print("Round1 cleared")
+        if round2 == 'pass':
+            print("Round2 cleared")
+            if round3=='pass':
+                print("Congrats you are selected!!")
+            else:
+                print("failed on round 3")
+        else:
+            print("Failed in round 2")
+    else:
+        print("Failed in round1")
+
+elif programNo == 18:
+    print("Program #18:Python program to find the largest number among three numbers")
+    num1 = int(input("Enter number1 : "))
+    num2 = int(input("Enter number2 : "))
+    num3 = int(input("Enter number3 : "))
+
+    if num1> num2 and num1>num3:
+        print("greater number is : ", num1)
+    elif num2>num1 and num2> num3:
+        print("greater number is : ", num2)
+    elif num3>num1 and num3> num2:
+        print("greater number is : ", num3)
+    elif num1==num2 and num1>num3:
+        print("greater number is : ", num1)
+    elif num1== num3 and num1>num2:
+        print("greater number is : ", num1)
+    else:
+        print("greater number is : ", num2)
+
+
+#----------------------------------------------------------------------------------------------
+
+
+
+elif programNo == 19:
+    print("Program #19:Python program to check any person eligible to vote or not"+
+    "age > 18+ : eligible"+
+    "age < 18: not eligible")
+
+    age = int(input("Enter age : "))
+    if age>=18:
+        print("You can vote")
+    else:
+        print("You can't vote")
+
+
+#---------------------------------------------------------------------------------------
+
+
 
 elif programNo == 20:
-    print("Program #20:")
+    print("Program #20:Python program to check whether any given number is a palindrome.")
+
+    num1= input("Enter number : ")
+    length = len(num1)
+
+    list1= list(num1)
+    list2=[]
+    for i in range(-1,-(length+1),-1):
+        list2.append(list1[i])
+
+    if list1==list2:
+        print("Given number is palindrome", num1)
+    else:
+        print("Given number is not palindrome", num1)
+
 
 else:
     print("Enter program between 1 to 20")
