@@ -114,7 +114,7 @@ else:
 """
 
 #Program 10
- """
+"""
 x = int(input("Enter your 1st number :"))
 y = int(input("Enter your 2nd number :"))
 
@@ -122,10 +122,10 @@ if x>y:
     print("the greater number is :", x)
 else:
     print("the greater number is :", y)
-"""
-"""
-print("__"*50)
 
+
+print("__"*50)
+"""
 for i in range(1, 7):
     for j in range(i):
         print("*", end=' ')
@@ -134,10 +134,11 @@ for i in range(1, 7):
 
 print("__"*50)
 
+'''
 for i in range(7, 1, -1):
     for j in range(i-0):
         print("*", end=' ')
 
     print()
 
-"""
+'''
