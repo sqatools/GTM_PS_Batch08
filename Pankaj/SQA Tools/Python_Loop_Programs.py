@@ -132,4 +132,61 @@ for i in range(1, 8):
 
 # 11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
 
+n = int(input("Enter your number: "))
+count = 1
+while count <= n:
+    print(count, end=" ")
+    count += 1
 
+# 12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
+
+num_rev = int(input("Enter your number: "))
+count = num_rev
+while count != 0:
+    print(count, end=" ")
+    count = count - 1
+
+# 13). Python Loops program to print all even numbers between 1 to 100 in python.
+for i in range(1, 101):
+    if i % 2 == 0:
+        print(i, end=" ")
+
+# 14). Python Loops program to print all odd numbers between 1 to 100 using python.
+for i in range(1, 101):
+    if i % 2 != 0:
+        print(i, end=" ")
+
+# 15). Python Loops program to find the sum of all natural numbers between 1 to n using python.
+
+n = int(input("Enter your number: "))
+sum1 = 0
+for i in range(1, n+1):
+    sum1 = sum1 + i
+print(sum1)
+
+# 16). Python program to find the sum of all even numbers between 1 to n using python.
+n = int(input("Enter your number: "))
+Even_No_Count = 0
+for i in range(1, n+1):
+    if i % 2 == 0:
+        Even_No_Count = Even_No_Count+i
+print(Even_No_Count)
+
+# 18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
+n = int(input("Enter your number: "))
+Odd_No_Count = 0
+for i in range(1, n+1):
+    if i % 2 != 0:
+        Odd_No_Count += i
+
+print(Odd_No_Count)
+
+# 19). Write a program to count the number of digits in a number using python.
+
+num = 23123123123
+str1 = str(num)
+print(str1, type(str1))
+count = 0
+for i in str1:
+    count += 1
+print(count)
