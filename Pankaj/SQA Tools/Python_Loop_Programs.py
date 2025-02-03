@@ -57,5 +57,48 @@ for _ in range(20):
     print(a, end=' ')
     a, b = b, a+b
 
+print("_" * 60)
+# 7). Write a program that iterates the integers from 1 to 30 using python.
+# For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”.
+# For numbers that are multiples of both three and five print “FizzBuzz”.
+
+for i in range(0, 31):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+
+# 8)Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
+# Input : “SqaTOOlS”
+# Output : “sqatools”
+
+HumanInput = str(input("Enter words in upper and lower case: "))
+result = " "
+for char in HumanInput:
+    if char.isupper():
+        print(char.lower(), end=" ")
+    else:
+        print(char, end=" ")
+
+# 9). Python loops program that accepts a string and calculates the number of digits and letters using python.
+# Input : “python1234”
+# Output :
+# Letters 6
+# Digits 4
+HumInput = str(input("Enter your alphanumeric value: "))
+digit = 0
+character = 0
+for char in HumInput:
+    if char.isalpha():
+        character += 1
+    elif char.isnumeric():
+        digit += 1
+
+print("Digits :", digit)
+print("Character :", character)
+
+
 
 
