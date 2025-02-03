@@ -91,3 +91,6 @@ for i in range (5, -1, -1):
 print()
 print("_"*80)
 
+# Write a program to check if a given number is prime or not
+
+num = int(input("Enter a number"))
