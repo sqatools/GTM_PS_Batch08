@@ -74,3 +74,58 @@ for i in range(6, 1, -1):
         print(j, end=" ")
 
     print()
+
+print("_"*50)
+""" 
+1 1 1 1 1
+1 1 1 1
+1 1 1
+1 1
+1
+
+"""
+print("_"*50)
+
+for i in range(6, 1, -1):
+    for j in range(1, i):
+        print("1", end=" ")
+
+    print()
+
+print("_"*50)
+###############################333333
+# write a program to check given number is prime or not
+
+num = 10
+prime = True
+
+for i in range(2, num//2):
+    print(i)
+    if num%i == 0:
+        #print(i)
+        prime = False
+
+
+#print("count value :", count)
+if prime is True:
+    print("this is prime number:", num)
+else:
+    print("This is not prime number :", num)
+
+print("_" * 50)
+###########################################
+# write a program to get list of prime numbers from 1 to 100
+prime_list = []
+for num in range(1, 101):
+    prime = True
+    for i in range(2, num//2+1):
+        if num%i == 0:
+            prime = False
+
+    if prime:
+        print(num, end=" ")
+        prime_list.append(num)
+
+print()
+print(prime_list)
+
