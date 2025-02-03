@@ -22,16 +22,16 @@ if play == "yes":
 
     if decision == 1:
         num3 = num1+num2
-        print("The sum of ", {num1}, "and ", {num2}, "is equal to: ", num3)
+        print("The sum of ", num1, "and ", num2, "is equal to: ", num3)
     elif decision == 2:
         num3 = num1 - num2
-        print("The subtraction of ", {num1}, "and ", {num2}, "is equal to: ", num3)
+        print("The subtraction of ", num1, "and ", num2, "is equal to: ", num3)
     elif decision == 3:
         num3 = num1 * num2
-        print("The multiplication of ", {num1}, "and ", {num2}, "is equal to: ", num3)
+        print("The multiplication of ", num1, "and ", num2, "is equal to: ", num3)
     elif decision == 4:
         num3 = num1 % num2
-        print("The division of ", {num1}, "and ", {num2}, "is equal to: ", num3)
+        print("The division of ", num1, "and ", num2, "is equal to: ", num3)
     else:
         print("This is invalid entry")
 else:
