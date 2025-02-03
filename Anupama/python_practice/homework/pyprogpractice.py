@@ -49,3 +49,18 @@ for i in range(n):
     for k in range(2*i+1):
         print("*",end="")
     print()
+
+#********reverse a nummber*
+num=121
+var1=num
+reverse=0
+while num>0: #123>0, 12>0, 1>0
+    temp=num%10 #3
+    reverse=reverse*10+temp #3
+    num=num//10  #12 12,1,0
+print(reverse)
+
+if var1==reverse:
+    print("This is a palindrom",reverse)
+else:
+    print("This is not palindrom",reverse)
