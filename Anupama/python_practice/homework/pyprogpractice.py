@@ -51,7 +51,7 @@ for i in range(n):
     print()
 
 #********reverse a nummber*
-num=121
+num=123
 var1=num
 reverse=0
 while num>0: #123>0, 12>0, 1>0
