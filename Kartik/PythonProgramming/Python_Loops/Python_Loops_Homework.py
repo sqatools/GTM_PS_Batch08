@@ -4,10 +4,10 @@
 num1 = 5
 num2 = 7
 for i in range(1, 50):
-    if (i % num1) == 0:
+    if (i % num1) == 0 or  (i % num2) == 0:
         print(i)
-    elif (i % num2) == 0:
-        print(i)
+    #elif (i % num2) == 0:
+      #  print(i)
 print(i)
 
 print("_" * 50)
