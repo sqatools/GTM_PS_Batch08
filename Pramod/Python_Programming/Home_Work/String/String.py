@@ -42,12 +42,18 @@ str4 = "Learning Python"
 "earning Pythoearning Pytho"
 4. get given output  : "LLLearning Pythonnn"
 """
-#print(str4[0:8])
-result=str4[1]+str4[-1]
+#1. read only "Learning"
+print(str4[0:8])
+
+#2)read only First and last character :  Ln
+result=str4[0]+str4[7]
 print(result)
 
+#3)read all characters except first and last and repeat 2 times the output.
 
+print(str4[1:7]*2)
 
+#4. get given output  : "LLLearning Pythonnn"
 
 
 
