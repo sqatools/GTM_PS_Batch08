@@ -1,26 +1,28 @@
-#5). Python program to find area of cube
+# Home work for string slicing
+str4 = "Learning Python"
 """
-for i in range(1,31,1):
-    if i%3==0:
-        print(i, end=" ")
-
+1. read only "Learning" 
+2. read only First and last character :  Ln
+3. read all characters except first and last and repeat 2 times the output.
+"earning Pythoearning Pytho"
+4. get given output  : "LLLearning Pythonnn"
 """
 
+#1)read only "Learning"
+str4 = "Learning Python"
+print(str4[0:8])
+print(str4[-15:-7])
 
+#2) read only First and last character :  Ln
+str4 = "Learning Python"
+print(str4[0] + str4[-1])
 
-##WAP to find the reverse of a number and check if its palindrome or not
+#3)read all characters except first and last and repeat 2 times the output.
+str4 = "Learning Python"
+print((str4[1:14])*2)
 
-num1 = 1221
-var1 = num1
-Reverse = 0
+#4)get given output  : "LLLearning Pythonnn"
+str4 = "Learning Python"
+result = f"LL{str4}nn"
+print(result)
 
-while num1 > 0:
-    Temp = num1 % 10
-    Reverse = Reverse*10 + Temp
-    num1 = num1//10
-print("The Reverse of the number is:", Reverse)
-
-if var1 == Reverse:
-    print("The Entered number is Palindrome")
-else:
-    print("The Entered number is not Palindrome")
