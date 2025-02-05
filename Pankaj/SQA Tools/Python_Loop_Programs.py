@@ -190,3 +190,17 @@ count = 0
 for i in str1:
     count += 1
 print(count)
+
+# 20). Write a program to check whether a number is a palindrome or not using python loops.
+num3 = 129
+reverse = 0
+original_num3 = num3
+while num3 != 0:
+    temp = num3 % 10
+    reverse = (reverse * 10) + temp
+    num3 = num3 // 10
+
+if original_num3 == reverse:
+    print("Number is palindrome")
+else:
+    print("Not palindrome")
