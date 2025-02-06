@@ -139,3 +139,5 @@ print("_"*50)
 str_w = "Learning if Fun"
 print("find ing :", str_w.find("ing")) # 5 index of first character of substring
 print("find TO :", str_w.find("TO")) # -1 return -1 value if string/char is not available
+
+
