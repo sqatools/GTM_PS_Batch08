@@ -51,9 +51,9 @@ print(result)
 
 #3)read all characters except first and last and repeat 2 times the output.
 
-print(str4[1:7]*2)
+print(str4[1:-1]*2)
 
 #4. get given output  : "LLLearning Pythonnn"
-
+print(str4[0]*2+str4+str4[-1]*2)
 
 
