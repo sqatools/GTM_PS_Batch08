@@ -11,7 +11,6 @@ R = 4
 7. calculate compound interest
 """
 
-1.
 a = 22
 b = 33
 
