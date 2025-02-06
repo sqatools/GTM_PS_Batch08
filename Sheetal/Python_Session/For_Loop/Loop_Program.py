@@ -1,4 +1,5 @@
 ## Write a Python Program to print value which are divisible by 5 and 7 from 1 to 50
+from selenium.webdriver.common.devtools.v85.fetch import continue_request
 
 for i in range(1, 51):
     if i%5 == 0 and i%7 == 0:
@@ -44,3 +45,30 @@ for i in range(1,6):
 
 print("_"*40)
 
+###WAP to get list of prime number ####
+prime_list=[]
+prime=True
+num = int(input("Enter a number: "))
+
+if num <2:
+    prime = False
+
+for i in range(2,num//2+1):
+    if num%i == 0:
+        prime = False
+        break
+if prime:
+    print("This is a prime number: ",num)
+else:
+    print("This is not a prime number", num)
+    prime_list.append(num)
+print("The prime number list is : ", prime_list)
+
+print("_"*40)
+# WAP to get the Fibonacci series upto the number using swap method
+num_terms = int(input("Enter the number of terms: "))
+a, b = 0, 1
+print("Fibonacci Series:", end=" ")
+for i in range(num_terms):
+    print(a, end=" ")
+    a, b = b, a + b  # Update values
