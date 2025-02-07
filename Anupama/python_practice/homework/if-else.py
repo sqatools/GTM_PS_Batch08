@@ -49,6 +49,7 @@ elif c==4:
     print("A divided by b = ", a % b)
 else:
     print("Invalid operation")
+print("-"*50)
 
 #**write a python code to simulate the interview process with the help nested if condition**
 
@@ -70,3 +71,17 @@ if round1 == "pass":
 
 else:
     print("Failed in first round, try next time")
+print("-"*50)
+
+#**python program to find number of strings and numbers**
+str1 = input("Enter your string: ")
+letters = 0
+digits = 0
+for letter in str1:
+    if letter.isalpha():
+        letters += 1
+    else:
+        digits += 1
+print(f"Letters {letters}")
+print(f"Digits {digits}")
+print("_"*100)
