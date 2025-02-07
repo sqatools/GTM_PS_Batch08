@@ -273,3 +273,27 @@ print("Result :", result2)
 str2 = "Pyth2on 356 Programing 2"
 result = str2 == ""
 print(result)
+
+password = "Admin@123"
+updated_Value = "*&%^&%&^%^".join(password)
+print(updated_Value)
+
+org_password = updated_Value.replace("*&%^&%&^%^", "")
+print(org_password)
+
+print("_"*50)
+########### use of is operator ##########
+list1 = [True, False, None, 'Hello', 'Python']
+
+# for val in list1:
+#     if val is None:
+#         continue
+#     else:
+#         print(val)
+
+
+for val in list1:
+    if val is not None:
+        print(val)
+    else:
+        continue
