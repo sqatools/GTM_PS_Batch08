@@ -1,11 +1,11 @@
-
+"""
 print("*"*15,"check if given number is divisible by 3", "*"*15)
 a = int(input("Integer value of a: "))
 if (a%3)==0:
     print(a,"is divisible by 3")
 else:
     print(a,"is not divisible by 3")
-"""**********************************************************************************"""
+print("-"*50)
 
 print("*"*15,"print square of even number and cube of odd number", "*"*15)
 a = int(input("Integer value of a: "))
@@ -13,7 +13,7 @@ if(a%2)==00:
     print("square of", a,"is",a**2)
 else:
     print("Cube of",a, "is", a**3)
-"""**********************************************************************************"""
+print("-"*50)
 
 
 print("*"*15,"check  if given number is positive or negative", "*"*15)
@@ -24,7 +24,7 @@ if a<0:
 else:
     print("The number is positive: ", a)
 
-"""**********************************************************************************"""
+print("-"*50)
 
 print("*"*10,"check  if given number is divisible by 7 then add 50, else subtract 50 from number", "*"*10)
 a = int(input("Integer value of a: "))
@@ -33,7 +33,7 @@ if(a%7)==0:
 else:
     print("Final value of",a,"is:", a-50)
 
-"""**********************************************************************************"""
+print("-"*50)
 
 print("*"*15,"simple calculator", "*"*15)
 a = int(input("Integer value of a: "))
@@ -121,4 +121,65 @@ if age>=18:
 else:
     print("You are not eligible to vote")
 print("_"*100)
+"""
 
+
+
+#**Ask the user for the name of the fruit and the weight in gms**
+# Define the prices per gram for each fruit
+fruit_prices = {
+    "apple": .5,
+    "banana": 0.99,
+    "orange": .4,
+    "pear": .40,}
+fruit_name = input("Enter the name of the fruit: ")
+fruit_weight = float(input("Enter the weight in gms: "))
+
+# Calculate the total cost of the purchase
+if fruit_name in fruit_prices:
+    fruit_price = fruit_prices[fruit_name]
+    total_cost = fruit_price * fruit_weight
+    print(f"Total cost of {fruit_weight:.2f} grams of {fruit_name} is Rs.{total_cost:.2f}")
+else:
+    print(f"{fruit_name} is not available in the store")
+print("_"*100)
+
+#**program to show students average grade**
+# Ask the user for the number of students
+num_students = int(input("Enter the number of students: "))
+
+# Initialize a variable to store the sum of grades
+total_grade = 0
+
+# Ask the user for the grades of each student and add it to the total grade
+for i in range(num_students):
+    grade = float(input(f"Enter the grade of student {i+1}: "))
+    total_grade += grade
+
+# Calculate the average grade
+average_grade = total_grade / num_students
+
+# Display the average grade to the user
+print(f"The average grade of {num_students} students is {average_grade:.2f}")
+
+# Ask the user for the symptoms of each patient and add them to the list**
+# Initialize an empty list to store the symptoms
+symptoms_list = []
+
+# Ask the user for the symptoms of each patient and add them to the list
+while True:
+    symptoms = input("Enter the symptoms of the patient (or 'q' to quit): ")
+    if symptoms == "q":
+        break
+    symptoms_list.append(symptoms)
+
+symptoms_count = {} # Count the number of patients with each symptom
+for symptom in symptoms_list:
+    if symptom in symptoms_count:
+        symptoms_count[symptom] += 1
+    else:
+        symptoms_count[symptom] = 1
+
+# Display the number of patients with each symptom
+for symptom, count in symptoms_count.items():
+    print(f"{symptom}: {count}")
