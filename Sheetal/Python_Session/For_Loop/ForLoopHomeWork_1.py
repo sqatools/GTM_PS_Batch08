@@ -84,6 +84,15 @@ print("_"*40)
 #        v w x
 #           y
 
+# 97
+start_pt = ord("a")
+end_pt = ord("z")
+for i in range(start_pt,end_pt):
+    for j in range(end_pt,i):
+        print(" " * (end_pt - i) + start_pt * i)
+        start_pt +=1
+
+
 print("_"*40)
 #Program 4
 # Write a program to find the maximum number from the list using Python Loops
@@ -193,3 +202,50 @@ print("_"*40)
 print("_"*40)
 #Program 21
 # Python loops program to enter a number and print it in words.
+
+print("_"*40)
+#Python 22
+# Write a program to count the total numbers of odd numbers between 1-100 using Python Loops.
+
+print("_"*40)
+#Program 23
+# Write a program to get input from the user if it is a number insert it into an empty list using Python Loops.
+
+
+print("_"*40)
+#Program 24
+# Write a program to get input from the user if it is a string insert it into an empty list using Python Loops.
+# Input: L = [] ‘sqatools007’
+
+print("_"*40)
+#Program 25
+# Write a program to accept the kilometers covered and calculate the bill according to the following using Python Loops.
+# First 5 km- 15rs/km
+# Next 20 km- 12rs/km
+# After that- 10rs/km
+
+print("_"*40)
+#Program 26
+# Write a program to construct the following pattern, using a nested for loop in Python.
+
+print("_"*40)
+#Program 27
+# Write a program to check the validity of password input by users using Python Loops.
+# At least 1 letter between [a-z] and 1 letter between [A-Z].
+# At least 1 number between [0-9].
+# At least 1 character from [$#@].
+# Minimum length 5 characters.
+# Maximum length 15 characters.
+# Input = Abc@1234
+# Output = Valid password
+
+print("_"*40)
+#Program 28
+# Write a program to check whether a string contains an integer or not using Python Loops.
+
+print("_"*40)
+#Program 29
+# Write a program to display numbers from a list using Python Loops.
+# Input = [1,5,8,0,4]
+
+
