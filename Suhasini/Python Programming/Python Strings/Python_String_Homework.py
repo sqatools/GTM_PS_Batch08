@@ -13,8 +13,24 @@ print(str4[0:8])        # Learning
 print()
 
 print("2. read only First and last character :  Ln")
-print(str4[0],str4[8])
+slen = len(str4)
+print(str4[0],str4[slen-1])
 
-for i in range (0,9):
-    if i == 0 and i == 8:
-        print(str[i])
+"""
+3. read all characters except first and last and repeat 2 times the output.
+"earning Pythoearning Pytho"
+"""
+print("print the pattern 'earning Pythoearning Pytho'")
+slen = len(str4)
+str5 = str4[1:slen-1]
+print(str5*2)
+
+
+"""
+4. get given output  : "LLLearning Pythonnn" 0,14
+"""
+print("get given output  : 'LLLearning Pythonnn'")
+s1 = str4[0]*2
+s2 = str4[14]*2
+s3 = s1+str4+s2
+print(s3)
