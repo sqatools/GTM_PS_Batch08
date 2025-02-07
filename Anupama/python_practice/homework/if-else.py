@@ -85,3 +85,40 @@ for letter in str1:
 print(f"Letters {letters}")
 print(f"Digits {digits}")
 print("_"*100)
+
+#***Python program to print the square or cube if the given number is divided by 2 or 3 respectively.")
+num1=11
+if num1%2==0:
+    print("The square of",num1,"is",num1**2)
+if num1%3==0:
+    print("The cube of",num1,"is",num1**3)
+if num1%2!=0 and num1%3!=0:
+    print("The number is not divisible by 2 or 3 ")
+print("_"*100)
+
+#**Python program to find the largest number among three numbers.")
+num1=int(input("Enter your first number: "))
+num2=int(input("Enter your second number: "))
+num3=int(input("Enter your third number: "))
+
+if num1>num2 and num1>num3:
+    print(num1,"is the greatest among",num1,num2,num3)
+elif num2>num1 and num2>num3:
+    print(num2,"is the greatest among",num1,num2,num3)
+elif num3>num1 and num3>num2:
+    print(num3,"is the greatest among",num1,num2,num3)
+else:
+    print("None of the numbers are greatest")
+print("_"*100)
+
+#**Python program to check any person eligible to vote or not")
+print("age > 18+ : eligible")
+print("age < 18: not eligible")
+
+age=int(input("Enter your age: "))
+if age>=18:
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote")
+print("_"*100)
+
