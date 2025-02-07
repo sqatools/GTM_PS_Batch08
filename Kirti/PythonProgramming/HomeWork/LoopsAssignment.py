@@ -156,3 +156,17 @@ Output :
 Letters 6
 Digits 4
 '''
+
+str1 = input("Enter the string : ")
+charlist=[]
+diglist=[]
+
+for i in range(0,len(str1), 1):
+    if str1[i].isdigit():
+        diglist.append(str1[i])
+    elif str1[i].isalpha():
+        charlist.append(str1[i])
+
+print("No. of Characters = ",len(charlist))
+print("No. of digits = ", len(diglist))
+

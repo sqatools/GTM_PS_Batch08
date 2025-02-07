@@ -1,3 +1,4 @@
+'''
 a = 5
 b = 6
 lhs = (a + b) ** 3
@@ -38,3 +39,13 @@ print("simple interest is:", P * R * T / 100)
 # 7 compound interest
 lhs=a
 rhs
+'''
+num =  int(input("Enter a number: "))
+count = 0
+for i in range(2,num):
+    if num%i == 0:
+        count += 1
+if count > 0:
+    print("It is not a prime number")
+else:
+    print("It is a prime number")
