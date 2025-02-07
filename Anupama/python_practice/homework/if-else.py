@@ -49,3 +49,24 @@ elif c==4:
     print("A divided by b = ", a % b)
 else:
     print("Invalid operation")
+
+#**write a python code to simulate the interview process with the help nested if condition**
+
+round1 = "fail"
+round2 = "pass"
+round3 = "pass"
+
+if round1 == "pass":
+    print("congrats first round is cleared")
+
+    if round2 == "pass":
+        print("congrats second round is cleared")
+        if round3 == "pass":
+            print("congrats you are selected")
+        else:
+            print("Failed in last round, try next time")
+    else:
+        print("Failed in second round, try next time")
+
+else:
+    print("Failed in first round, try next time")

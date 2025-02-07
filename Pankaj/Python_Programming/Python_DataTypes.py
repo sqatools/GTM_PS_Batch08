@@ -236,6 +236,8 @@ list2 = [2, 3.3, False, 23 + 3.3j, [2, 3.3, 'D'], "Pankaj", (2, 5, 7, "Prasad")]
 print(list2, type(list2))
 print(list2[-6])
 
+
+
 print(dir(list))
 """
 # Method for list
