@@ -65,7 +65,6 @@ str4 = "Learning Python"
 "earning Pythoearning Pytho"
 4. get given output  : "LLLearning Pythonnn"
 """
-# Homework
 # 1. read only "Learning"
 str5 = "Learning Python"
 print(str5[0:8])
@@ -203,7 +202,7 @@ result2 = f"{M1} {M2} {M3} {M4} {M5}"
 print("Result2 :", result2)
 
 print("_"*50)
-########################## Python String Methods ###############
+########################## Python String Methods ##########################
 print(dir(str))
 
 """
@@ -235,6 +234,13 @@ print("for checking lower case : ", str_b.islower())
 print("for checking upper case : ", str_b.islower())
 
 print("_"*50)
+###################
+# capitalize Method: This method convert only first character of string in capital case and convert remaining into
+#                     small case.
+str_0 = "today i have To go Office"
+print(str_0.capitalize())
+
+print("_"*50)
 ################
 # title() and istitle method:
 # title method convert first letter of each word into camel case and istitle check the given string
@@ -258,3 +264,136 @@ print(str_BB)
 
 str_C = str_b.replace("Pankaj", "Prasad")
 print(str_C)
+
+print("_"*50)
+#################################################################
+
+#  count() Method: This method count the occurrences of any character or substring in the given string
+str_d = "Hello i am from Varanasi and i am working in banagalore"
+print("Count of char a : ", str_d.count('a'))
+print("Count of am : ", str_d.count('am'))
+
+# How to find total character
+Total_Char = len(str_d)
+print("Total number of char used in String is : ", Total_Char)
+
+print("_"*50)
+# ################
+#  swapcase() Method: This method covert all the character from Upper to lower and lower to upper.
+
+str_e = "Hello i am from Varanasi and i am working in banagalore"
+print("Swapcase result : ", str_e.swapcase())
+
+# same thing by using for loop
+output_x = ""
+for char in str_e:
+    #print(char)
+    if char.isupper():
+        output_x = output_x + char.lower()
+    elif char.islower():
+        output_x = output_x + char.upper()
+    else:
+        output_x = output_x + char
+print(output_x, end=" ")
+
+# count of character using for loop
+print("_"*50)
+# Write a python program to get count of each character in the string.
+str_l = "Lets HopE IndIa wiLL win the last Test India Match"
+temp = "" # empty string
+for char in str_l:
+    if char not in temp:
+        print(char, str_l.count(char))
+        temp = temp+char
+    else:
+        continue
+
+print("_"*50)
+# ################
+#  index() Method : This method return the index position of available sub-string or character.
+str_f = "Good Morning"
+print("Index of M: ", str_f.index("M"))
+print("Index of ning: ", str_f.index("ning"))
+
+# print("If char is not present in string P", str_f.index("P"))
+# find the index of un-available string
+# print("index of ing :", str_x.index("MM")) # 9
+# It gives error and fail the program if the target sub-string in not available
+# ValueError: substring not found
+
+print("_"*50)
+############
+# find method : This method return the index position of character or sub-string if it is available or
+#               method will return -1 if the sub-string/character is not available.
+
+str_g = "Hello python is easier than java"
+print(str_g.find("python"))
+print(str_g.find("csharp")) # o/p -1: if this method is not able to find i will give you output as -1
+
+print("_"*50)
+############
+# split method: This method split the string with given delimeters or substring and return the list of words.
+
+str_p = "Python#Programming#Is#Easy#To#Learn"
+# split the string with #
+result = str_p.split("#")
+print("Split result: ", result)
+# split with space
+str_q = "Hello i know java python and csharp"
+result_1 = str_q.split(" ")
+print(result_1)
+
+
+print("_"*50)
+############
+# strip method : This method helps to remove trailing spaces from given string.
+# Trailing space means, spaces that are available in the beginning and end of string.
+str_w = "       Pankaj Prasad       "
+result_3 = str_w.strip()
+print(result_3)
+# remove right space
+print(str_w.lstrip())
+#remove right space
+print(str_w.rstrip())
+
+print("_"*50)
+###################################################
+# join() method : This help to join string with any word/character/number/special character
+str_r = "Pankaj"
+result_4 = "_".join(str_r)
+print(result_4)
+
+print("_"*50)
+##########################
+# isnumeric method : This method check the given string only contains numbers
+str_t = "1312312312"
+str_y = "12312312 p"
+str_u = "Darshika"
+print(str_t.isnumeric())
+print(str_y.isnumeric())
+
+#isalpha : This method check the target string contains only alhabates.
+print(str_t.isalpha())
+print(str_u.isalpha())
+
+# isalnum : This method check the given string contains alphanumeric value
+str_p = "Python123"
+str_q = "Hello 345"
+print(str_p.isalnum()) # this method is for alphanumeric
+print(str_q.isalnum())
+
+#isspace : This method return true if string only contains space.
+str_x = "   "
+str_y = "N E H A"
+print(str_x.isspace())
+print(str_y.isspace())
+
+
+
+
+
+
+
+
+
+
