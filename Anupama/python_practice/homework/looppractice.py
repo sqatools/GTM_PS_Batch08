@@ -149,3 +149,74 @@ if num6 in list1:
 else:
     print(num6, "is not part of the fibonacci series from 1 to 10")
 print("_"*100)
+
+#**** Python for loop program to print the alphabet pattern ‘O’ using python.")
+
+for i in range(1,8):
+    for j in range(1,6):
+        if (i==1 or i==7) and 1<j<5:
+            print("*", end=" ")
+        elif 1<i<7 and (j==1 or j==5):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+print("_"*100)
+
+#**Python Loops program to print all natural numbers from 1 to n using a while loop in python.")
+n=int(input("Enter number: "))
+i=1
+while i<=n:
+    print(i,end=" ")
+    i+=1
+print()
+print("_"*100)
+
+#**Python Loops program to print all alphabets from a to z using for loop \n Take chr method help to print characters with ASCII values \n chr(65) = ‘A’ \n    A-Z ASCII Range  65-90 \n     a-z ASCII Range  97-122")
+
+for n in string.ascii_lowercase:
+    print(n,end=" ")
+print()
+for i in string.ascii_uppercase:
+    print(i, end=" ")
+print()
+print("_"*100)
+
+for n in range(65,91):
+    print(chr(n),end=" ")
+print()
+for i in range(97,123):
+    print(chr(i),end=" ")
+print()
+print("_"*100)
+
+#**Python Loops program to print all odd numbers between 1 to 100 using python.")
+for x in range(1,101,2):
+    print(x,end=" ")
+print()
+print("_"*100)
+
+#**Python Loops program to print all even numbers between 1 to 100 in python.")
+for x in range(2,101,2):
+    print(x,end= " ")
+print()
+print("_"*100)
+
+#**Python Loops program to find the sum of all natural numbers between 1 to n using python.")
+n=int(input("Enter number : "))
+num1=0
+for x in range(1,n+1):
+    num1+=x
+print("The sum of all natural numbers from 1 to",n, "is",num1)
+print("_"*100)
+
+#**Python program to find the sum of all even numbers between 1 to n using python.")
+n= int(input("Enter number : "))
+num1=0
+for i in range(2,n,2):
+    num1+=i
+if n%2==0:
+    num1=num1+n
+print("-"*100)
+
+
