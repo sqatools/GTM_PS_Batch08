@@ -32,7 +32,7 @@ str4="learning Python"
 s = "apple"
 n = len(s)
 print(len(s))
-    for i in range(n):
+for i in range(n):
         # Print leading spaces
         for j in range(n- i- 1):
             print(" ", end="")

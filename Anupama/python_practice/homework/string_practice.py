@@ -1,5 +1,3 @@
-# 3rd Feb'2025
-
 str1 = "Python"
 
 
@@ -84,9 +82,6 @@ str4 = "Learning Python"
 "earning Pythoearning Pytho"
 4. get given output  : "LLLearning Pythonnn"
 """
-
-#5th Feb'2025
-
 
 print("_"*50)
 ##################
@@ -190,11 +185,3 @@ print(str_p[::]) # LearningSlicing
 print(str_p[:-1:]) # LearningSlicin
 print(str_p[-1:len(str_p):1]) # g
 print(str_p[-1::]) # g
-
-
-
-
-
-
-
-
