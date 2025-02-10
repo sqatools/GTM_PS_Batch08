@@ -64,6 +64,8 @@ c= " "
 pos= str2.count(c)
 print("The number of spaces are: ",pos)
 
+
+#**problems given in class***
 str4="learning Python"
 """ 
 1 read learning
@@ -71,7 +73,7 @@ str4="learning Python"
 3 read all characters except first and last and repeat 2wice
 4 get this output "LLLearning Pythonnn"""
 
-#**problems given in class***
+
 print(str4[:8:])
 print(str4[:15:14])
 print(str4[:15:14],str4[:15:14])

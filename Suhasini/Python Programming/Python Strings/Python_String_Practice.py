@@ -88,5 +88,39 @@ print(str4[-9:-2]) # d Morni
 print("_"*50)
 
 
+# Home work for string slicing
+str4 = "Learning Python"
+"""
+1. read only "Learning" 
+2. read only First and last character :  Ln
+3. read all characters except first and last and repeat 2 times the output.
+"earning Pythoearning Pytho"
+4. get given output  : "LLLearning Pythonnn"
+"""
+
+print("_"*50)
+
+
+##################
+# Rule 2: str[ : end index]
+# Default initial index will be zero
+
+str5 = "Programming"
+
+print(str5[:6]) # Progra
+print(str5[:-3]) # Programm
+print(str5[:-1]) # Programmin
+print(str5[:]) # Programming
+print(str5[:0]) # blank
+
+print("_"*50)
+
+#######################
+# Rule 3 : str [start index :]
+# Default end index would be end of the string
+
+str6 = "Good Evening"
+
+
 
 
