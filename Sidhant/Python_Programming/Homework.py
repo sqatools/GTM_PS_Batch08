@@ -1,51 +1,35 @@
-'''
-a = 5
-b = 6
-lhs = (a + b) ** 3
-rhs = a ** 3 + b ** 3 + 3 * a * b * (a + b)
-print(lhs == rhs)
+# 1. write a python program to get The Smallest word from given string.
 
-# (a-b)(a+b)=a^2-b^2
+str1 = "GOAL WITHOUT PLAN IS JUST A WISH "
+small_len = 999999
+small_word = " "
+word_list = str1.split()
+for word in word_list:
+    exact_len = len( word )
+    if exact_len < small_len:
+        small_len = exact_len
+        small_word = word
+print( f"The smallest word is{small_word}of length:", small_len )
 
-lhs = (a - b) * (a + b)
-rhs = a ** 2 - b ** 2
-print(lhs == rhs)
+# Q2 :  write a python program to get count all vowels from given string
+str_a = "Hello GoOd MOrnIong"
+vowels = "aeiouAEIOU"
+vowel_count = 0
+for char in str_a:
+    if char in vowels:
+        vowel_count += 1
+print( vowel_count )
 
-# 3. a^3-b^3=(a-b)^3 +3ab(a-b)
-lhs = a ** 3 - b ** 3
-rhs = (a - b) ** 3 + 3 * a * b * (a - b)
-print(lhs == rhs)
-
-# 4 H^2=P^2+B^2
-
-H = 5
-P = 3
-B = 4
-lhs = H ** 2
-rhs = P ** 2 + B ** 2
-print(lhs == rhs)
-# 5. area of circle
-
-
-print("area of circle is: ", 3.14 * P ** 2)
-
-
-# 6. simple interest
-R = 10
-T = 5
-print("simple interest is:", P * R * T / 100)
-
-
-# 7 compound interest
-lhs=a
-rhs
-'''
-num =  int(input("Enter a number: "))
-count = 0
-for i in range(2,num):
-    if num%i == 0:
-        count += 1
-if count > 0:
-    print("It is not a prime number")
-else:
-    print("It is a prime number")
+# Q3 :  Write a python program to Convert all Vowels from upper to lower and lower to upper.
+str_a = "We Are LEarnIng Python PrOgrammIng"
+vowels = "aeiouAEIOU"
+Final_string = ""
+for char in str_a:
+    if char in vowels:
+        if char.islower():
+            Final_string += char.upper()
+        elif char.isupper():
+            Final_string += char.lower()
+    else:
+        Final_string += char
+print(Final_string)
