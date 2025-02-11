@@ -68,6 +68,7 @@ print(list_a[::-1])  # [3, 88, 22, 7, 11, 8, 2, 7, 5]
 # list_a[-1:-len(list)-1:-1]
 
 print(list_a[::1]) # [5, 7, 2, 8, 11, 7, 22, 88, 3]
+# list_a[0:len(list_a):1]
 
 list_b = ['a', 'b', 'c', 'd', 'e']
 print(list_b[-5:-1:])  # ['a', 'b', 'c', 'd']
@@ -161,3 +162,101 @@ list_q = [4, 6, 7, 8, 1, 5]
 list_q[1:4] = [500]
 print("list_q : ", list_q)
 # list_q :  [4, 500, 1, 5]
+
+print("_"*50)
+############################################
+# list concatenation :  we can add two list values and create new list without updating the original list
+
+list_n = [5, 6, 8, 22]
+list_m = ['a', 'b', 'c', 'd']
+list_v = [4.5, 6.7, 88.9, 22.3]
+
+list_o = list_n + list_m + list_v
+print("list output :", list_o)
+# [5, 6, 8, 22, 'a', 'b', 'c', 'd', 4.5, 6.7, 88.9, 22.3]
+
+
+
+############################  Remove data from list ################
+print("_"*50)
+# remove method : This method remove any specific value from list
+#                 ->  If any value repeated multiple time, then it will remove first occurrence.
+#                 -> remove method does not return anything, default return is None
+#                 -> In remove method if specified value is not available the it will throw error
+#                    ValueError: list.remove(x): x not in list
+
+list_k = [4, 7, 9, 2, 6, 7, 11]
+list_k.remove(6)
+
+print("list_k :", list_k)
+# list_k : [4, 7, 9, 2, 7, 11]
+val = list_k.remove(7)
+print(val)
+print("list_k :", list_k)
+
+
+print("_"*50)
+#########################
+# pop method  : -> pop method remove value from list and return it.
+#               -> pop method remove value from specific index position, default index position -1
+#               ->  If pop method is specified index is not available then it will given error index out of range
+#
+
+list_g = [44, 66, 88, 22, 55, 6]
+# remove value from default index -1
+val = list_g.pop()
+print("removed value :", val) # removed value : 6
+print("list_g :", list_g) # [44, 66, 88, 22, 55]
+
+# remove value from specific index
+val2 = list_g.pop(2)
+print("removed value :", val2) # removed value : 88
+print("list_g :", list_g) # [44, 66, 22, 55]
+
+
+list_h = [44, 66, 88, 22, 88, 55, 6]
+list_h.pop(2)
+print("list_h :", list_h) # [44, 66, 22, 88, 55, 6]
+
+
+print("_"*50)
+#########################
+# remove data with help del keyword: del keyword remove the object from memory
+# del can any type of variable from memory. int, float, string, list, tuple, dict, set, bool
+list_j = [4, 6, 8, 9, 12]
+# remove the list object from memory
+del list_j
+#print(list_j) # list_j removed from memory
+
+
+# remove value with slicing using del keyword
+list_y = [55, 66, 88, 22, 51]
+
+del list_y[1:3]
+print("list_y :", list_y) # [55, 22, 51]
+
+del list_y[-1]
+print("list_y :", list_y)   # [55, 22]
+
+
+list_Q = [5, 7, 8, 2, 6, 3, 6, 9, 22]
+del list_Q[1::2]
+print("list_Q :", list_Q)  # [5, 8, 6, 6, 22]
+
+list_z = [5, 7, 99]
+# list_z.remove(100)
+# ValueError: list.remove(x): x not in list
+
+# list_z.pop(5)
+# IndexError: pop index out of range
+
+print("_"*50)
+################################
+# clear method : this method clear all the data from list and remain only blank list
+
+list_aa = [5, 7, 22, 55, 88]
+list_aa.clear()
+
+print("list_aa :", list_aa) # list_aa : []
+
+
