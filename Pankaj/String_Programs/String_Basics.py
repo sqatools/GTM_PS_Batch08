@@ -80,6 +80,8 @@ print(ch1*2)
 ch2 = str5[0:]
 print(str5[0]*2+ch2+str5[-1]*2)
 
+
+
 # Date: 06/02/2024
 print("_"*70)
 # Rule 2 : str[ : end index]
@@ -265,6 +267,8 @@ print(str_BB)
 str_C = str_b.replace("Pankaj", "Prasad")
 print(str_C)
 
+################# Strip ##############################
+
 print("_"*50)
 #################################################################
 
@@ -332,7 +336,7 @@ print(str_g.find("csharp")) # o/p -1: if this method is not able to find i will 
 
 print("_"*50)
 ############
-# split method: This method split the string with given delimeters or substring and return the list of words.
+# split method: This method split the string with given delimiters or substring and return the list of words.
 
 str_p = "Python#Programming#Is#Easy#To#Learn"
 # split the string with #
@@ -379,7 +383,8 @@ print(str_u.isalpha())
 # isalnum : This method check the given string contains alphanumeric value
 str_p = "Python123"
 str_q = "Hello 345"
-print(str_p.isalnum()) # this method is for alphanumeric
+str_q1 = ""
+print(str_p.isalnum(), "ppppp") # this method is for alphanumeric
 print(str_q.isalnum())
 
 #isspace : This method return true if string only contains space.
@@ -387,6 +392,62 @@ str_x = "   "
 str_y = "N E H A"
 print(str_x.isspace())
 print(str_y.isspace())
+
+# Count space without using count method
+str_11 = "Hello my name is pankaj"
+space_count = 0
+for char in str_11:
+    if char.isspace():
+        space_count += 1
+    else:
+        continue
+print("No of space in string", space_count)
+
+
+# isDigit Method: This method is used to check given string only contains digit or not
+str_r = "Pankaj12345"
+str_r1 = "12345"
+str_r2 = "12345qwqwqw"
+print(str_r.isdigit())
+print(str_r1.isdigit())
+print(str_r2.isdigit())
+
+# Write a python program to replace the word today with tomorrow
+str_t = "lets learn python Today"
+result = ""
+word1 = "Today"
+word2 = "Tomorrow"
+word_list = str_t.split()
+print(word_list)
+for word in word_list:
+    print(word)
+    if word == word1:
+        result = result + word2 + " "
+    else:
+        result = result + word + " "
+print(result)
+
+print("_"*60)
+word_list1 = ['lets', 'learn', 'python', 'Today']
+word_list1.insert(2, '2025')
+print(word_list1)
+
+########################################################
+str_22 = "Prasad"
+result22 = "*".join(str_22)
+print(result22)
+########################################################
+str_21 = "Python is fun to learn"
+updated_value = "&^@*&$#^!@*&".join(str_21)
+print(updated_value)
+
+org_password = updated_value.replace("&^@*&$#^!@*&", "")
+print(org_password)
+
+########################################################
+print("_"*70)
+
+
 
 
 
