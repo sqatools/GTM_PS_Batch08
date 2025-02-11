@@ -2,23 +2,23 @@
 for cond:
    code
 """
+# Hello
 # range(start, stop, difference)
 # when we run loop with range, then it include the start value and exclude stop value
 
-for i in range(1,18,2):
+for i in range(1, 10, 1):
     print(i)
-
 
 print("_"*50)
 # range with 2 parameter range(start, stop), default difference value will be 1
-for i in range(1,21):
-    print(i)
+for j in range(2, 8):
+    print(j)
 
 
 print("_"*50)
 # print negative values in reverse order
-for x in range(-1,-21,-1):
-    print(x)
+for j in range(-10, -20, -1):
+    print(j, end="")
 
 # -10 -11 -12 -13 -14 -15 -16 -17 -18 -19
 
