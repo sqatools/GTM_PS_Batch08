@@ -386,10 +386,6 @@ print("_"*50)
 dict2 = {'a': 123, 'b' : 456, 'c': 789}
 list2 = list(dict2)
 print(list2, type(list2))
-
-
-
-
 # ['a', 'b', 'c'] <class 'list'>
 
 print(list(dict1.items()))

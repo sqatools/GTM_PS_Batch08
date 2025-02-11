@@ -1,5 +1,7 @@
 ##Program 1
-## Python Loops program to construct the following pattern, using a nested for loops.
+from colorama import *
+
+print(Fore.GREEN +"Python Loops program to construct the one side diamond pattern, using a nested for loops."+ Style.RESET_ALL)
 """
 *
 * *
@@ -11,12 +13,11 @@
 * *
 *
 """
-from numpy.core.defchararray import lower
 
-num = int(input("Enter number of rows for pattern number: "))
+num = int(input('Enter number of rows for pattern number: '))
 
-for i in range(0,num):  ##rows
-    for k in range(0,i+1):  ##column
+for i in range(0,num):
+    for k in range(0,i+1):
         print("*",end=" ")
     print()
 for i in range(0, num):
@@ -38,29 +39,28 @@ for i in range(0,num):  ##rows
 """
 
 #Program 2
-## Full Diamond
+print(Fore.BLUE +"WAP to print Full Diamond pattern"+ Style.RESET_ALL)
 
 print("_"*40)
 num = int(input("Enter number of rows for the pattern: "))
 
-# Upper part of the diamond
 for i in range(1, num + 1):
     print(" " * (num - i) + "* " * i)
-# Lower part of the diamond
+
 for i in range(num - 1, 0, -1):
     print(" " * (num - i) + "* " * i)
 
 print("_"*40)
-##Python for loop program to print the alphabet pattern 0 using python.
-"""Output:
-  ***  
-*       *
-*       *
-*       *
-*       *
-*       *
-   ***  
-"""
+print(Fore.GREEN +"Python for loop program to print the alphabet pattern 0 using python."+ Style.RESET_ALL)
+# """Output:
+#   ***
+# *       *
+# *       *
+# *       *
+# *       *
+# *       *
+#    ***
+# """
 for i in range(0,13):
     for j in range(0,13):
         if (i==0 or i==12) and (1< j <11):
@@ -73,7 +73,7 @@ for i in range(0,13):
 
 print("_"*40)
 #Program 3
-# Print the following small alphabet letter pattern using Python Loops.
+print(Fore.GREEN +"Print the following small alphabet letter pattern using Python Loops."+ Style.RESET_ALL)
 # Output =
 #            a
 #        b c d
@@ -100,7 +100,7 @@ for i in range(1,9):
 
 print("_"*40)
 #Program 4
-# Write a program to find the maximum number from the list using Python Loops
+print(Fore.GREEN +"Write a program to find the maximum number from the list using Python Loops"+ Style.RESET_ALL)
 # Input : [12,14,45,88,63,97,88]
 # Output : Maximum number: 97
 Input = [12,14,45,88,63,97,88]
@@ -117,7 +117,7 @@ print("The maximum value is : ", max_value)
 
 print("_"*40)
 #Program 5
-# Write a program to sort a list using for loop in Python Loops.
+print(Fore.GREEN +"Write a program to sort a list using for loop in Python Loops.")
 Input = [6,8,2,3,1,0,5]
 # Output = [0,1,2,3,5,6,8]
 
@@ -131,7 +131,7 @@ print(Input)
 
 print("_"*40)
 #Program 6
-# Python Loops program that will add the word from the user to the empty string using python.
+print(Fore.GREEN +"Python Loops program that will add the word from the user to the empty string using python."+ Style.RESET_ALL)
 str1 = ""
 str2 = str(input("Enter a string: "))
 
@@ -141,7 +141,7 @@ print("The input string was: ", str1)
 
 print("_"*40)
 #Program 7
-# Python Loops program to count the number of even and odd numbers from a series of numbers using python.
+print(Fore.GREEN +"Python Loops program to count the number of even and odd numbers from a series of numbers using python."+ Style.RESET_ALL)
 Input = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 count1 = 0
 count2 = 0
@@ -154,8 +154,9 @@ print("The count of even numbers in the Input is: ", count1)
 print("The count of odd numbers in the Input is: ", count2)
 
 print("_"*40)
+
 #Program 8
-# Write a program to find the sum of the first and last digits of a number using python.
+print(Fore.GREEN +"Write a program to find the sum of the first and last digits of a number using python."+ Style.RESET_ALL)
 Input = int(input("Enter the number: "))
 result = str(Input)
 # for i in range(0,len(result)):
@@ -168,7 +169,7 @@ print("The sum of first and last digit is: ", final)
 
 print("_"*40)
 #Program 9
-# Write a program to count the number of digits in a number using python.
+print(Fore.GREEN +"Write a program to count the number of digits in a number using python."+ Style.RESET_ALL)
 Input = int(input("Enter the number: "))
 result = str(Input)
 print("The length of the number is :", len(result))
@@ -176,16 +177,17 @@ print("The length of the number is :", len(result))
 
 print("_"*40)
 #Program 10
-# Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python.
+print(Fore.GREEN +"Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python."+ Style.RESET_ALL)
 for i in range (7):
     if i!= 3 or i != 6:
         print(i,end="")
 
 
-# print("_"*40)
+print("_"*40)
 #Program 11
-# Write a program that iterates the integers from 1 to 30 using python. For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”.
-# For numbers that are multiples of both three and five print “FizzBuzz”.
+print(Fore.GREEN +"""Write a program that iterates the integers from 1 to 30 using python.
+ For multiples of three print 'Fizz' instead of the number and for multiples of five print 'Buzz'.
+  For numbers that are multiples of both three and five print 'FizzBuzz'"""+ Style.RESET_ALL)
 
 for i in range(1,31):
     if i%3 ==0 and i%5 ==0:
@@ -196,38 +198,55 @@ for i in range(1,31):
         print("Buzz")
     else:
         print(i)
+
+
 print("_"*40)
 #Program 12
-# Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
+print(Fore.GREEN +"Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python."+ Style.RESET_ALL)
 Input = "SqaTOOlS"
 
-print(lower(Input))
+print(Input.lower())
 
 print("_"*40)
-#Program 13
-# Python loops program that accepts a string and calculates the number of digits and letters using python.
-# Input : “python1234”
+# Program 13
+print(Fore.GREEN +"Python loops program that accepts a string and calculates the number of digits and letters using python."+ Style.RESET_ALL)
+Input = "python1234"
+count1 =0
+count2 = 0
+list1 = []
+for i in Input:
+    list1.append(i)
+for j in range(0,len(list1)):
+    if list1[j].isnumeric():
+        count1 = count1 + 1
+    else:
+        count2 = count2 + 1
+print(list1)
+print("Count of Alphabet: ",count2)
+print("Count of Number: ",count1)
 
 
 print("_"*40)
-#Program 14
-# Python Loops program to print all alphabets from a to z using for loop
+# Program 14
+print(Fore.GREEN +"Python Loops program to print all alphabets from a to z using for loop"+ Style.RESET_ALL)
 #         Take chr method help to print characters with ASCII values
 #         chr(65) = ‘A’
 
-for i in range(96, 127):
-    print(chr(i),end="")
+for i in range(97, 123):
+    print(chr(i),end=" ")
 
+print()
 print("_"*40)
 #Program 15
-# Python Loops program to print all even numbers between 1 and 100 in python.
+print(Fore.GREEN +"Python Loops program to print all even numbers between 1 and 100 in python."+ Style.RESET_ALL)
 for i in range(0,101):
     if i%2 == 0:
-        print(i)
+        print(i, end =" ")
 
+print()
 print("_"*40)
 #Program 16
-# Python Loops program to find the sum of all natural numbers between 1 to n using python.
+print(Fore.GREEN +"Python Loops program to find the sum of all natural numbers between 1 to n using python."+ Style.RESET_ALL)
 sum1= 0
 for i in range(0,100):
     sum1 = sum1 +i
@@ -236,7 +255,7 @@ print("The sum of first 100 numbers are: ", sum1)
 
 print("_"*40)
 #Program 17
-# Python program to find the sum of all even numbers between 1 to n using python.
+print(Fore.GREEN +"Python program to find the sum of all even numbers between 1 to n using python."+ Style.RESET_ALL)
 
 sum2 = 0
 for i in range(0,101):
@@ -246,30 +265,48 @@ for i in range(0,101):
 print("Sum of even numbers upto 100", sum2)
 
 print("_"*40)
-#Program 18
-# Write a program to count the number of digits in a number using python.
+# Program 18
+print(Fore.GREEN +"Write a program to count the number of digits in a number using python."+ Style.RESET_ALL)
 
 
 print("_"*40)
 #Program 19
-#
+print(Fore.GREEN +"Write a Python loops program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included)."+ Style.RESET_ALL)
+Input1 = 1500
+Input2 = 2700
 
 
 
 
 print("_"*40)
 #Program 20
-# Program to find the frequency of each digit in a given integer using Python Loops
+print(Fore.GREEN +"Program to find the frequency of each digit in a given integer using Python Loops"+ Style.RESET_ALL)
+# Input = "Hello12 Python14 is2 a1 greate1 program2"
+# digit_frequency = [0]*10
+#
+# for i in Input:
+#     if i.isdigit():
+#         digit_frequency[int(i)] += 1
+#
+# for digit in range(10):
+#     if digit_frequency[digit] > 0:
+#         print(f"Digit {digit}: {digit_frequency[digit]} times")
 
-
-
-print("_"*40)
+# Input = "Hello12 Python14 is2 a1 greate1 program2"
+#
+# for digit in range(1,10):
+#     count = Input.count(str(digit))
+#     if count > 0:
+#         print(f"Digit {digit}: {count} times")
+#
+#
+# print("_"*40)
 #Program 21
-# Python loops program to enter a number and print it in words.
+print(Fore.GREEN +"Python loops program to enter a number and print it in words."+ Style.RESET_ALL)
 number = int(input("Enter a single digit number: "))
 str1 = ""
 
-for i in str(num):
+for i in str(number):
     if i == "1":
         str1 += "One"
     elif i == "2":
@@ -292,32 +329,45 @@ for i in str(num):
 print(str1)
 print("_"*40)
 #Python 22
-# Write a program to count the total numbers of odd numbers between 1-100 using Python Loops.
+print(Fore.GREEN +"Write a program to count the total numbers of odd numbers between 1-100 using Python Loops."+ Style.RESET_ALL)
+count1 = 0
+for i in range(0,101):
+    if i%2 != 0:
+        # print(i,end=" ")
+        count1 = count1 +1
+
+print("The total count of odd number between 0 and 100 is: ",count1)
 
 print("_"*40)
 #Program 23
-# Write a program to get input from the user if it is a number insert it into an empty list using Python Loops.
+print(Fore.GREEN+ "Write a program to get input from the user if it is a number insert it into an empty list using Python Loops."+ Style.RESET_ALL)
 
 
 print("_"*40)
 #Program 24
-# Write a program to get input from the user if it is a string insert it into an empty list using Python Loops.
-# Input: L = [] ‘sqatools007’
+print(Fore.GREEN +"Write a program to get input from the user if it is a string insert it into an empty list using Python Loops."+ Style.RESET_ALL)
+Input = "sqatools007"
+list1 = []
+for i in Input:
+    if i.isalpha():
+        list1.append(i)
+print(list1)
 
 print("_"*40)
 #Program 25
-# Write a program to accept the kilometers covered and calculate the bill according to the following using Python Loops.
+print(Fore.GREEN +"Write a program to accept the kilometers covered and calculate the bill according to the following using Python Loops"+ Style.RESET_ALL)
 # First 5 km- 15rs/km
 # Next 20 km- 12rs/km
 # After that- 10rs/km
 
+
 print("_"*40)
 #Program 26
-# Write a program to construct the following pattern, using a nested for loop in Python.
+print(Fore.GREEN +"Write a program to construct the following pattern, using a nested for loop in Python."+ Style.RESET_ALL)
 
 print("_"*40)
 #Program 27
-# Write a program to check the validity of password input by users using Python Loops.
+print(Fore.GREEN +"Write a program to check the validity of password input by users using Python Loops"+ Style.RESET_ALL)
 # At least 1 letter between [a-z] and 1 letter between [A-Z].
 # At least 1 number between [0-9].
 # At least 1 character from [$#@].
@@ -328,11 +378,25 @@ print("_"*40)
 
 print("_"*40)
 #Program 28
-# Write a program to check whether a string contains an integer or not using Python Loops.
+print(Fore.GREEN +"Write a program to check whether a string contains an integer or not using Python Loops"+ Style.RESET_ALL)
+Input = "Hello657 Python1234"
+list1 =[]
+
+for i in Input:
+    if i.isnumeric():
+        print(True, end="")
+        break
+        # list1.append(i)
+
+print()
+# print(list1)
 
 print("_"*40)
 #Program 29
-# Write a program to display numbers from a list using Python Loops.
-# Input = [1,5,8,0,4]
+print(Fore.GREEN +"Write a program to display numbers from a list using Python Loops"+ Style.RESET_ALL)
+Input = [1,5,8,0,4]
+for i in Input:
+    print(i, end =" ")
 
+print("_"*40)
 
