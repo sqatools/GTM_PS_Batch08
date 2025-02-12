@@ -112,37 +112,119 @@ print()
 print("-" * 50)
 """
 9). Python program to check authentication with the given username and password.
-"""
 
+USERNAME = "admin"
+PASSWORD = "password123"
+
+entered_username = input("Enter username: ")
+entered_password = input("Enter password: ")
+
+
+if entered_username == USERNAME and entered_password == PASSWORD:
+    print("Login successful!")
+else:
+    print("Authentication failed! Invalid username or password.")
+"""
 print("-" * 50)
 """
 10). Python program to validate user_id in the list of user_ids.
-print("-" * 50)
-Solution
+
+USERID = "Sankar_123"
+
+entered_userid = input("Enter user ID: ")
+if entered_userid == USERID:
+    print("User ID validation done successfully")
+else:
+    print("User ID validation not done successfully")
+
+"""
 print("-" * 50)
 
+"""
 11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
+
+"""
+number = 13
+
+if (number % 2 or number % 3) == 0:
+    print(f"{number} is divided by 2 or 3")
+else:
+    print(f"{number} is not divided by 2 or 3")
+
 print("-" * 50)
-Solution
+
+"""
 12). Python program to describe the interview process.
+"""
+round1 = "pass"
+round2 = "pass"
+final_round = "fail"
+
+if round1 == "pass":
+
+    if round2 == "pass":
+
+        if final_round == "pass":
+            print("Congratulation you are selected")
+        else:
+            print("Your failed in final round, Better luck next time")
+    else:
+        print("Your failed in round 2, Better luck next time")
+else:
+    print("Your failed in round 1, Better luck next time")
+
 print("-" * 50)
-Solution
+"""
 13). Python program to determine whether a given number is available in the list of numbers or not.
+"""
+number = -4
+list_nums = [i for i in range(1, 100)]
+
+if number in list_nums:
+    print(f"{number} available in the list")
+else:
+    print(f"{number} not available in the list")
+
 print("-" * 50)
-Solution
+"""
 14). Python program to find the largest number among three numbers.
+"""
+number = "123"
+
+for i in number:
+    if int(i) == int(max(number)):
+        print("largest number is: ", i)
+    else:
+        pass
 print("-" * 50)
-Solution
+""" 
 15). Python program to check any person eligible to vote or not
 age > 18+ : eligible
 age < 18: not eligible
+"""
+age = 12
+if age >= 18:
+    print("Your eligible for Vote")
+else:
+    print("Your not eligible for Vote")
+
 print("-" * 50)
-Solution
+"""
 16). Python program to check whether any given number is a palindrome.
 Input: 121
 Output: palindrome
+"""
+Input = 121
+Output = ""
+
+for i in range(121):
+    temp = Input % 10
+    Output += Output
+    break
+
+
 print("-" * 50)
-Solution
+"""
 17). Python program to check if any given string is palindrome or not.
 Input: ‘jaj’
 output = palindrome
