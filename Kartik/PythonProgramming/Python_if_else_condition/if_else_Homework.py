@@ -76,25 +76,25 @@ if decision ==3 : multi num1, num2
 if decision ==4 : division num1, num2
 if decision > 4 : invalid input
 """
-print("_____CALCULATOR_____")
+print("_____calculator_____")
 num1 = float(input("please enter 1st Number : "))
 num2 = float(input("please enter 2nd Number : "))
 decision = int(input("Please enter your choice 1: Add, 2: Subtract, 3: Multiply, 4: Divide " ))
 
 if decision == 1:
     result = num1 + num2
-    print("The result of addition is:", result)
+    print("Addition is:", result)
 elif decision == 2:
     result = num1 - num2
-    print("The result of subtraction is:", result)
+    print("Subtraction is:", result)
 elif decision == 3:
     result = num1 * num2
-    print("The result of multiplication is:", result)
+    print("Multiplication is:", result)
 elif decision == 4:
     result = num1 / num2
-    print("The result of division is:", result)
+    print("Division is:", result)
 else:
-    print("Invalid input! Please enter a choice between 1 to 4.")
+    print("Invalid Choice, Please Enter valid Selection from 1 to 4")
 
 
 
