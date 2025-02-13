@@ -1,15 +1,12 @@
-#6th Feb'2025
-
 print(dir(str))
 """
-'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 
-'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 
-'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 
-'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 
-'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip',
- 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 
+'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 
+'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 
+'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 
+'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 
+'title', 'translate', 'upper', 'zfill']
 """
-
 ######
 # lower() and upper() method :
 #      -> Lower method convert character in small case.
@@ -142,7 +139,6 @@ str_w = "Learning if Fun"
 print("find ing :", str_w.find("ing")) # 5 index of first character of substring
 print("find TO :", str_w.find("TO")) # -1 return -1 value if string/char is not available
 
-#7th feb'2025
 
 print("_"*50)
 #####################
