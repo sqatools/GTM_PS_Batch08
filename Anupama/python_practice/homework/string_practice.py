@@ -1,4 +1,4 @@
-str1 = "Python"
+"""str1 = "Python"
 
 
 print(str1, type(str1))
@@ -6,9 +6,9 @@ print(str1, type(str1))
 # read string with positive and negative  indexing
 
 """
- 0 1 2 3 4 5
- P y t h o n
--6-5-4-3-2-1
+#  0 1 2 3 4 5
+#  P y t h o n
+# -6-5-4-3-2-1
 
 """
 print(str1[3]) # h
@@ -75,13 +75,13 @@ print(str3[-9:-2]) # d Morni
 
 # Home work for string slicing
 str4 = "Learning Python"
-"""
+
 1. read only "Learning" 
 2. read only First and last character :  Ln
 3. read all characters except first and last and repeat 2 times the output.
 "earning Pythoearning Pytho"
 4. get given output  : "LLLearning Pythonnn"
-"""
+
 
 print("_"*50)
 ##################
@@ -184,4 +184,46 @@ print(str_p[::-1]) # gnicilSgninraeL
 print(str_p[::]) # LearningSlicing
 print(str_p[:-1:]) # LearningSlicin
 print(str_p[-1:len(str_p):1]) # g
-print(str_p[-1::]) # g
+print(str_p[-1::]) # g"""
+
+######################## Home Work ################
+# Q1 : Write a python program to find the smallest word from given string
+
+# Q2 :  write a python program to get count all vowels from given string
+#str_a = "Hello GoOd MOrnIong"
+# output = 7
+
+# Q3 :  Write a python program to Convert all Vowels from upper to lower and lower to upper.
+#str_b = "We Are LEarnIng Python PrOgrammIng"
+# output = "WE arE LeArning PythOn ProgrAmming"
+
+#** to find smallest word in given string**
+# s=input("Input a sentence:")
+# s = s.split()
+# print(min(s, key=len))
+# print("_"*50)
+#
+# #**find all vowels in given string**
+# from collections import Counter
+# s=input("Input a sentence to find vowels:")
+#
+# v = "aeiouAEIOU"
+# cnt = Counter([i for i in s if i in v])
+# print(cnt)
+
+#Q3
+from collections import Counter
+
+s = input("enter the string: ")
+v = "aeiouAEIOU"
+t = ''
+var = 0
+for i in s:
+    if i in v:
+        if i.isupper():
+            t = t+i.lower()
+        else:
+            t = t+i.upper()
+    else:
+        t = t+i
+print(t)
