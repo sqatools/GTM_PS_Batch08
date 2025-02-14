@@ -16,3 +16,5 @@ for i in range(1,21):
         print(i,"^ 2 =",i**2)
     else:
         print(i,"^ 3 =",i**3)
+
+
