@@ -214,13 +214,18 @@ print("-" * 50)
 Input: 121
 Output: palindrome
 """
-Input = 121
-Output = ""
+Input = 1221
+reversed_num = 0
+original_num = Input
+while original_num > 0:
+    last_digit = original_num % 10
+    reversed_num = reversed_num * 10 + last_digit
+    original_num = original_num // 10
 
-for i in range(121):
-    temp = Input % 10
-    Output += Output
-    break
+if Input == reversed_num:
+    print(f"Given {Input} a palindrome")
+else:
+    print(f"Given {Input} not a palindrome")
 
 
 print("-" * 50)
@@ -228,35 +233,98 @@ print("-" * 50)
 17). Python program to check if any given string is palindrome or not.
 Input: ‘jaj’
 output = palindrome
+"""
+word = "hello"
+palindrome = word[::-1]
+
+if word == palindrome:
+    print("Given word is a palindrome:", word)
+else:
+    print("Given word is not a palindrome:", word)
+
+
 print("-" * 50)
+
+"""
 Solution 18). Python program to check whether a student has passed the exam. If marks are greater than 35 students 
 have passed the exam. Input = Enter marks: 45 Output = Pass
+"""
+marks = 35
+
+if marks > 35:
+    print("Pass")
+else:
+    print("Fail")
+
 print("-" * 50)
-Solution
+"""
 19). Python program to check whether the given number is positive or not.
 Input = 20
 Output = True
+"""
+num = 30
+if num > 0:
+    print(f"Given {num} is positive number")
+else:
+    print(f"Given {num} is negative number")
+
 print("-" * 50)
-Solution
+"""
 20). Python program to check whether the given number is negative or not.
 Input = -45
 Output = True
-print("-" * 50)
-Solution
+"""
+num = -30
+if num > 0:
+    print(f"Given {num} is positive number")
+else:
+    print(f"Given {num} is negative number")
 
+print("-" * 50)
+"""
 21). Python program to check whether the given number is positive or negative and even or odd.
 Input = 26
 Output = The given number is positive and even
+"""
+num = 26
+if num > 0:
+    if num % 2 == 0:
+        print(f"Given {num} is positive and even number")
+    else:
+        print(f"Given {num} is positive and odd number")
+
+else:
+    if num % 2 == 0:
+        print(f"Given {num} is negative and even number")
+    else:
+        print(f"Given {num} is negative and odd number")
+
 print("-" * 50)
-Solution
+"""
 22). Python program to print the largest number from two numbers.
 Input:
 25, 63
 Output = 63
+"""
+nums = 65, 120
+
+if nums[0] > nums[1]:
+    print(f"In the {nums}, the largest number is {nums[0]}")
+else:
+    print(f"In the {nums}, the largest number is {nums[1]}")
+
+
 print("-" * 50)
-Solution
+"""
 23). Python program to check whether a given character is uppercase or not.
 Input = A
 Output = The given character is an Uppercase
-print("-" * 50)
 """
+character = "H"
+
+if character == character.upper():
+    print(f"Given {character} is in uppercase")
+else:
+    print(f"Given {character} is in lowercase")
+print("-" * 50)
+

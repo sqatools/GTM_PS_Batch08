@@ -209,7 +209,6 @@ print("removed value :", val) # removed value : 6
 print("list_g :", list_g) # [44, 66, 88, 22, 55]
 
 # remove value from specific index
-
 val2 = list_g.pop(2)
 print("removed value :", val2) # removed value : 88
 print("list_g :", list_g) # [44, 66, 22, 55]

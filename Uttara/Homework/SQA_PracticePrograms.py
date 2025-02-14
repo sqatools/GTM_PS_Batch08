@@ -145,3 +145,92 @@ for i in range(10 ,16):
         print(i)
 print("*"*100)
 
+#12. Python program to accept two numbers and mathematical operations from users and perform mathematical operations according to it.
+"""Input:
+A=30
+B=45
+Operation = +
+Output = 75"""
+
+num1 = int(input("Enter 1st number: "))
+num2 = int(input("Enter 2nd number: "))
+operation = input("Enter operation of your choice")
+
+if operation == "+":
+    print(num1+num2)
+elif operation == "-":
+    print(num1-num2)
+elif operation == "/":
+    print(num1/num2)
+elif operation == "*":
+    print(num1*num2)
+else:
+    print("Invalid operation")
+
+"""13.Python program to accept the temperature in Fahrenheit and check whether the water is boiling or not.
+Hint: The boiling temperature of water in Fahrenheit is 212 degrees
+Input = Enter temperature: 190
+Output = Water is not boiling
+code:"""
+
+temp = int(input("Enter temperature of water in Fahrenheit: "))
+
+if temp != 212:
+    print("Water is not boiling")
+else:
+    print("Water is boiling")
+
+"""14.Python program to accept the city name and display its monuments (take Pune and Mumbai as cities).
+Input = Enter city name: Pune
+Output:
+Shaniwar vada
+Lal mahal
+Sinhgad fort
+code:"""
+city = input("Enter city name: ").lower()
+
+if city == "pune":
+    print("Shaniwar vada\nLal mahal\n")
+    print("Sinhgad fort")
+elif city == "mumbai":
+    print("Getway of India\nGandhi statue\nAjanta cave")
+else:
+    print("Invalid city")
+
+
+"""15.Python program to check the student’s eligibility to attend the exam based on his/her attendance. If attendance is greater than 75% eligible if less than 75% not eligible.
+Input = Enter attendance: 78
+Output = You are eligible"""
+
+attendance = int(input("Enter attendance % of a student: "))
+if attendance >= 75:
+    print("Student is eligible")
+else:
+    print("Student is not eligible")
+
+#16. A shop will give a 10% discount if the bill is more than 1000, and 20% if the bill is more than 2000. Using the python program Calculate the discount based on the bill.
+
+bill = int(input("Enter bill amount: "))
+discount = 0
+
+if bill >= 2000:
+    discount = 20*(bill/100)
+elif 1000<= bill < 2000:
+    discount = 10*(bill/100)
+
+print("Discount amount: ",discount)
+
+#17. Find the lowest number between three numbers.
+
+num1 = 70
+num2 = 23
+num3 = 68
+
+if num1<num2:
+    if num1<num3:
+        print("Lowest numbner: ",num1)
+elif num2<num1:
+    if num2<num3:
+        print("Lowest numbner: ",num2)
+else:
+    print("Lowest number: ",num3)
