@@ -92,6 +92,23 @@ l2=[44,76,97,55,3,7,42,21]
 for val in l2:
     if val % 3==0 and val%7==0:
         print(val)
+print("-"*50)
+
+#**Change the case of vovels in the given string**
+s = input("enter the string: ")
+v = "aeiouAEIOU"
+t = ''
+var = 0
+for i in s:
+    if i in v:
+        if i.isupper():
+            t = t+i.lower()
+        else:
+            t = t+i.upper()
+    else:
+        t = t+i
+print(t)
+
 
 
 
