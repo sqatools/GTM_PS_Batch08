@@ -204,7 +204,12 @@ print(min(s, key=len))
 print("_"*50)
 
 #**find all vowels in given string**
+from collections import Counter
 s=input("Input a sentence to find vowels:")
+
+v = "aeiouAEIOU"
+cnt = Counter([i for i in s if i in v])
+print(cnt)
 
 
 
