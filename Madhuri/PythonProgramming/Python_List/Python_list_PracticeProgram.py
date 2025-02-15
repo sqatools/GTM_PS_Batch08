@@ -123,3 +123,136 @@ print(result) # Prog%am%in%
 
 print("-"*50)
 
+
+
+#11). Write a python program to get to swap the last character of a given string.
+#Input = “SqaTool”
+#Output = “IqaTooS”
+
+str9 = "SqaTool"
+print(str9[-1]+str9[1:-1]+str9[0])
+
+print("-"*50)
+#12). Write a python program to exchange the first and last character of each word from the given string.
+#Input = “Its Online Learning”
+#Output = “stI enlino gearninL”
+
+str10 = "Its Online Learning"
+list=str10.split(" ")
+
+for word in list:
+    print(word)
+    new_word=  word[-1]+word[1:-1]+word[0]
+    index = list.index(word)
+    list[index] = new_word
+print(list) #['stI', 'enlinO', 'gearninL']
+
+
+#13). Write a python to count vowels from each word in the given string show as dictionary output.
+#Input = “We are Learning Python Codding”
+#output = {“We” : 1, “are” : 2, “Learning” : 3, “Python”:1, “Codding”}
+
+str11 = "We are Learning Python Codding"
+
+list1 = str11.split(" ")
+
+vowels = "aeiou"
+dictionary = dict()
+
+for word in list1:
+    count=0
+    print(word)
+    for char in word:
+        if char in vowels:
+            count= count+1
+
+    dictionary[word] = count
+print(dictionary)
+
+
+print("-"*50)
+#15). Write a python program to re-arrange the string.
+#Input = “Cricket Plays Virat”
+#Output = “Virat Plays Cricket”
+
+str12 = "Cricket Plays Virat"
+list2 = str12.split(" ")
+list2.reverse()
+print(list2)
+" ".join(list2)
+
+"""
+
+16). Write a python program to get all the digits from the given string.
+Input = “””
+Sinak’s 1112 aim is to 1773 create a new generation of people who
+understand 444 that an organization’s 5324 success or failure is
+based on 555 leadership excellence and not managerial
+acumen
+“””
+Output = [1112, 5324, 1773, 5324, 555]
+"""
+
+string = """Sinak’s 1112 aim is to 1773 create a new generation of people who
+understand 444 that an organization’s 5324 success or failure is
+based on 555 leadership excellence and not managerial"""
+
+list3=string.split(" ")
+list4 = []
+
+for val in list3:
+    if val.isdigit():
+        list4.append(val)
+
+print(list4) #['1112', '1773', '444', '5324', '555']
+
+print("-"*50)
+
+
+#17). Write a python program to replace the words “Java” with “Python” in the given string.
+#Input = “JAVA is the Best Programming Language in the Market”
+#Output = “Python is the Best Programming Language in the Market”
+
+string2 = "JAVA is the Best Programming Language in the Market"
+list5 = string2.split(" ")
+
+print(string2.replace("JAVA","Python"))
+
+
+#18). Write a Python program to get all the palindrome words from the string.
+#Input = “Python efe language aakaa hellolleh”
+#output = [“efe”, “aakaa”, “hellolleh”]
+
+string4 = "Python efe language aakaa hellolleh"
+List4 = string4.split(" ")
+new_list1 = []
+
+for val in List4:
+    if val == val[::-1]:
+        new_list1.append(val)
+print(new_list1) #['efe', 'aakaa', 'hellolleh']
+
+print("-"*50)
+#19). Write a Python program to create a string with a given list of words.
+#Input = [“There”, “are”, “Many”, “Programming”, “Language”]
+#Output = There are many programming languages.
+
+list6 = ["There","are", "Many", "Programming", "Language"]
+" ".join(list6)
+
+
+#20. Write a Python program to get common words from strings.
+#Input String1 = “Very Good Morning, How are You”
+#Input String1 = “You are a Good student, keep it up”
+#Output = “You Good are”
+
+#Input strings
+string1 = "Very Good Morning, How are You"
+string2 = "You are a Good student, keep it up"
+List = []
+
+for word in string1.split(" "):
+    if word in string2.split(" "):
+        List.append(word)
+
+" ".join(List)

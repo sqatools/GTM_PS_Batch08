@@ -1,4 +1,4 @@
-#*** program to calculate square of the values in list**
+""""#*** program to calculate square of the values in list**
 list1 = [3, 5, 7, 1, 8]
 
 for val in list1:
@@ -23,7 +23,7 @@ output=list1.extend(list2)
 print(list1)
 print("_"*50)\
 
-#program to reverse list**
+#program to reverse a list**
 list_a=[2,9,75,65]
 print(list_a[-1:-5:-1])
 print("_"*50)
@@ -57,7 +57,24 @@ print("_"*50)
 lst1 =[5,6,7,9,33,56]
 lst1[3]= 100 #replace data at 3 index
 print(lst1)
+print("_"*50)
 
+#** program to find the smallest and biggest number from list**
 
+list1 = [9,7,6,4,32,41,22,12,65]
+list1.sort()
 
+print("Smallest number: ", list1[0])
+print("Largest number: ", list1[-1])
+print("_"*50)"""
 
+#** program to sort and mearge 2 list**
+list1=[45,76,84,384,756,846,378,345]
+list2=[578,456,234,890,34,3,76,33,63]
+list3= list1.extend(list2)
+print(list1)
+list1.sort()
+print(list1[0::])
+print("_"*50)
+
+#**
