@@ -79,6 +79,36 @@ print(str4[:15:14])
 print(str4[:15:14],str4[:15:14])
 print("ll"+str4[::]+"nn")
 
+#get average
+l1 = [2, 4, 6, 8, 10]
+sum=0
+for val in l1:
+    sum +=  val
+avg= sum/len(l1)
+print(avg)
+
+# check if list values are divisible by 3and 7
+l2=[44,76,97,55,3,7,42,21]
+for val in l2:
+    if val % 3==0 and val%7==0:
+        print(val)
+print("-"*50)
+
+#**Change the case of vovels in the given string**
+s = input("enter the string: ")
+v = "aeiouAEIOU"
+t = ''
+var = 0
+for i in s:
+    if i in v:
+        if i.isupper():
+            t = t+i.lower()
+        else:
+            t = t+i.upper()
+    else:
+        t = t+i
+print(t)
+
 
 
 
