@@ -96,20 +96,109 @@
 #         continue
 #
 # print("-" * 50)
-
-"""
-6). Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
-"""
-
-input_6 = input("Enter your word:")
-output_6 = ""
-
-for i in input_6:
-    if i.islower():
-        output_6 += i.upper()
-    else:
-        output_6 += i.lower()
-
-print(output_6)
-print("-" * 50)
-
+#
+# """
+# 6). Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
+# """
+#
+# input_6 = input("Enter your word:")
+# output_6 = ""
+#
+# for i in input_6:
+#     if i.islower():
+#         output_6 += i.upper()
+#     else:
+#         output_6 += i.lower()
+#
+# print(output_6)
+# print("-" * 50)
+#
+# """
+# 7). Python loops program that accepts a string and calculates the number of digits and letters using python.
+# Input : “python1234”
+# Output :
+# Letters 6
+# Digits 4
+# """
+#
+# input_7 = input("Enter your input:")
+# num_str = '1234567890'
+# alpha_count = 0
+# digit_count = 0
+#
+# for i in input_7:
+#     if i in num_str:
+#         digit_count += 1
+#     elif i.isalpha():
+#         alpha_count += 1
+#     else:
+#         print("There is a special character present:", i)
+#
+# print("Number of alphabets:", alpha_count)
+# print("Number of digits:", digit_count)
+#
+# print("-" * 50)
+#
+# """
+# 8). Python for loop program to print the alphabet pattern ‘O’ using python.
+# Output:
+#   ***
+# *       *
+# *       *
+# *       *
+# *       *
+# *       *
+#    ***
+# """
+#
+# input_8 = int(input("Enter your preferable size:"))
+# print("Your output")
+# print(" "+"*"*(input_8-2)+" ")
+# for i in range(1,input_8):
+#     print("*"+" "*(input_8-2)+"*")
+# print(" "+"*"*(input_8-2)+" ")
+# print("-" * 50)
+#
+# """
+# 9). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
+# """
+#
+# input_9 = int(input("Enter the input range:"))
+# i = 1
+#
+# while i < input_9+1:
+#     print(i)
+#     i += 1
+# print("-" * 50)
+#
+# """
+# 9). Python Loops program to print all alphabets from a to z using for loop
+#         Take chr method help to print characters with ASCII values
+#         chr(65) = ‘A’
+#         A-Z ASCII Range  65-90
+#         a-z ASCII Range  97-122
+# """
+# print("Alphabet from a-z")
+# for i in range(26):
+#     print(chr(97 + i), end=' ')
+#
+# print("\nAlphabet from A-Z")
+# for i in range(26):
+#     print(chr(65 + i), end=' ')
+#
+# print("-" * 50)
+#
+# """
+# 10). Python Loops program to print all even and odd numbers between 1 to 100 in python.
+# """
+# even_list = []
+# odd_list = []
+#
+# for i in range(1,101):
+#     if i % 2 == 0:
+#         even_list.append(i)
+#     else:
+#         odd_list.append(i)
+#
+# print("Even numbers:", even_list)
+# print("Odd numbers:", odd_list)

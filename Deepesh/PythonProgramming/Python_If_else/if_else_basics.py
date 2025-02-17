@@ -1,44 +1,4 @@
 """
-if condition:
-    code
-else:
-    code
-"""
-"""
-print("_"*50)
-# check given numbers are equal or not
-a = 40
-b = 50
-
-if a == b:
-    # if condition is True
-    print("Numbers are equal:", a, b)
-else:
-    # if condition is False
-    print("Numbers are not equal :", a, b)
-
-
-print("condition output:", a == b)
-
-"""
-
-print("_"*50)
-# write a program to check given number is even or odd
-# if any number can be divisible by 2 than it is even or odd number
-#
-# input function accepts the values in string format, we have to convert as per requirements
-"""
-
-
-var1 = 2
-print("condition output :", num1%var1)
-
-if (num1%var1) == 0:
-    print("This is even number :", num1)
-else:
-    print("This is odd number :", num1)
-"""
-"""
 Home Work.
 
 #1). write a python program to check given number is divisible by 3 or not
@@ -154,4 +114,150 @@ if decision ==3 : multi num1, num2
 if decision ==4 : division num1, num2
 if decision > 4 : invalid input
 
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+if condition:
+    code
+else:
+    code
+"""
+"""
+print("_"*50)
+# check given numbers are equal or not
+a = 40
+b = 50
+
+if a == b:
+    # if condition is True
+    print("Numbers are equal:", a, b)
+else:
+    # if condition is False
+    print("Numbers are not equal :", a, b)
+
+
+print("condition output:", a == b)
+
+"""
+
+print("_"*50)
+# write a program to check given number is even or odd
+# if any number can be divisible by 2 than it is even or odd number
+#
+# input function accepts the values in string format, we have to convert as per requirements
+"""
+
+
+var1 = 2
+print("condition output :", num1%var1)
+
+if (num1%var1) == 0:
+    print("This is even number :", num1)
+else:
+    print("This is odd number :", num1)
 """
