@@ -1,0 +1,110 @@
+"""
+tuple properties:
+-> tuple is immutable data type, we can not modify it
+-> tuple can contain all types of data,int,float,list,string,tuple,dict,set,bool
+-> tuple follows +ve and -ve indexing as like list and string
+-> tuple defined with round brackets.
+-> Generally we use tuple data type, when the data is going to fix no changes are required
+    e.g : days in a week,months in year etc
+"""
+
+tup1 = (3, 3.5, 'hello', [3, 5, 7],(4, 1, 5),{'a': 123, 'b': 45}, True, {3, 6, 8})
+print(tup1, type(tup1))
+# (3, 3.5, 'hello', [3, 5, 7], (4, 1, 5), {'a': 123, 'b': 45}, True, {8, 3, 6})
+
+# get value from tuple using index
+print(tup1[4])  # (4, 1, 5)
+print(tup1[4][2])  # 5
+
+print(tup1[-3])  # {'a': 123, 'b': 45}
+
+var1 = "2PIR"
+var2 = "a^2+b^2+2ab"
+var3 = [5, 7, 8]
+tup3 = (var1, var2, var3)
+
+print(tup3)  # {'a': 123, 'b': 45}
+var3.append(100)
+print(tup3)  # ('2PIR', 'a^2+b^2+2ab', [5, 7, 8, 100])
+
+#####################################
+tup4 = ('a', 'b', 'c', 'd')
+
+#without indexing
+for val in tup4:
+    print(val)
+
+print("_"*40)
+#with indexing
+for i in range(len(tup4)):
+    print(i, tup4[i])
+"""
+0 a
+1 b
+2 c
+3 d
+"""
+
+name = "manoj"
+tup5 = ("hello", f"my name is {name}", "iam a good student")
+print(tup5)
+# ('hello', 'my name is manoj', 'iam a good student')
+print("_"*50)
+################## slicing in tuple ##############
+
+tup6 = (4, 6, 8, 12, 13, 15, 16, 11, 22, 66)
+print(tup6[6:-2:1]) # (16, 11)
+print(tup6[3:8]) # (12, 13, 15, 16, 11)
+print(tup6[-3:-8:-1]) # (11, 16, 15, 13, 12)
+print(tup6[1::2]) # (6, 12, 15, 11, 66)
+print(tup6[1::-1]) # (6, 4)
+
+
+########################
+print(dir(tuple))
+# 'count', 'index'
+
+tup7 = (5, 7, 8, 7, 2, 7, 3, 7)
+print("count of 7 : ", tup7.count(7))
+# count of 7 :  4
+
+print("index of 3 :", tup7.index(3))
+# index of 3 : 6
+
+#################################
+# max min and sum from tuple
+tup8 = (33, 66, 77, 102, 40, 50, 20)
+
+print("max value :", max(tup8))
+# max value : 102
+print("min value : ", min(tup8))
+# min value :  20
+print("sum of values :", sum(tup8))
+# sum of values : 388
+
+##############################
+# get index position of any specific repeated value from given tuple
+tup8 = (5, 7, 8, 7, 2, 7, 3, 7)
+# second_7_index
+num = 7
+count_of_num = 4
+count = 0
+for i in range(len(tup8)):
+    if tup8[i] == num:
+        count += 1
+        if count_of_num == count:
+            print(i)
+            break
+    else:
+        continue
+
+##########################################
+tup_a = (4, 7, 1, 8, 22, 6, 17)
+
+# get sorted value of tuple
+result1 = tuple(sorted(tup_a))
+print("sorted result :", result1)  # (1, 4, 6, 7, 8, 17, 22)
+
+# get reversed from tuple
+result2 = tuple(reversed(tup_a))
+print("reversed value :", result2)  # (17, 6, 22, 8, 1, 7, 4)
