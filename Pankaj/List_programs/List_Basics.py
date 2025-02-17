@@ -202,10 +202,30 @@ print("_"*50)
 list_P = [4, 11, 1, 3, 5, 2, 55]
 list_P.sort()
 print(list_P)
+# [1, 2, 3, 4, 5, 11, 55]
 
 # sort the list in descending order
 list_Q.sort(reverse=True)
 print("List_Q :", list_Q)
 # [55, 30, 14, 12, 11, 5, 1]
+
+##################################### Sorted Function #####################
+# 1. This function accept list as parameter and return the list in ascending and descending order
+# 2. Sorted function does not modify the original list
+# 3. This function return required result
+
+list_aa = [3, 6, 99, 101, 2, 0]
+result_1 = sorted(list_aa)
+print("Ascending Order list: ", result_1)
+# Ascending Order list:  [0, 2, 3, 6, 99, 101]
+
+result_2 = sorted(list_aa, reverse=True)
+print("Descending order list: ", result_2)
+# Descending order list:  [101, 99, 6, 3, 2, 0]
+
+list_abc = ['a', 'z', 'l', 'e', 'd']
+result_abc = sorted(list_abc)
+print("Ascending Order abc: ", result_abc)
+# Ascending Order abc:  ['a', 'd', 'e', 'l', 'z']
 
 

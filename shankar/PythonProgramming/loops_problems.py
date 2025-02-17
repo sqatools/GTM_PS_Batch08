@@ -98,22 +98,68 @@ for i in range(limit):
 print()
 print("-" * 50)
 """
-7). Write a program that iterates the integers from 1 to 30 using python. For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”.
+7). Write a program that iterates the integers from 1 to 30 using python. For multiples of three print “Fizz” 
+instead of the number and for multiples of five print “Buzz”.
 For numbers that are multiples of both three and five print “FizzBuzz”.
+"""
+for i in range(1, 31):
+    if (i % 3 == 0) and (i % 5 == 0):
+        print(f"{i} multiple of 3 and 5, So 'FizzBuzz'")
+    elif i % 3 == 0:
+        print(f"{i} multiple of 3, So 'Fizz'")
+    elif i % 5 == 0:
+        print(f"{i} multiple of 5, So 'Buzz'")
+    else:
+        continue
 
 print("-" * 50)
+# Using List Comprehension
+
+FizzBuzz = ["FizzBuzz" if (num % 3 == 0) and (num % 5 == 0)
+            else "Fizz" if (num % 3 == 0)
+else "Buzz" if (num % 5 == 0)
+else num for num in range(1, 31)]
+print(FizzBuzz)
+
+print("-" * 50)
+"""
 8). Write a program that accepts a word from the user and converts all uppercase's in the word to lowercase using python.
 Input : “SqaTOOlS”
 Output : “sqatools”
+"""
+word = "SqaTOOlS"
+lowercase_word = ""
+for i in word:
+    lowercase_word += i.lower()
+print(lowercase_word)
 
 print("-" * 50)
+# used list comprehension
+lowercase_list = [i.lower() for i in word]
+print("".join(lowercase_list))
+
+print("-" * 50)
+"""
 9). Python loops program that accepts a string and calculates the number of digits and letters using python.
 Input : “python1234”
 Output :
 Letters 6
 Digits 4
+"""
+n = "python1234"
+letters = 0
+digits = 0
+for char in n:
+    if char.isalpha():
+        letters += 1
+    else:
+        digits += 1
+
+print(f"Given string count of Letters : {letters}")
+print(f"Given string count of Digits : {digits}")
 
 print("-" * 50)
+"""
 10). Python for loop program to print the alphabet pattern ‘O’ using python.
 Output:
   ***
@@ -123,15 +169,49 @@ Output:
 *       *
 *       *
    ***
+"""
+n = 10
+for i in range(n):
+    if i == 0 or i == n-1:
+        print("*" * n)
+    else:
+        print("* " + " " * (n-2) + "*")
 
 print("-" * 50)
-
+"""
 11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
+"""
+n = 10
+natural_nums = []
+count = 1
+while count <= n:
+    natural_nums.append(count)
+    count += 1
+print(natural_nums)
 
-Solution
-12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
+# using list comprehension
+natural_nums = [i for i in range(1,n+1)]
+print(natural_nums)
+
 
 print("-" * 50)
+"""
+12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
+"""
+natural_nums = [i for i in range(n,0,-1)]
+print(natural_nums)
+
+n = 10
+natural_nums = []
+count = n
+while count > 0:
+    natural_nums.append(count)
+    count -= 1
+print(natural_nums)
+
+
+print("-" * 50)
+"""
 13). Python Loops program to print all alphabets from a to z using for loop
         Take chr method help to print characters with ASCII values
         chr(65) = ‘A’
@@ -165,5 +245,30 @@ print("-" * 50)
 print("-" * 50)
 22). Write a program to calculate the sum of digits of a number using python.
 """
+n = 2345
+convert_to_str = str(n)
+sum_n_digits = 0
+for i in convert_to_str:
+    sum_n_digits += int(i)
+print(f"total sum of {n} digits is {sum_n_digits}")
+
+digits_sum = sum(int(dig) for dig in str(n))
+print(f"total sum of {n} digits is {digits_sum}")
+print("-" * 50)
+
+# Write python program to get values in a list are divided by 3 and 7.
+
+list_1 = [9, 42, 33, 21, 28, 25]
+
+result = [num for num in list_1 if num % 3 == 0 and num % 7 == 0]
+print(f"Numbers are divided by 3 and 7 are {result}")
 
 print("-" * 50)
+
+# Write python program to get average of a list.
+
+total = sum([num for num in list_1])
+count = len([num for num in list_1])
+
+average = total // count
+print(f"average of a list is {average}")

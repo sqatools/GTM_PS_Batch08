@@ -6,9 +6,9 @@ print(str1, type(str1))
 # read string with positive and negative  indexing
 
 """
- 0 1 2 3 4 5
- P y t h o n
--6-5-4-3-2-1
+#  0 1 2 3 4 5
+#  P y t h o n
+# -6-5-4-3-2-1
 
 """
 print(str1[3]) # h
@@ -198,18 +198,32 @@ print(str_p[-1::]) # g"""
 # output = "WE arE LeArning PythOn ProgrAmming"
 
 #** to find smallest word in given string**
-s=input("Input a sentence:")
-s = s.split()
-print(min(s, key=len))
-print("_"*50)
+# s=input("Input a sentence:")
+# s = s.split()
+# print(min(s, key=len))
+# print("_"*50)
+#
+# #**find all vowels in given string**
+# from collections import Counter
+# s=input("Input a sentence to find vowels:")
+#
+# v = "aeiouAEIOU"
+# cnt = Counter([i for i in s if i in v])
+# print(cnt)
 
-#**find all vowels in given string**
+#Q3
 from collections import Counter
-s=input("Input a sentence to find vowels:")
 
+s = input("enter the string: ")
 v = "aeiouAEIOU"
-cnt = Counter([i for i in s if i in v])
-print(cnt)
-
-
-
+t = ''
+var = 0
+for i in s:
+    if i in v:
+        if i.isupper():
+            t = t+i.lower()
+        else:
+            t = t+i.upper()
+    else:
+        t = t+i
+print(t)
