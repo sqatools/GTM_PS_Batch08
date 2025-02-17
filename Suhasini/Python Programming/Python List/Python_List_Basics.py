@@ -19,7 +19,12 @@ print(list2[1])  # 7
 print(list2[-1]) # 10
 
 print("_"*50)
-################ apply loop on the list ########
+
+
+print(list2[-1]) # 10
+
+print("_"*50)
+################ Apply loop on the list ########
 
 list3 = [5, 7, 2, 8, 11, 44, 77]
 
@@ -27,6 +32,7 @@ for val in list3:
     print(val)
 
 """
+Output:
 5
 7
 2
@@ -36,79 +42,86 @@ for val in list3:
 77
 """
 print("_"*50)
+
+
 # Loop with indexing
 
 for i in range(len(list3)):
-    print(i, list3[i])
+    print(list3[i])
 
 """
-0 5
-1 7
-2 2
-3 8
-4 11
-5 44
-6 77
+# Output:
+5
+7
+2
+8
+11
+44
+77
 """
-
 print("_"*50)
+
 ##################### Slicing in the list ###############
 
-list_a = [5, 7, 2, 8, 11, 7, 22, 88, 3]
-print(list_a[3:7])  # [8, 11, 7, 22]
-print(list_a[1:6])  # [7, 2, 8, 11, 7]
-print(list_a[-5:-1]) # [11, 7, 22, 88]
-print(list_a[-1:-5]) # []
-print(list_a[1:8:2]) # [7, 8, 7, 88]
-print(list_a[-2:-9:-2])  # [88, 7, 8, 7]
-print(list_a[-8:-1:1])  # [7, 2, 8, 11, 7, 22, 88]
-print(list_a[-8:-1:2])  # [7, 8, 7, 88]
+listA = [5, 7, 2, 8, 11, 7, 22, 88, 3]
 
-print(list_a[::-1])  # [3, 88, 22, 7, 11, 8, 2, 7, 5]
+print(listA[3:7])   # [8, 11, 7, 22]
+print(listA[1:6])   # [7, 2, 8, 11, 7]
+print(listA[-5:-1])   # [11, 7, 22, 88]
+print(listA[-9:-6])   # [5, 7, 2]
+print(listA[-6:-9])   # []
+print(listA[1:8:2])   # [7, 8, 7, 88]
+print(listA[-2:-9:-2])  # [88, 7, 8, 7]
+print(listA[-8:-1])  # [7, 2, 8, 11, 7, 22, 88]
+print(listA[-8:-1:2])  # [7, 8, 7, 88]
+
+print(listA[::-1])  # [3, 88, 22, 7, 11, 8, 2, 7, 5]
 # list_a[-1:-len(list)-1:-1]
 
-print(list_a[::1]) # [5, 7, 2, 8, 11, 7, 22, 88, 3]
-# list_a[0:len(list_a):1]
+print(listA[::1]) # [5, 7, 2, 8, 11, 7, 22, 88, 3]
 
 list_b = ['a', 'b', 'c', 'd', 'e']
 print(list_b[-5:-1:])  # ['a', 'b', 'c', 'd']
 print(list_b[-1:-5:]) # []
-
 print("_"*50)
+
+
 ##################### List Methods ##################
 print(dir(list))
 """
 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
 """
 
+print("_"*50)
+
 ############## Add content to the list ############
-print("_"*50)
-###############
+
 # append method() : This method add value to the list at last index.
-list_c = [54, 7, 2, 5, 7]
-list_c.append(400)
-list_c.append('Hello')
-print("list_c :", list_c)
-# list_c : [54, 7, 2, 5, 7, 400, 'Hello']
-
-
+listC = [54, 7, 2, 5, 7]
+listC.append("300")
+print(listC)
+listC.append(100)
+print(listC)
+listC.append('Hello')
+print("listC :", listC)
+# listC : [54, 7, 2, 5, 7, '300', 100, 'Hello']
 print("_"*50)
-###############
-# insert method() :  This method add value to specified index position
-list_d = [6, 8, 22, 55, 88, 9]
-list_d.insert(2, 700)
-print("list_d :", list_d)
-# list_d : [6, 8, 700, 22, 55, 88, 9]
 
-list_d.insert(3, 'Python')
-print("list_d :", list_d)
+# insert method() :  This method add value to specified index position
+listD = [6, 8, 22, 55, 88, 9]
+listD.insert(2, 700)
+print("listD :", listD)
+# listD : [6, 8, 700, 22, 55, 88, 9]
+
+listD.insert(3, 'Python')
+print("listD :", listD)
 # list_d : [6, 8, 700, 'Python', 22, 55, 88, 9]
 
-list_d.insert(-1, [4, 6, 8])
-print("list_d :", list_d)
+listD.insert(-1, [4, 6, 8])
+print("listD :", listD)
 # list_d : [6, 8, 700, 'Python', 22, 55, 88, [4, 6, 8], 9]
-
 print("_"*50)
+
 ###############
 # extend method()  :  Thin method help to add one list data to another list at end of another.
 list_p = ['a', 'b', 'c']
@@ -125,9 +138,9 @@ print("list_r :", list_r)
 list_t = [4, 6, 7, ['a', 'b', 'c', [17, 18, 19]]]
 print(list_t[3][1]) # b
 print(list_t[3][3][2]) # 19
-
-
 print("_"*50)
+
+
 ################### Replace data in current #################
 # we can replace data in the list with help of index position and
 # slicing, no need to use any method
@@ -209,7 +222,6 @@ print("removed value :", val) # removed value : 6
 print("list_g :", list_g) # [44, 66, 88, 22, 55]
 
 # remove value from specific index
-
 val2 = list_g.pop(2)
 print("removed value :", val2) # removed value : 88
 print("list_g :", list_g) # [44, 66, 22, 55]
@@ -260,8 +272,6 @@ list_aa.clear()
 
 print("list_aa :", list_aa) # list_aa : []
 
-
-print("_"*50)
 ########################## List data manupulation #############
 # sort method:  ->  This method sort the list values in ascending and descending order.
 #               ->  sort method modify the original list
@@ -448,3 +458,6 @@ for val in list1:
 
 print("output2 :", output2)
 # [{55: 'odd'}, {77: 'odd'}, {88: 'even'}, {11: 'odd'}, {23: 'odd'}, {56: 'even'}]
+
+
+
