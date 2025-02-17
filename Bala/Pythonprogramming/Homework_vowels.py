@@ -6,6 +6,8 @@
 # count1 = sum(string.count(vowel) for vowel in vowels)
 # print(count1)
 
+#smallest word in given string
+
 str1 = "lick Open Zoom Workplace app on the dialog shown by your browser"
 small_word = ''
 small_len = 4
