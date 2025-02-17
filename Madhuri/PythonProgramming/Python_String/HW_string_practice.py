@@ -12,7 +12,7 @@ str4 = "Learning Python"
 
 print(str4[0:8])
 
-print(str4[0],str4[])
+print(str4[0],str4[-1])
 
 print(str4[1:-1]*2)
 

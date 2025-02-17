@@ -50,6 +50,7 @@ elif marks >= 90:
     print("Your grade is A")
 
 """
+"""
 #Write a program that asks the user to input their purchase amount and applies a discount based on the following conditions:
 #Purchase amount over $1000: 20% discount
 #Purchase amount between $500 and $1000: 10% discount
@@ -63,3 +64,17 @@ elif bill >= 500 and bill < 1000:
     print("You are eligible to get 10% discount on your next purchase")
 elif bill > 1000:
     print("You are eligible to get 20% discount on your next purchase"
+"""
+
+
+def reverse_negative(num):
+    if num >= 0:
+        return "Please enter a negative number."
+
+    reversed_num = int(str(abs(num))[::-1])
+    return -reversed_num
+
+
+# Example usage
+num = -56743
+print(reverse_negative(num))  # Output: -54321

@@ -19,10 +19,14 @@ print(str4[0] + str4[-1])
 
 #3)read all characters except first and last and repeat 2 times the output.
 str4 = "Learning Python"
-print((str4[1:14])*2)
+print((str4[1:14])*2, end="")
+
+"""
 
 #4)get given output  : "LLLearning Pythonnn"
 str4 = "Learning Python"
 result = f"LL{str4}nn"
 print(result)
+
+"""
 
