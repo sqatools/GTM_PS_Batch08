@@ -52,6 +52,7 @@ l2=[]
 result=[l1.append(x) if x>=0 else l2.append(x) for x in list2]
 print("Using list comprehension",l1+l2)
 print("_"*100)
+print(result)
 
 ######################################
 #Write a python program to get average of all list value without using any function or method.
@@ -61,7 +62,6 @@ for x in list_c:
     sum=sum+x
 Average=sum/len(list_c)
 print(Average)
-
 
 
 
