@@ -114,7 +114,6 @@ else:
 
 Num = int(input("Enter any number of your choice : "))
 
-if Num % 3 == 0:
     print("The number if divided by 3")
 elif Num % 5 == 0:
     print("The number is divided by 5")
