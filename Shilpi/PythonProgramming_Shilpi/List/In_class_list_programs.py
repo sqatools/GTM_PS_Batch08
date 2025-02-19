@@ -63,7 +63,21 @@ for x in list_c:
 Average=sum/len(list_c)
 print(Average)
 
+#using list comprehension
+list_d=[9,42,33,21,28,25]
+output2=[]
+[output2.append(x) for x in list_d if x%7==0 and x%3==0]
+print("Using list comp :",output2)
 
+###########################################
+#Write a python program to check value can be divided by 3 and 7
+list_d=[9,42,33,21,28,25]
+#output:[42,21]
+output1=[]
+for x in list_d:
+    if x%7==0  and x%3==0:
+        output1.append(x)
+print(output1)
 
 
 

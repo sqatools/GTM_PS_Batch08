@@ -1,4 +1,5 @@
 #8,13,18,19,20(question not clear)
+
 print("1). Python program to calculate the square of each number from the given list.")
 list1=[1,2,3,4,5,6,7,8,9,10]
 for i in list1:
@@ -34,6 +35,20 @@ print("5). Python program to find the minimum and maximum elements from the list
 list5=[34,89,2,7,90]
 print("The maximum number is: ",max(list5))
 print("The minimum number is: ",min(list5))
+
+#using logic
+list5=[34,89,2,7,90]
+maxnum=list5[0]
+minnum=list5[0]
+for x in list5:
+    for y in range(0,len(list5)):
+        if list5[y]>maxnum:
+            maxnum=list5[y]
+        if list5[y]<minnum:
+            minnum=list5[y]
+print("The Maximum number using logic is: ",maxnum)
+print("The Minimum number using logic is: ", minnum)
+print("_"*100)
 
 print("6). Python program to differentiate even and odd elements from the given list.")
 list6=[3,5,6,8,90,23,34,9]
@@ -293,7 +308,31 @@ list1 = [55, 77, 88, 11, 23, 56, 77]
 # output = [(55, 'odd'), (77, 'odd'), (88, 'even'), (11, 'odd'), (23, 'odd'), (26, 'even')]
 #output2 = [{55: 'odd'}, {77 :'odd'}, {88: 'even'}, {11: 'odd'}, {23:'odd'}, {26: 'even'}]
  
+output=[]
+for x in list1:
+    if x%2==0:
+        output.append((x,"even"))
+    else:
+        output.append((x, "odd"))
+print(output)
 
+#using list comp
+output1=[]
+[output1.append((x,"even")) if x%2==0 else output1.append((x,"odd")) for x in list1]
+print("list comp",output1)
+
+output2=[]
+for x in list1:
+    if x%2==0:
+        output.append({x,"even"})
+    else:
+        output.append({x, "odd"})
+print(output)
+
+#using list comp
+output4=[]
+[output4.append({x,"even"}) if x%2==0 else output4.append({x,"odd"}) for x in list1]
+print("using list comp",output4)
 
 
 

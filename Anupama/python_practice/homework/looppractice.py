@@ -219,4 +219,4 @@ if n%2==0:
     num1=num1+n
 print("-"*100)
 
-
+#**print a star pattern in m
