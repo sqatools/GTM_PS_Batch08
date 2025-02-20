@@ -209,6 +209,7 @@ list_Q.sort(reverse=True)
 print("List_Q :", list_Q)
 # [55, 30, 14, 12, 11, 5, 1]
 
+
 ##################################### Sorted Function #####################
 # 1. This function accept list as parameter and return the list in ascending and descending order
 # 2. Sorted function does not modify the original list
@@ -223,9 +224,124 @@ result_2 = sorted(list_aa, reverse=True)
 print("Descending order list: ", result_2)
 # Descending order list:  [101, 99, 6, 3, 2, 0]
 
-list_abc = ['a', 'z', 'l', 'e', 'd']
+list_abc = ['a', 'z', 'love', 'e', 'd']
 result_abc = sorted(list_abc)
-print("Ascending Order abc: ", result_abc)
+print("Ascending Order Alphabets: ", result_abc)
 # Ascending Order abc:  ['a', 'd', 'e', 'l', 'z']
+
+# list_3 = ['a', 2, 3, "D"]
+# sorted_list_3 = list_3.sort()
+# print(sorted_list_3)
+# TypeError: '<' not supported between instances of 'int' and 'str'
+
+print("_"*50)
+############################## reverse() method : ####################
+# -> This method reverse the list values
+# -> This method modify the original list and does not return anything
+list_4 = [12, 4, 5, 6, 7, 10]
+rev_list_4 = list_4.reverse()
+print(list_4)
+# [10, 7, 6, 5, 4, 12]
+
+print("_"*50)
+###################### Reversed Function ######################
+# -> This function reverse the list values and return the required result.
+# -> This function does not modify original list
+# -> This function return the revers interator object that we can convert into list
+
+list_5 = [10, 20, 30, 40, 50]
+reverse_list_5 = reversed(list_5)
+print(reverse_list_5)
+# <list_reverseiterator object at 0x000001176CF93370>
+for val in reverse_list_5:
+    print(val, end=" ")
+    # 50 40 30 20 10
+print()
+
+print("_"*50)
+################################
+# count method :  This method count the numbers of occurrences of any value in list
+list_6 = [0, 4, 7, 1, 2, 9, 10, 9, 0, 9]
+print(list_6.count(9)) # put the number for which you want count not indexing
+print(list_6.count(0))
+print(list_6.count(7))
+
+print("_"*50)
+################################
+# index method : This method return index position of any specific value
+list_7 = [0, 1, 22, 34, 4, 5, 6, 7]
+print(list_7.index(22)) # enter value to check indexing of value in list
+print(list_7.index(34))
+# print(list_7.index(100)) # ValueError: 100 is not in list
+
+
+print("_"*50)
+####################################
+# copy method :
+
+# shallow copy : In shallow copy concept when we assign one list to another list, then it does not copy the content
+#                It pass the reference of one list to another, and if we modify anyone of the list, then changes will
+#                reflect in both list.
+list_8 = [33, 77, 11, 99, 48, 92]
+list_empty = list_8
+list_empty.append(200)
+list_8.append(300)
+print(list_8)
+print(list_empty)
+
+print("_"*50)
+# deep copy : In Deep copy, when we copy data from one list to another list, then it create a new list with all value of
+#             first list, If we do change in any of list, then it will reflect in another list.
+
+list_9 = [2, 9, 4, 7, 8, 1, 0]
+list9_1 = list_9.copy()
+
+list_9.append(100)
+list9_1.append(200)
+
+print(list_9)
+print(list9_1)
+
+print("_"*70)
+#############################################
+# get sum of list value, max and mini number from list
+
+list_10 = [1, 2, 3, 4, 5, 6, 7]
+print(sum(list_10))
+print(max(list_10))
+print(min(list_10))
+print(len(list_10))
+
+print("_"*50)
+############################################################
+# write a python program to return the output list this
+list11 = [55, 77, 88, 11, 23, 56, 77]
+# output = [(55, 'odd'), (77, 'odd'), (88, 'even'), (11, 'odd'), (23, 'odd'), (26, 'even')]
+#output2 = [{55: 'odd'}, {77 :'odd'}, {88: 'even'}, {11: 'odd'}, {23:'odd'}, {26: 'even'}]
+
+output = []
+for val1 in list11:
+    if val % 2 == 0:
+        output.append((val1, 'Even'))
+    else:
+        output.append((val1, 'Odd'))
+print(output)
+# [(55, 'Even'), (77, 'Even'), (88, 'Even'), (11, 'Even'), (23, 'Even'), (56, 'Even'), (77, 'Even')]
+
+print("_"*50)
+list12 = [55, 77, 88, 11, 23, 56, 77]
+output12 = []
+for val in list12:
+    temp = {}
+    if val % 2 == 0:
+        output12.append({val: 'even'})
+    else:
+        temp[val] = 'odd'
+        output12.append(temp)
+
+# Print value with negative indexing 
+list_13 = [3, 2, 5, 7, 9, 10, 0, 10, 22, 88, 87]
+for i in range(-1, -len(list_13)-1, -1):
+    print(i, list_13[i])
 
 
