@@ -107,6 +107,25 @@ fruits_details = {'Banana': [10, 100], 'watermelon': [60, 500], 'mango': [70, 25
 
 fruit_purchase = {'Apple': 5, 'Banana': 10, 'watermelon': 15, 'mango': 25}
 
+update_inventory_5 = {}
+total_bill_5 = 0
 
-
-
+for k,v in fruit_purchase.items():
+    fruit_name_5 = k
+    fruit_quantity_5 = v
+    fruit_price_5 = fruits_details[k][0]
+    fruit_bill_5 = fruit_quantity_5 * fruit_price_5
+    total_bill_5 = total_bill_5 + fruit_bill_5
+    fruit_inventory_5 = fruits_details[k][1]
+    updated_fruit_inventory_5 = fruit_inventory_5 - v
+    fruits_details[k][1] = updated_fruit_inventory_5
+    print(fruit_name_5)
+    print(fruit_quantity_5)
+    print(fruit_price_5)
+    print(fruit_inventory_5)
+    print(fruit_bill_5)
+    print(updated_fruit_inventory_5)
+    print(fruits_details[k][1])
+    print("*"*50)
+print(total_bill_5)
+print(fruits_details)
