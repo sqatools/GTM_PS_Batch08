@@ -263,3 +263,6 @@ for i in listA:
     if i%3==0 or i%7==0:
        listB.append(i)
 print(listB) #[3, 7, 0, 6, 14, 21]
+
+
+
