@@ -205,7 +205,7 @@ if num in list_a:
     print("the given number is available in the list", num)
 else:
     print("the given number is not available in the list", num)
-""""""""""""""""
+"""""""""""""""""""""""
 
 
 
