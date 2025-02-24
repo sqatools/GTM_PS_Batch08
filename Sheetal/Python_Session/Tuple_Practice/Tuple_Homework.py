@@ -68,3 +68,15 @@ print("The repeated values more than 2 times are:", final_list)
 
 print("_"*40)
 print("Python tuple program to create a tuple with 2 lists of data.")
+# Input lists:
+list1 = [4, 6, 8]
+list2 = [7, 1, 4]
+
+tup7 =tuple(zip(list1,list2))
+
+print(tuple(tup7))
+
+print("_"*40)
+
+
+

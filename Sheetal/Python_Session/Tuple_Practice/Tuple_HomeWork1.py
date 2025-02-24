@@ -4,25 +4,45 @@ print("Python tuple program to create a tuple with 2 lists of data.")
 list1 = [4, 6, 8]
 list2 = [7, 1, 4]
 # Output= ((4, 7), (6, 1), (8, 4))
+tup7 = tuple(zip(list1,list2))
 
+print(tup7)
 
 print("_"*40)
 print("Python tuple program to find the maximum value from a tuple.")
 Input = (41, 15, 69, 55)
 # Output = 69
+maximum = 1
+for maxim in Input:
+    if maxim > maximum:
+        maximum = maxim
 
+print(f"The maximum number from Tuple is {maximum}")
 
 print("_" * 40)
 print("Python tuple program to find the minimum value from a tuple.")
 Input1 = (36,5,79,25)
 # Output = 5
 
+max_val = Input1[0]
+
+for val in Input1:
+    if val > max_val:
+        max_val = val
+
+print(f"The maximum value from the Tuple is {max_val}")
+
 
 print("_" * 40)
 print("Python tuple program to create a list of tuples from a list having a number and its square in each tuple.")
 Input2 = [4,6,3,8]
 # Output = [ (4, 16), (6, 36), (3, 27), (8, 64) ]
-
+output1 =[]
+for num in Input2:
+    num_sqr = num**2
+    output = (num,num_sqr)
+    output1.append(output)
+print(output1)
 
 print("_"*40)
 print("Python tuple program to create a tuple with different datatypes.")

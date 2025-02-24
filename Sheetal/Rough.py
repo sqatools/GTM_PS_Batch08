@@ -78,3 +78,18 @@
 
 
 
+print("Q5: write a python to calculate total bill and update the inventory from given")
+# {'FruitName': [price, inventory]}
+
+fruits_details = {'Banana': [10, 100], 'watermelon': [60, 500], 'mango': [70, 250],
+                  'Apple': [50, 100], 'lichi': [20, 300]}
+
+fruit_purchase = {'Apple': 5, 'Banana': 10, 'watermelon': 75, 'mango': 25}
+total_bill = 0
+
+for fruit,quant in fruit_purchase.items():
+    price_per_unit = fruits_details[fruit][0]
+    total_bill = total_bill + price_per_unit * quant
+    fruits_details[fruit][1] = fruits_details[fruit][1] - quant
+for fruit, details in fruits_details.items():
+    print({f"{fruit} : {details[1]}"})
