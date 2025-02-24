@@ -8,7 +8,7 @@ print("1). Python tuple program to create a tuple with 2 lists of data.")
 # Output= ((4, 7), (6, 1), (8, 4))
 
 list1 = [4, 6, 8]
-list2 = [7, 1, 4]
+list2 = [7, 1, 4, 8, 9]
 output1=[]
 for x in range(0,len(list1)):
     for y in range(x,x+1):
@@ -113,6 +113,7 @@ for x in tup7:
 print(str1)
 print("_"*100)
 """
+# "".join(Input)
 #######################################################################
 print("10). Python tuple program to get the 2nd element from the front and the 3rd element from the back of the tuple.")
 # Input = (‘s’, ‘q’, ‘a’, ‘t’, ‘o’, ‘o’ ,’l’, ‘s’)
@@ -177,15 +178,26 @@ tupA=[[('sqa',4)],[('tools',8)]]
 tupB=(3,6)
 print("Input A : ",tupA)
 print("Input B : ",tupB)
-l1=list(tupA[0][0])
-l2=list(tupA[1][0])
-l1.append(tupB[0])
-l2.append(tupB[1])
-tup1=tuple(l1)
-tup2=tuple(l2)
-Output=[[tup1],[tup2]]
-print("Output : ",Output)
-print("_"*100)
+
+output = []
+for i in range(len(tupA)):
+    l1 = list(tupA[i][0])
+    l1.append(tupB[i])
+    output.append([tuple(l1)])
+
+print(output)
+
+
+
+# l1=list(tupA[0][0])
+# l2=list(tupA[1][0])
+# l1.append(tupB[0])
+# l2.append(tupB[1])
+# tup1=tuple(l1)
+# tup2=tuple(l2)
+# Output=[[tup1],[tup2]]
+# print("Output : ",Output)
+# print("_"*100)
 
 #############################QUESTION#####################################
 print("15). Python tuple program to create a tuple having squares of the elements from the list.")
