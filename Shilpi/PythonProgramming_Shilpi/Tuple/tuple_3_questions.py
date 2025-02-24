@@ -12,10 +12,13 @@ print("_"*100)
 #Write a python program to get the list of combination of two values whose sum is 20
 
 t2=(3,6,9,10,11,12,8,14,6)
+l1=[]
 for x in range(0,len(t2)):
-    for y in range(x,len(t2)):
+    for y in range(x+1,len(t2)):
         if t2[x]+t2[y]==20:
-            print((t2[x],t2[y]))
+            l1.append((t2[x],t2[y]))
+            #print((t2[x],t2[y]))
+print(l1)
 print("_"*100)
 
 #################################################################################
