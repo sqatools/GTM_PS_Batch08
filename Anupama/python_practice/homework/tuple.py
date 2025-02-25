@@ -26,3 +26,13 @@ for i in range(len(list1)):
 
 #Printing output
 print(list3)
+
+print("*"*50)
+
+"""l1 = (3, 6, 9, 10, 11, 12, 8, 14, 6)
+for i in range(len(l1)):
+    for j in range(len(l1)):
+        if (i+j==20):
+            print("(",i,j,")")
+        else:
+            continue"""
