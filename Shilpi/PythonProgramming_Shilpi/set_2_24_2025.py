@@ -5,6 +5,6 @@ dict1 = {'a' : [3, 5, 7, 3, 7, 8],
          'd' : [True, False, True, False]}
 dict2={}
 for k,v in dict1.items():
-    dict2[k]=set(v)
+    dict2[k]=list(set(v))
 print(dict2)
 
