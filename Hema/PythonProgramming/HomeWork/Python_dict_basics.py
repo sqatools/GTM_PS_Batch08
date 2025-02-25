@@ -129,3 +129,15 @@ for k,v in fruit_purchase.items():
     print("*"*50)
 print(total_bill_5)
 print(fruits_details)
+
+
+print("#"*50)
+#sample program
+
+fruits_with_price = {'Apple': 50, 'Banana': 10, 'watermelon': 60, 'mango': 70}
+cust_pur_with_quantity = {'Apple': 10, 'Banana': 20, 'watermelon': 5, 'mango': 20}
+output = {}
+for i, j in cust_pur_with_quantity.items():
+    print(i)
+    print(j)
+
