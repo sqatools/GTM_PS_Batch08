@@ -59,4 +59,17 @@ elif len(A)<len(B):
             l1.append(B[x])
 A.extend(l1)
 print(A)
+print("_"*100)
 ######################################################################################
+#17). Python tuple program to join tuples if the initial elements of the sub-tuple are the same.
+# Input:
+# [(3,6,7),(7,8,4),(7,3),(3,0,5)]
+# Output:
+# [(3,6,7,0,5),(7,8,4,3)]
+Input=[(3,6,7),(7,8,4),(7,3),(3,0,5)]
+output=[]
+for x in range(len(Input)):
+    for y in range(x+1,len(Input)):
+        if Input[x][0]==Input[y][0]:
+            output.append(tuple(list(Input[x])+list(Input[y][1:])))
+print(output)

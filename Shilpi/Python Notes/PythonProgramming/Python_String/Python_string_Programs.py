@@ -100,3 +100,4 @@ str_a = "Hello GoOd MOrnIong"
 # Q3 :  Write a python program to Convert all Vowels from upper to lower and lower to upper.
 str_b = "We Are LEarnIng Python PrOgrammIng"
 # output = "WE arE LeArning PythOn ProgrAmming"
+
