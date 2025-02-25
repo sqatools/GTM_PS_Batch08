@@ -238,15 +238,109 @@ B = (3,6)
 Output:
 [[(‘sqa’, 4,3)], [(‘tools’, 8,6)]]
     '''
-    ##############  NOT  WORKING ###################
+    ##############  WORKING ###################
     A_var_14 = [[('sqa', 4)], [('tools', 8)]]
     B = (3,6)
 
     out_var_14 = []
     if len(A_var_14) == len(B):
-        for i in range(2):
-            out_var_14 = out_var_14+[(A_var_14[i],B[i],)]
+        for i in range(len(A_var_14)):
+            out_var_14 = out_var_14+[(A_var_14[i][0]+(B[i],))]
     print(out_var_14)
 
     # out_var_14_1 = A_var_14.extend(B)
     # print(out_var_14_1)
+
+elif ch == 15:
+    '''
+    15). Python tuple program to create a tuple having squares of the elements from the list.
+Input = [(1,5,7), (3,6)]
+    Origianl tuple:  (1, 3, 5, 7, 6)
+After sqauring elements:  (1, 9, 25, 49, 36)
+    '''
+    inp_var_15 = (1, 3, 5, 7, 6)
+    out_var_15 = []
+    list_inp_var_15 = list(inp_var_15)
+    for i in list_inp_var_15:
+        out_var_1_15 = i**2
+        out_var_15.append(out_var_1_15)
+
+    print("Tuple having squares: ", tuple(out_var_15))
+
+elif ch == 16:
+    '''
+    16). Python tuple program to multiply adjacent elements of a tuple.
+Input = (1,2,3,4)
+Output =  (2,6,12)
+
+    '''
+    inp_var_16 = (1,2,3,4)
+    out_var_16 =()
+    for i in range(len(inp_var_16)-1):
+        row = [(inp_var_16[i]*inp_var_16[i+1])]
+        out_var_16 = out_var_16 + tuple(row)
+    print(out_var_16)
+
+elif ch == 17:
+    '''
+    17). Python tuple program to join tuples if the initial elements of the sub-tuple are the same.
+Input:
+[(3,6,7),(7,8,4),(7,3),(3,0,5)]
+Output:
+[(3,6,7,0,5),(7,8,4,3)]
+    '''
+    inp_var_17 = [(3,6,7),(7,8,4),(7,3),(3,0,5)]
+    output_var_17 = []
+
+    for i in range(len(inp_var_17)):
+        #print(inp_var_17[i])
+        #print(inp_var_17[i][0])
+        for j in range(i+1, len(inp_var_17)):
+            if inp_var_17[i][0] == inp_var_17[j][0]:
+                output_var_17.append(inp_var_17[i]+inp_var_17[j],)
+    print(output_var_17)
+
+elif ch == 18:
+    '''    
+18). Python tuple program to convert a list into a tuple and multiply each element by 2.
+Input = [12,65,34,77]
+Output = (24, 130, 68, 154)
+    '''
+    inp_var_18 = [12,65,34,77]
+    output_var_18 = []
+    print("The input value is: ", inp_var_18)
+    for i in inp_var_18:
+        output_var_18.append(i*2)
+        tup_output_var_18 = tuple(output_var_18)
+    print("List output: ",output_var_18)
+    print("convert list into a tuple and multiply each element by 2", tup_output_var_18)
+elif ch == 19:
+    '''
+19). Python tuple program to remove an item from a tuple.
+Input:
+A=(p,y,t,h,o,n)
+Output: (p,y,t,o,n)
+    '''
+    A = ('p','y','t','h','o','n')
+    print("Original value: ",A)
+    output_A = []
+    for i in A:
+        if i == 'h':
+            continue
+        else:
+            output_A.append(i)
+            tup_var_A = tuple(output_A)
+    print("After remove an item in tuple: ", tup_var_A)
+
+elif ch ==20:
+    '''
+    20). Python tuple program to slice a tuple.
+Input:
+A=(5,7,3,4,9,0,2)
+Output:
+(5,7,3)
+(3,4,9)
+    '''
+    A_var_20 = (5, 7, 3, 4, 9, 0, 2)
+    print(A_var_20[0:3])
+    print(A_var_20[2:5])

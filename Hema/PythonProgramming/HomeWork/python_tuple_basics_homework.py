@@ -41,11 +41,11 @@ ip=(1,3,1,4,1,5,3,6,3,7,3,4,6,4)
 op=[5,6,7]
 
 '''
-ip_3=(1,3,1,4,1,5,3,6,3,7,3,4,6,4)
-ip_3_1=(5,6,7)
-op_3=[]
-rem_val_3=[]
-op_3_1=[]
+#ip_3=(1,3,1,4,1,5,3,6,3,7,3,4,6,4)
+#ip_3_1=(5,6,7)
+#op_3=[]
+#rem_val_3=[]
+#op_3_1=[]
 # count=0
 # for i in range(len(ip_3)):
 #     #print((ip_3.count(i)))
@@ -73,25 +73,36 @@ op_3_1=[]
 #             rem_val_3.append(ip_3[i])
 
 #print(rem_val_3)
-
+#Not works
 #solution 2:
 
-for i in ip_3:
-    if i in ip_3_1:
-        op_3_1.append(i)
-    else:
-        continue
-print(op_3_1)
+# for i in ip_3:
+#     if i in ip_3_1:
+#         op_3_1.append(i)
+#     else:
+#         continue
+# print(op_3_1)
 
 #solution 3:
 # count = 0
-for i in range(len(ip_3)):
-    if ip_3.count(ip_3[i]) <=2:
-        if ip_3[i] not in ip_3_1:
-            op_3_1.append(ip_3[i])
-            #count = count +1
-        else:
-            rem_val_3.append(ip_3[i])
+ip_3=(1,3,1,4,1,5,3,6,3,7,3,4,6,4)
+
+rem_val_3=[]
+op_3_1=[]
+
+# for i in range(len(ip_3)):
+#     if ip_3.count(ip_3[i]) <=2:
+#         if ip_3[i] not in ip_3_1:
+#             op_3_1.append(ip_3[i])
+#         else:
+#             rem_val_3.append(ip_3[i])
+
+for i in ip_3:
+    if ip_3.count(i) <=2 and i not in op_3_1:
+        op_3_1.append(i)
+    else:
+        rem_val_3.append(i)
 
 print(rem_val_3)
+print(op_3_1)
 #print(ip_3)

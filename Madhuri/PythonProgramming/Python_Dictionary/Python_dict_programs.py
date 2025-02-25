@@ -107,6 +107,16 @@ fruits_details = {'Banana': [10, 100], 'watermelon': [60, 500], 'mango': [70, 25
 
 fruit_purchase = {'Apple': 5, 'Banana': 10, 'watermelon': 15, 'mango': 25}
 
+print("_"*50)
 
+total_bill=0
+
+for fruit, quant in fruit_purchase.items():
+    fruit_charges = quant*fruits_details[fruit][0]
+    total_bill= total_bill + fruit_charges
+    fruits_details[fruit][1]=fruits_details[fruit][1]-quant
+
+print(fruits_details)
+print(total_bill)
 
 
