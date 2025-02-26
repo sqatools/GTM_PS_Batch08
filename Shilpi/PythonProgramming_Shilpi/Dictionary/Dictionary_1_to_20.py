@@ -82,7 +82,7 @@ print("_"*100)
 
 ##################################QUESTION#################################################################
 print("6). Python Dictionary Program to create a dictionary from two lists.")
-#Please explain wesite solution and check my 2 approaches
+#Please explain website solution and check my 2 approaches
 # Input :
 # list1 = ['a', 'b', 'c', 'd', 'e']|
 # list2 = [12, 23, 24, 25, 15, 16]
@@ -265,7 +265,13 @@ for x in range(-1,-len(l2)-1,-1):
 print(l1)
 print(l3)
 dict15_1=dict(zip(l1,l3))
-print(dict15_1)
+print("Long method",dict15_1)
+#Since there are only 2 values we can do it simple by
+dict15_4={'name':'yash','city':'pune'}
+dict15_5={}
+dict15_5['name']=dict15_4['city']
+dict15_5['city']=dict15_4['name']
+print("Short straight forward method",dict15_5)
 
 print("15). Python Dictionary program to swap the values with the keys in the dictionary.")
 #Input = {name:’yash’, city: "pune’}
@@ -330,3 +336,13 @@ OutputDict={}
 for x in range(1,num+1):
     OutputDict[x]=x**3
 print(OutputDict)
+print("_"*100)
+#############################################################################################################
+print("21). Python Dictionary program to insert a key at the beginning of the dictionary.")
+# Input = { ‘course’ : ’python’,  ‘institute’ : ’sqatools’ }
+# Insert : ( ‘name’ : ’omkar’ )
+# Output= { ‘name’ : ’omkar’, ‘course’ : ’python’, ‘institute’ : ’sqatools’}
+dict21={'course': 'python','institute':'sqatools'}
+dict21_1={'name':'omkar'}
+dict21_1.update(dict21)
+print(dict21_1)
