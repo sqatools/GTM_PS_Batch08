@@ -223,7 +223,7 @@ print(A)
 #items. is that acceptable?
 A = [[('sqa', 4)], [('tools', 8)],[('shilpi', 3)]]
 #[[('sqa', 4, 3)], [('tools', 8, 6)], [('shilpi', 3,4)],[(5)]]
-B = (3,6)
+B = (3,6,4,5)
 #len(A)=len(B)
 l1=[]
 

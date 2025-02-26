@@ -1,5 +1,3 @@
-#21st Feb'25
-
 set1 = {3, 5, 7, 'Hello'}
 print(set1, type(set1))
 # {5, 3, 'Hello', 7} <class 'set'>
@@ -185,9 +183,7 @@ set_12.intersection_update(set_11)
 print("set11 :", set_11)  # {'b', 'c', 'a'}
 print("set_12:", set_12)  # {'r', 's', 'q', 'b', 'p', 'c', 'a'}
 
-#24th Feb2025
-print("*"*50)
-
+print("_" * 50)
 ######################
 # difference method() : This method return set of difference value from set1 to set2.
 set_13 = {'a', 'b', 'c', 'd', 'e', 'f', 3, 5}

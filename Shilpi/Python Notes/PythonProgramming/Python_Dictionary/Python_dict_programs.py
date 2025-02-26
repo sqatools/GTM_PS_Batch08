@@ -118,5 +118,3 @@ for fruit, quant in fruit_purchase.items():
 
 print(fruits_details)
 print(total_bill)
-
-
