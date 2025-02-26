@@ -38,15 +38,25 @@ print(f"The maximum value from the set is {Fore.BLUE}{max_val}{Style.RESET_ALL} 
 
 print("_" * 40)
 print("Get All the Subsets of a Given Size in a Set")
+set1 = {15, 25, 2, 10, 11, 55}
+set2 = {2,10,11}
 
+set3 = set1.issuperset(set2)
+print("Set1 is superset of Set2: ",set3)
 
 print("_" * 40)
 print("Determine if Two Sets Are Disjoint or Not Without In-built Methods")
+set1 = {15, 25, 2, 10, 11, 55}
+set2 = {12,19,31,45}
+set3 = set1.isdisjoint(set2)  #Return True if two sets have a null intersection.
 
+print("Set1 and Set2 are disjoints: ", set3)
 
 print("_" * 40)
 print("Remove the Given Items of a Set at Once")
-
+set1 = {15, 25, 2, 10, 11, 55}
+set3 = set1.clear()  #clear method remove all the data from set and remain empty set
+print(set3)
 
 print("_" * 40)
 print("Count Number of Vowels in a Given String Using Sets")
@@ -59,7 +69,7 @@ count = 0
 #         count +=1
 
 for string in StringA:
-    if string in String_Vol:
+    if string in String_Vol and string.isalpha():
         count +=1
 print(f"The count of vowels in StringA is {count}")
 
