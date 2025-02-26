@@ -217,32 +217,62 @@ print("-" * 50)
         chr(65) = ‘A’
         A-Z ASCII Range  65-90
         a-z ASCII Range  97-122
+"""
+for i in range(65,91):
+    print(chr(i),end=" ")
+print()
+
+for i in range(97,123):
+    print(chr(i),end=" ")
+print()
 print("-" * 50)
+"""
 14). Python Loops program to print all even numbers between 1 to 100 in python.
-
-print("-" * 50)
 15). Python Loops program to print all odd numbers between 1 to 100 using python.
+"""
+even_nums = []
+odd_nums = []
+for i in range(1, 100):
+    if i % 2 == 0:
+        even_nums.append(i)
+    else:
+        odd_nums.append(i)
+
+print(even_nums)
+print(odd_nums)
 
 print("-" * 50)
+
+"""
 16). Python Loops program to find the sum of all natural numbers between 1 to n using python.
-
+"""
+n = 20
+for i in range(1, n+1):
+    print(i, end=" ")
+print()
 print("-" * 50)
+"""
 17). Python program to find the sum of all even numbers between 1 to n using python.
+"""
 
 print("-" * 50)
+"""
 18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
-
+"""
 print("-" * 50)
-
+"""
 19). Write a program to count the number of digits in a number using  python.
-
+"""
 print("-" * 50)
+"""
 20). Write a program to find the first and last digits of a number using python.
-
+"""
 print("-" * 50)
+"""
 21). Write a program to find the sum of the first and last digits of a number using python.
-
+"""
 print("-" * 50)
+"""
 22). Write a program to calculate the sum of digits of a number using python.
 """
 n = 2345
