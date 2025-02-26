@@ -61,3 +61,20 @@ print(output)
 result = [tuple(list(l1[i]) + list(l1[j][1:])) for i in range(len(l1)) for j in range(i+1, len(l1)) if l1[i][0] == l1[j][0]]
 
 print("result :", result)
+
+########################################
+# program to check data type each value
+print("_"*50)
+list1 = [3, 3.5, 'Hello', [5, 6, 7], (1, 3, 5)]
+for val in list1:
+    if isinstance(val, int):
+        print("data type :int, ", val)
+    elif isinstance(val, str):
+        print("data type :string, ", val)
+    elif isinstance(val, float):
+        print("data type :float, ", val)
+    elif isinstance(val, list):
+        print("data type :list, ", val)
+    elif isinstance(val, tuple):
+        print("data type :tuple, ", val)
+
