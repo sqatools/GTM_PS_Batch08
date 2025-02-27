@@ -254,10 +254,15 @@ elif ch==15:
     '''
     15). Python Dictionary program to swap the values of the keys in the dictionary.
 Input = {name:’yash’, city: ‘pune’}
-Output = {name:’pune’, city: ‘yash’}
+wrong_Output = {name:’pune’, city: ‘yash’}
+o/p{'yash': 'name', 'pune': 'city'}
     '''
     #doubt:
     inp_var_15 = {'name':'yash', 'city': 'pune'}
+    out_var_15 = {}
+    for k,v in inp_var_15.items():
+        out_var_15[v]=k
+    print(out_var_15)
 
 elif ch ==16:
     '''
