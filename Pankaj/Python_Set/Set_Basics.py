@@ -138,20 +138,88 @@ print(common_value)
 # {2, 3, 4, 5, 6, 7, 8, 9}
 
 print("_"*70)
-# 8.intersatcion_update method: this method modify anyone original set with command value between two sets.
+# 8.intersection_update method: this method modify anyone original set with common value between two sets.
 
 set_n.intersection_update(set_o)
 print(set_n) # {8, 9, 5, 6}
 print(set_o) # {1, 5, 6, 7.7, 8, 9}
 
+print("_"*70)
+# 9. difference method: this method return set of difference value in sets
+set_1 = {'a', 'b', 'c', 'd', 'e', 'f', 'g'}
+set_2 = {'c', 'd', 'e', 'f', 'g', 'h', 'i'}
+value1 = set_2.difference(set_1)
+value2 = set_1.difference(set_2)
+print(value1) # {'i', 'h'}
+
+print(value2) # {'a', 'b'}
+
+print("_"*70)
+# 10. difference_update method(): this method update the target set with difference output
+set_11 = {1, 2, 3, 4}
+set_22 = {4, 5, 6, 7}
+set_11.difference_update(set_22)
+print(set_11)
+print(set_22)
+
+print("_"*70)
+# 11. Symmetric_Update(): this method will return the difference value from both the sets
+set_33 = {1, 2, 3, 4}
+set_44 = {4, 5, 6, 7}
+value3 = set_33.symmetric_difference(set_44)
+print(value3)
+
+print("_"*70)
+# 12. Symmetric_difference_update(): method is a built-in method in Python for sets. It updates a set by removing
+# elements found in it that are also present in another set and adding the elements that are in the other set but
+# not in it. In other words, it modifies the original set to be the symmetric difference of the two sets.
+set_55 = {1, 2, 3, 'a', 'b', 'c'}
+set_66 = {3, 4, 5, 'e', 'f', 'g'}
+set_66.symmetric_difference_update(set_55)
+print(set_66)
+
+print("_"*70)
+# 13. superset and subset method : The issuperset() and issubset() methods are used to check if one set is a superset
+# or subset of another set in Python. These methods return True or False based on the relationship between the two sets.
+
+set_55 = {1, 2, 3, 'a', 'b', 'c'}
+set_66 = {3, 4, 5, 'b', 'c', 'g'}
+set_77 = {'b', 'c', 'g'}
+print(set_77.issuperset(set_66))# False
+print(set_77.issubset(set_66))# True
+print(set_66.issuperset(set_77))# True
+print(set_77.issubset(set_55)) #False
 
 
 
+print("_"*70)
+# 14. isdisjoint method: it checks both sets are different to each other.
+set_88 = {3, 4, 5, 'b', 'c', 'g'}
+set_99 = {'b', 'c', 'g'}
+set_100 = {'f', 'k', 'l'}
+
+print(set_99.isdisjoint(set_88)) # False
+print(set_100.isdisjoint(set_99)) # True
 
 
+print("_"*70)
+# 15. copy method: this method is used to copy one set to another set
+# Shallow copy
+set_111 = {3, 4, 5}
+set_222 = set_111
+set_111.add(100)
+set_222.add(200)
+print(set_111)
+print(set_222)
+#{3, 100, 4, 5, 200}
+#{3, 100, 4, 5, 200}
 
-
-
+# Deep copy
+set_333 = {3, 4, 5}
+set_444 = set_333.copy()
+set_444.add(500)
+print(set_333)# {3, 4, 5}
+print(set_444)# {500, 3, 4, 5}
 
 
 

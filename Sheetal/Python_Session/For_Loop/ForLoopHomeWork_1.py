@@ -389,14 +389,44 @@ print(Fore.GREEN +"Write a program to construct the following pattern, using a n
 print("_"*40)
 #Program 28
 print(Fore.GREEN +"Write a program to check the validity of password input by users using Python Loops"+ Style.RESET_ALL)
-# At least 1 letter between [a-z] and 1 letter between [A-Z].
-# At least 1 number between [0-9].
-# At least 1 character from [$#@].
-# Minimum length 5 characters.
-# Maximum length 15 characters.
-# Input = Abc@1234
-# Output = Valid password
 
+print("""At least 1 letter between [a-z] and 1 letter between [A-Z].
+At least 1 number between [0-9].
+At least 1 character from [$#@].
+Minimum length 5 characters.
+Maximum length 15 characters.""")
+
+Input = "Abcd@1234"
+# Input = "A@1"
+# Output = Valid password
+import string
+from colorama import *
+Output = ""
+
+count_lower = count_upper = count_special = count_number = 0
+if 5 <= len(Input) <=15:
+    for char in Input:
+        if char.isalpha() or char.isnumeric() or char in ("$#@"):
+            if char.isalpha() and char in (string.ascii_lowercase):
+                Output += char
+                count_lower +=1
+            if char.isalpha() and char in (string.ascii_uppercase):
+                Output += char
+                count_upper +=1
+            if char.isnumeric() and char in string.digits:
+                Output +=char
+                count_number +=1
+            if char in ("@#$"):
+                Output += char
+                count_special +=1
+
+    if count_lower >0 and count_special > 0 and count_upper >0 and count_number >0:
+        print(f"The output of the string {Fore.BLUE }{Output} {Style.RESET_ALL}is a valid password")
+    else:
+        print(f"The password entered {Fore.BLUE}{Output} {Style.RESET_ALL} is wrong. It must contain given parameter")
+else:
+    Output = Input
+    print(f"Please check the length of your entered password {Fore.BLUE }{Output} {Style.RESET_ALL} which should be between 5 to 15")
 
 print("_"*40)
 #Program 29
