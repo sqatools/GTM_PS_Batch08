@@ -143,14 +143,49 @@ set3 = set2.difference(set1)
 set5 = set1.difference(set2)
 
 
-print(list(set3),"The difference")
-print(list(set5),"The difference")
+print(f"Values in l2 but not in l1 {list(set3)}")
+print(f"Values in l2 but not in l1 {list(set5)}")
 
 set4 = set1.intersection(set2)
 
-print(list(set4), " The common values")
+print("The common values between two list {list(set4)}")
 
-print(set1.symmetric_difference(set2))
+print(f"Unique values in either list {set1.symmetric_difference(set2)}")
+
+print("_" * 40)
+print("WAPP to remove all duplicate vowels from given string")
+str1 = "Hello We Are Learning Python"
+vowels = "aeiouAEIOU"
+output =("")
+
+for char in str1:
+    if char in vowels and char not in output:
+        output +=char
+    elif char not in vowels:
+        output +=char
+    else:
+        continue
+print(f"The final removed duplicate vowels from string is {output}")
+
+
+print("_"*40)
+print("WAPP to remove all vowels from given string")
+str1 = "Hello We Are Learning Python"
+vowels = "aeiouAEIOU"
+output =("")
+
+for char in str1:
+    if char in vowels and char in output:
+        output = output
+    elif char not in vowels and char not in output:
+        output +=char
+    elif char not in vowels and char in output:
+        output += char
+    else:
+        continue
+print(f"The final removed vowels from string is {output}")
+
+
 
 print("_" * 40)
 print("WAPP to remove all the duplicate value from given dictionary values")
@@ -173,4 +208,22 @@ for key,val in dict1.items():
 print(f"After removing the duplicates the dictionary value is \n {dict1}")
 
 print("_"*40)
+
+import shlex
 print("Check if a Given String Is Heterogram or Not")
+
+actual_string = "Python Programming 'The quick brown fox' hello"
+
+string1 = shlex.split(actual_string)
+for word in string1:
+    processed_word = "".join(char.lower() for char in word if char.isalpha())
+    char_set = set(processed_word)
+
+    if len(char_set) == len(processed_word):
+        result = "Heterogram"
+    else:
+        result = "Not a Heterogram"
+    print(f"The word {word} is: ",result)
+
+# split() → Breaks everything at spaces, including inside quotes.
+# shlex.split() → Preserves quoted phrases as single elements.

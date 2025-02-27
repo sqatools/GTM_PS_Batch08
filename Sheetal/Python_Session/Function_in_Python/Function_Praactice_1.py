@@ -4,13 +4,10 @@ def function_name():
 
 function_name()  #call function to pass values
 """
-from Uttara.Homework.SQA_Strngprogrm import vowel
-
 # Homework
 
 print("1. WAPF to get max value from list")
 def maximum_fun(l1):
-    max_num = l1[0]
     for num in l1:
         if num > max_num:
             max_num = num
@@ -36,7 +33,7 @@ print(f"The Factorial of number is {fact_of_num}")
 
 print("_"*40)
 print("3. WAPF to calculate the number of consonants in given string.")
-str1= "Hello We are Learning Python" # output = 16
+str1= "Hello We are Learning Python" # output = 15
 
 def const_alp(str2,count_c):
     vowel = ("aeiouAEIOU")
@@ -54,3 +51,4 @@ const_print, count_const = const_alp(str1, 0)
 print(f"The final string is {const_print} and the count of the consonants are {count_const}")
 
 
+print("Python function program to get a valid mobile number.")
