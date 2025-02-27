@@ -1,5 +1,4 @@
 ## Write a Python Program to print value which are divisible by 5 and 7 from 1 to 50
-from selenium.webdriver.common.devtools.v85.fetch import continue_request
 
 for i in range(1, 51):
     if i%5 == 0 and i%7 == 0:

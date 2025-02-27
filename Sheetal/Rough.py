@@ -75,8 +75,7 @@
 # #         if str1[i] == str1[j]:
 # #             print(f"({str1[i]},{str1.index(str1[i])})")
 # #     break
-
-
+from Uttara.Homework.SQA_Strngprogrm import str11
 
 print("Q5: write a python to calculate total bill and update the inventory from given")
 # {'FruitName': [price, inventory]}
@@ -93,3 +92,50 @@ for fruit,quant in fruit_purchase.items():
     fruits_details[fruit][1] = fruits_details[fruit][1] - quant
 for fruit, details in fruits_details.items():
     print({f"{fruit} : {details[1]}"})
+
+
+print(dir(set))
+print("WAP to remove all duplicate vowels from the string")
+srt11 = "Hello we are Learning Python"
+set_vol = "aeiouAEIOU"
+set3 = ""
+set4 = ""
+
+for vowel in srt11:
+    if vowel in set_vol and vowel not in set3:
+        set3 = set3 + vowel
+    elif vowel not in set_vol:
+        set4 = set4 + vowel
+    else:
+        continue
+
+print(set4)
+output = ''
+for char in str1:
+    if (char in vowels ) and (char not in output):
+        output += char
+    elif char not in vowels:
+        output += char
+    else:
+        continue
+
+print("output :", output)
+# Hello w ar lrning Pythn
+
+print("WAPP to find the difference and common values between the list")
+l1 = [1,2,3]
+l2 = [4,2,5]
+
+set1 = set(l1)
+set2 = set(l2)
+
+set3 = set2.difference(set1)
+set5 = set1.difference(set2)
+
+
+print(list(set3),"The difference")
+print(list(set5),"The difference")
+
+set4 = set1.intersection(set2)
+
+print(list(set4), " The common values")

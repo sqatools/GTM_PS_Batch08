@@ -48,17 +48,18 @@ for val4 in t3:
         result_list[val4] +=1
     else:
         result_list[val4] = 1
-for val4,count1 in result_list.items():
-    if count1 >2:
-        final_list.append(val4)
 
+for val5,count1 in result_list.items():
+    if count1 >2:
+        final_list.append(val5)
+
+print(f"The actual count of each number from the list is {result_list}")
 print("The repeated values more than 2 are: ",final_list)
 
 print("_"*40)
 t3 = (1, 3, 1, 4, 1, 5, 6, 3, 6, 3, 7, 3, 4, 4)
 final_list = []
 
-# Check each unique value in t3
 for val4 in t3:
     if t3.count(val4) > 2 and val4 not in final_list:
         final_list.append(val4)
@@ -74,8 +75,7 @@ list2 = [7, 1, 4]
 
 tup7 =tuple(zip(list1,list2))
 
-print(tuple(tup7))
-
+print(tup7)
 print("_"*40)
 
 
