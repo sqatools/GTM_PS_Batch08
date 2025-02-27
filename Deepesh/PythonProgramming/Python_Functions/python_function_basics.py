@@ -263,7 +263,6 @@ list1 = [
     {'name':'rohit', 'surname': 'verma', 'age':20, 'email':'rohit@gmail.com'},
     {'name':'dharmendra', 'surname': 'sahu', 'age':25, 'email':'dharmendra@gmail.com'},
     {'name':'shilpi', 'surname': 'sharma', 'age':30, 'email':'shilpi@gmail.com'}
-
 ]
 
 print(list1)
