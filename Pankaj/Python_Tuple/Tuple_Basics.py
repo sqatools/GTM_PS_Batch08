@@ -84,6 +84,24 @@ for i in range(len(tup8)):
 
 print("_"*50)
 ####################################
-tup_a = (4, 7, 1, 8, 22, 6, 17)
-# get sorted value from tuple
+tup_9 = (4, 7, 1, 8, 22, 6, 17)
+############################ get sorted value from tuple ###############################
+value1 = tuple(sorted(tup_9))
+print(value1)
 
+################################# get reverse value #################################
+tup_10 = (4, 7, 1, 8, 22, 6, 17)
+value2 = tuple(reversed(tup_10))
+print(value2)
+
+################################ tuple comprehension ###########################
+print("_"*70)
+
+tup11 = (3, 2, 1, 11, 99, 22, 33, 44)
+result1 = (x**2 for x in tup11)
+print(tuple(result1))  # (9, 4, 1, 121, 9801, 484, 1089, 1936)
+
+tup12 = (3, 2, 1, 11, 99, 22, 33, 44)
+result2 = (['even: ', x] if x%2 == 0 else ['odd:', x] for x in tup11)
+print(tuple(result2))
+# (['odd:', 3], ['even: ', 2], ['odd:', 1], ['odd:', 11], ['odd:', 99], ['even: ', 22], ['odd:', 33], ['even: ', 44])
