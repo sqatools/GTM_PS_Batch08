@@ -29,4 +29,42 @@ dict1 = {'a' : [3, 5, 7, 3, 7, 8],
          'b' : 'Programming',
          'c' : (4, 7, 9, 11, 5, 7, 11, 77, 88, 11),
          'd' : [True, False, True, False]}
+out_var_3 =[]
+out_3 =[]
+out_var = {}
 
+# for v in dict1.values():
+#     out_var_3.append(v)
+#     for i in range(len(out_var_3)):
+#         for j in range(i+1, len(out_var_3)):
+#             #print(out_var_3[i])
+#             #print(out_var_3[j])
+#             if out_var_3[i][0] not in out_3 :
+#                 out_3.append(out_var_3[i])
+#             else:
+#                 continue
+
+for k,v in dict1.items():
+    # for value in v:
+        #print(value)
+    if type(v) == list:
+        for value in range(len(v)):
+            #print(value)
+            if v[value] not in out_var_3:
+                out_var_3.append(v[value])
+        out_var[k] = out_var_3
+
+    elif type(v) == str:
+        for ch in range(len(v)):
+            #print(ch)
+            if v[ch] not in out_var_3:
+                out_var_3.append(v[ch])
+                #print(out_var_3)
+        out_var[k]=''.join(out_var_3)
+
+
+    else:
+        out_var_3[k]=v
+#print(out_var_3)
+#print(out_3)
+print(out_var)
