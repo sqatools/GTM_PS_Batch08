@@ -62,6 +62,8 @@ result = [tuple(list(l1[i]) + list(l1[j][1:])) for i in range(len(l1)) for j in 
 
 print("result :", result)
 
+
+"""
 ########################################
 # program to check data type each value
 print("_"*50)
@@ -77,4 +79,4 @@ for val in list1:
         print("data type :list, ", val)
     elif isinstance(val, tuple):
         print("data type :tuple, ", val)
-
+"""
