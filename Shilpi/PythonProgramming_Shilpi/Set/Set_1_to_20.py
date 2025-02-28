@@ -1,3 +1,5 @@
+# Check with sir for 14 max value third way.
+
 print("1). Python program to create a set with some elements.")
 set1={2,3,5,6,8,9,0,23}
 print(set1,type(set1))
@@ -68,4 +70,70 @@ set9=set7.symmetric_difference(set7_1)
 print("The symmetric difference",set9)
 print("_"*100)
 ##############################################################################################
+print("10). Python program to show if one set is a subset of another set.")
+set10_1={2,4,6,8,10,12,14}
+set10_2={2,4,6}
+set10_3={2,3,4}
+print("Subset:",set10_2.issubset(set10_1))#True
+print("Subset:",set10_3.issubset(set10_1))#False
+print("_"*100)
+##############################################################################################
+print("11). Python program to check if two sets are disjoint.")
+set10_1={2,4,6,8,10,12,14}
+set11_1={100,101,102}
+set11_2={2,3,4}
+print("Disjoint: ",set11_1.isdisjoint(set10_1))#True
+print("Disjoint: ",set11_2.isdisjoint(set10_1))#False
+print("_"*100)
+##################################################################################################
+print("12). Python program to convert a list to a set.")
+l1=[2,3,4,5,6,2,4]
+print("List: ",l1)
+set12=set(l1)
+print("List converted to set:",set12)
+print("_"*100)
+###################################################################################################
+print("13). Python program to convert a set to a list.")
+set12_1={2, 3, 4, 5, 6}
+print(set12_1)
+l1=list(set12_1)
+print("set converted to list: ",l1)
+print("_"*100)
+###################################################################################################
+print("14). Python program to find the maximum element in a set.")
+set14={2,3,8,9,10,101}
+mxval=0
+for val in set14:
+    if val>mxval:
+        mxval=val
+print("The maximum value using logic is: ",mxval)
+
+set14={2,3,8,9,10,101}
+maxval=max(set14)
+print("The maximum value using max function in the set is:",maxval)
+
+#By logic
+set14={2,3,8,9,10,101}
+l2=list(set14)
+maxval1=0
+for x in range(len(l2)):
+    if l2[x]>maxval1:
+        maxval1=l2[x]
+print("Tha maximum value by list and logic is:",maxval1)
+
+#Another method
+set14={2,3,8,9,10,101}
+l2=list(set14)
+l2.sort()
+print("Tha maximum value by using sort list method: ", l2[len(l2)-1])
+print("_"*100)
+
+
+########################################################################################################
+print("15). Python program to find the minimum element in a set.")
+
+
+
+
+
 
