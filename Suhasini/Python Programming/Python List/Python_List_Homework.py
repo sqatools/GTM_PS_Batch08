@@ -295,6 +295,92 @@ print(result2)
 print("_"*70)
 
 
+# 21. Python program to remove data from the list from a specific index using the pop method.
+print("21. Program to remove data from the list from a specific index using the pop method")
+list21 = [2, 4, 1, 78, 34, 56, 99, 23, 21, 10]
+
+print("Popping element from 5th position:")
+list21.pop(5)
+print("list after popping 5th element out is: ")
+print(list21)
+print("_"*70)
+
+
+# 22. Python program to get the max, min, and sum of the list using in-built functions
+print("22. Program to get the max, min, and sum of the list using in-built functions")
+
+list22 = [2, 4, 1, 78, 34, 56, 99, 23, 21, 10]
+
+print("Max of the list is: ",max(list22))
+print("Minimum of the list is: ",min(list22))
+#print("Sum of the list is: ",sum(list22))
+print("_"*70)
+
+
+# 23. Python program to check whether a list contains a sublist.
+print("23.Program to check whether a list contains a sublist.")
+
+list23 = [2, 4, 1, 78, 34, 56, 99, 23, 21, 10]
+listA = [34, 4]
+count = 0
+
+for val in list23:
+    for element in listA:
+        if val == element:
+            count += 1
+
+if count == len(listA):
+    print("The list contains a sublist")
+else:
+    print("The list does not contain sublist")
+print("_"*70)
+
+
+# 24. Python program to find the second largest number from the list.
+print("24.Program to find the second largest number from the list")
+
+list23 = [2, 4, 1, 78, 34, 56, 99, 23, 21, 10]
+list23.sort()
+print(list23)
+print("The second largest number is: ",list23[-2])
+print("The second smallest number is: ",list23[1])
+print("_"*70)
+
+
+# 25. Python program to reverse each element of the list.
+# Input = [‘Sqa’, ‘Tools’, ‘Online’, ‘Learning’, ‘Platform’]
+# output = [‘aqS’, ‘slooT’, ‘enilno’, ‘gninraeL’, ‘mroftalP’]
+
+list1 = ['Sqa', 'Tools', 'Online', 'Learning', 'Platform']
+list2 = []
+
+for val in list1:
+    list2.append(val[::-1])
+
+print("List after reversing each element of the list: ")
+print(list2)
+print("_"*70)
+
+
+# 26. Python program to combine two list elements as a sublist in a list.
+# list1 = [3, 5, 7, 8, 9]
+# list2 = [1, 4, 3, 6, 2]
+# Output = [[3, 1], [5, 4], [7, 3], [8, 6], [9, 2]]
+
+list1 = [3, 5, 7, 8, 9]
+list2 = [1, 4, 3, 6, 2]
+list3 = []
+output = []
+
+for i in range (len(list1)):
+    for j in range (len(list2)):
+        if i == j:
+            list3 = list1[i],list2[j]
+            output.append(list3)
+print(output)
+
+
+
 
 
 

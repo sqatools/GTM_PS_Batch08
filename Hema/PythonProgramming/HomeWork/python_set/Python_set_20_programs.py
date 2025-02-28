@@ -46,7 +46,6 @@ elif ch==5:
 
 '''
 
-
 '''
 6). Python program to find the union of two sets.
 
@@ -183,3 +182,31 @@ Solution
 51). Python program to find the longest word in a set.
 
 '''
+
+
+# def fact(n):
+#         result =1
+#         for val in range(2,n+1):
+#             if val==1:
+#                 result= 1
+#             elif val>1:
+#                 result= result * val
+#             else:
+#                 print(f"invalid")
+#         return result
+#
+#     result1 = fact(5)
+#     print(result1)
+#
+#     def cal_num_consonants():
+#         str1 = 'Hello We Are Learning Python'
+#         vowel = ('a','e','i','o','u')
+#         consonant =''
+#         for i in str1:
+#             if i in vowel:
+#                 continue
+#             else:
+#                 consonant +=i
+#         print(len(consonant))
+#
+#     cal_num_consonants()
