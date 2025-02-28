@@ -6,8 +6,10 @@ function_name()  #call function to pass values
 """
 # Homework
 
+
 print("1. WAPF to get max value from list")
 def maximum_fun(l1):
+    max_num =l1[0]
     for num in l1:
         if num > max_num:
             max_num = num
@@ -51,4 +53,40 @@ const_print, count_const = const_alp(str1, 0)
 print(f"The final string is {const_print} and the count of the consonants are {count_const}")
 
 
-print("Python function program to get a valid mobile number.")
+# print("Python function program to get a valid mobile number.")
+
+print("_"*40)
+"""
+write a python program update the user entry in the data base using *kwargs
+->  we have company data, here we have to add 10 new member details in database
+->  create a function which accept the users details using kwargs
+->  add kwargs values to list
+->  accept all the values using input 
+"""
+
+list1 = []
+def emp_detail(*kargs):
+    emp = {}
+    emp['name'] = input("Enter emp first name: ")
+    emp['surname'] = input("Enter emp last name: ")
+    emp['age'] = input("Enter age of emp: ")
+    emp['email'] = input("Enter email of emp: ")
+
+    list1.append(emp)
+
+for i in range(10):
+    print(f"\nEnter details for Employee {i+1}:")
+    emp_detail()
+
+print("\nUpdated Employee Database:")
+for emp in list1:
+    print(emp,"\n")
+
+
+# list1 = [
+#     {'name':'rohit', 'surname': 'verma', 'age':20, 'email':'rohit@gmail.com'},
+#     {'name':'dharmendra', 'surname': 'sahu', 'age':25, 'email':'dharmendra@gmail.com'},
+#     {'name':'shilpi', 'surname': 'sharma', 'age':30, 'email':'shilpi@gmail.com'}
+# ]
+
+# print(list1)
