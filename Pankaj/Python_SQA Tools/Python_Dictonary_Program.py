@@ -1,3 +1,12 @@
+# 1). Python Dictionary program to add elements to the dictionary.
+dict1 = {}
+dict1["Name"] = "Pankaj"
+dict1["Sarname"] = "Prasad"
+dict1["Age"] = 38
+print(dict1)
+
+print("_"*70)
+# 2). Python Dictionary program to print the square of all values in a dictionary.
 print("_" * 70)
 # 1). Python Dictionary program to add elements to the dictionary.
 dict1 = {'a': "Pankaj", 'b': 77, 'c': 'D', 'e': 33.3, 'f': True}
