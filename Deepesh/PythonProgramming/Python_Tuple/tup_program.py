@@ -58,10 +58,10 @@ for i in range(len(l1)):
 
 print(output)
 
-result = [tuple(list(l1[i]) + list(l1[j][1:])) for i in range(len(l1)) for j in range(i+1, len(l1)) if l1[i][0] == l1[j][0]]
-
-print("result :", result)
-
+# result = [tuple(list(l1[i]) + list(l1[j][1:])) for i in range(len(l1)) for j in range(i+1, len(l1)) if l1[i][0] == l1[j][0]]
+#
+# print("result :", result)
+#
 
 """
 ########################################
@@ -80,3 +80,13 @@ for val in list1:
     elif isinstance(val, tuple):
         print("data type :tuple, ", val)
 """
+
+tup = (41, 15, 69, 55)
+max_val = 0
+for val in tup:
+    if val > max_val:
+        max_val = val
+    else:
+        continue
+
+print("max value :", max_val)
