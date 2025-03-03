@@ -147,7 +147,7 @@ print("_" * 70)
 # *args parameter accept n number of value while calling the function
 # it accepts value in form of tuple
 
-def get_sum_of_values(var1, *args):
+def get_sum_of_values(*args):
     sum1 = 0
     for val in args:
         sum1 += val
