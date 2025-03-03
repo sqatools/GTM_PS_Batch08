@@ -1,3 +1,5 @@
+import re
+
 print("_" * 70)
 # 1). Python string program to get a string made of 4 copies of the last two characters of a specified string
 # (length must be at least 2).
@@ -142,5 +144,83 @@ print(" ".join(list1))
 print("_" * 70)
 
 
-#14.
+#14. Write a Python program to get all the palindrome words from the string.
+#Input = “Python efe language aakaa hellolleh”
+#output = [“efe”, “aakaa”, “hellolleh”]
 
+str14 = "Python efe language aakaa hellolleh"
+List = str14.split(" ")
+new_list = []
+for val in List:
+    if val == val[::-1]:
+        new_list.append(val)
+print(new_list)
+
+
+# 15). Write a Python program to create a string with a given list of words.
+# Input = [“There”, “are”, “Many”, “Programming”, “Language”]
+# Output = There are many programming languages.
+
+list15 = ["There", "are", "Many", "Programming", "Language"]
+print(" ". join(list15))
+
+# 16).  Write a Python program to remove duplicate words from the string.
+# Input = “John jany sabi row john sabi”
+# output = “John jany sabi row”
+
+str16 = "john jany sabi row john sabi"
+list16 = str16.split(" ")
+list16_1 = []
+for val in list16:
+    if val not in list16_1:
+        list16_1.append(val)
+print(list16_1)
+
+# 17). Write a Python to remove unwanted characters from the given string.
+# Input = “Prog^ra*m#ming”
+# Output = “Programming”
+#
+# Input = “Py(th)#@&on Pro$*#gram”
+# Output = “PythonProgram”
+
+str17 = "Prog^ra*m#ming"
+cleared_string = re.sub(r'[^a-zA-Z0-9]', '', str17)
+print(cleared_string)
+
+str17 = "Py(th)#@&on Pro$*#gram"
+cleared_str = ''
+for char in str17:
+    if char.isalnum():
+        cleared_str += char
+
+print(cleared_str)
+
+#18). Write a Python program to find the longest capital letter word from the string.
+#Input = “Learning PYTHON programming is FUN”
+#Output = “PYTHON”
+str18 = "Learning PYTHON programming is FUN"
+word = re.findall(r"[A-Z]+", str18)
+print(max(word, key=len))
+
+
+#19). Write a Python program to get common words from strings.
+#Input String1 = “Very Good Morning, How are You”
+#Input String1 = “You are a Good student, keep it up”
+#Output = “You Good are”
+
+str18 = "Very Good Morning, How are You"
+str18_1 = "You are a Good student, keep it up"
+list18 =[]
+for word in str18.split(" "):
+    if word in str18_1.split(" "):
+        list18.append(word)
+print(" ".join(list18))
+
+#20).  Write a Python program to find the smallest and largest word in a given string.
+#Input = “Learning is a part of life and we strive”
+#Output = “a”, “Learning”
+
+str20 = "Learning is a part of life and we strive"
+list20 = str20.split(" ")
+print("Longest word: ", max(list20, key=len))
+print("Smallest word: ", min(list20, key=len))
