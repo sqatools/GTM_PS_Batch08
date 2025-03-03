@@ -140,5 +140,7 @@ for word in list1:
 print(" ".join(list1))
 
 print("_" * 70)
+
+
 #14.
 
