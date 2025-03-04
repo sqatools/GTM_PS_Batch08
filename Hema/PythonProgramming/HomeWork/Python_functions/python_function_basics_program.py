@@ -73,32 +73,38 @@ write a python program update the user entry in the data base using *kwargs
 ->  accept all the values using input
 """
 
-# def get_user_details(user_member_details,name,**kwargs):
-#     #user_member_details = []
-#     member_details ={}
-#     # for k,v in kwargs.items():
-#     #     member_details[k]=v
-#     # count=0
-#     # while count<num:
-#     #     count = count + 1
-#     for k,v in kwargs.items():
-#          user_member_details.append([k,v,])
-#
-#     print(user_member_details)
-#     dict_user_member_details = dict(user_member_details)
-#     print(dict_user_member_details)
-#
-# num=int(input('How many records you want to add: '))
-# #ch=input("Do you waant to enter records: ")
+user_member_details = []
+def get_user_details(**kwargs):
+    #user_member_details = []
+    #member_details ={}
+    # for k,v in kwargs.items():
+    #     member_details[k]=v
+    # count=0
+    # while count<num:
+    #     count = count + 1
+    # for k,v in kwargs.items():
+    #      user_member_details.append([k,v,])
+    user_member_details.append(kwargs)
+
+    # dict_user_member_details = dict(user_member_details)
+    # print(dict_user_member_details)
+
+num=int(input('How many records you want to add: '))
+#ch=input("Do you waant to enter records: ")
 # name = input("Enter username: ")
 # surname = input("Enter surname: ")
 # age = int(input('Enter age: '))
 # email = input("Enter mail id: ")
-#
+
 # user_member_details = []
-#
-# #while ch == 'y':
-# for _ in range(num):
-#     get_user_details(user_member_details = [],name,surname=surname,age_num=age,mail=email)
 
+#while ch == 'y':
+for i in range(num):
+    name = input("Enter username: ")
+    surname = input("Enter surname: ")
+    age = int(input('Enter age: '))
+    email = input("Enter mail id: ")
 
+    get_user_details(name=name,surname=surname,age_num=age,mail=email)
+
+print(user_member_details)

@@ -224,6 +224,24 @@ Output= (c, 1) (a,13) (d, 14) (b, 52)
     '''
     #Doubt
     inp_var_12 = {'d': 14, 'b': 52,  'a': 13, 'c': 1}
+    #temp = inp_var_12[0][1]
+    value = inp_var_12.items()
+    #print(type(value))
+    list_value = list(value)
+    print(list_value)
+    for i in range(len(list_value)):
+        min_index = i
+        #print(min_index)
+        for j in range(i+1, len(list_value)):
+            #print(list_value[j][1],",",list_value[min_index][1])
+            if list_value[j][1] < list_value[min_index][1]:
+                min_index = j
+                #print(min_index)
+        #print(list_value[i],",",list_value[min_index])
+        list_value[i],list_value[min_index] = list_value[min_index], list_value[i]
+        print(list_value[i], ",", list_value[min_index])
+    print(list_value)
+
 
 
 elif ch==13:
