@@ -1,4 +1,4 @@
-print ("*"*10,"Program to print O","*"*10)
+"""print ("*"*10,"Program to print O","*"*10)
 for row in range(0, 7):
         for column in range(0, 7):
             if (row == 0 or row == 6) and (1 < column < 5) :
@@ -15,4 +15,16 @@ for row in range(0, 7):
 unit = 155
 total_bill=0
 if unit<=100:
-    total_bill= total_bill+ unit*20
+    total_bill= total_bill+ unit*20"""
+
+
+def num():
+
+    a = 20
+    a = a + 10
+    print(a)
+
+
+a = 10
+num()
+print(a)
