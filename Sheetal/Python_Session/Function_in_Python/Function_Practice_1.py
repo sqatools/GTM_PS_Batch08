@@ -26,11 +26,11 @@ def fact_num(num):
     while num >0:
         fact_n = fact_n * num
         num = num-1
-    return fact_n
+    return fact_n,num
 
 fact_of_num = fact_num(5)
 
-print(f"The Factorial of number is {fact_of_num}")
+print(f"The Factorial of number is {fact_of_num} and the data type of", type(fact_of_num))
 
 
 print("_"*40)
@@ -42,6 +42,7 @@ def const_alp(str2,count_c):
     str3 = ""
     # count_const = 0
     for string1 in str2:
+        print(string1)
         if string1 not in vowel and string1.isalpha():
             str3 += string1
             count_c +=1
@@ -61,11 +62,11 @@ write a python program update the user entry in the data base using *kwargs
 ->  we have company data, here we have to add 10 new member details in database
 ->  create a function which accept the users details using kwargs
 ->  add kwargs values to list
-->  accept all the values using input 
+->  accept all the values using input
 """
 
 list1 = []
-def emp_detail(*kargs):
+def emp_detail(**kargs):
     emp = {}
     emp['name'] = input("Enter emp first name: ")
     emp['surname'] = input("Enter emp last name: ")
@@ -74,7 +75,7 @@ def emp_detail(*kargs):
 
     list1.append(emp)
 
-for i in range(10):
+for i in range(3):
     print(f"\nEnter details for Employee {i+1}:")
     emp_detail()
 
@@ -88,5 +89,42 @@ for emp in list1:
 #     {'name':'dharmendra', 'surname': 'sahu', 'age':25, 'email':'dharmendra@gmail.com'},
 #     {'name':'shilpi', 'surname': 'sharma', 'age':30, 'email':'shilpi@gmail.com'}
 # ]
-
+import re
 # print(list1)
+list1= []
+def emp_detail(**kargs):
+    list1.append(kargs)
+
+for i in range(3):
+    print(f"\nEnter details for Employee {i + 1}:")
+    while True:
+        name = input("Enter emp first name: ")
+        if name == "" or name[0].isnumeric():
+            print("First Name can't be blank or name can't start with number")
+        else:
+            break
+    surname = input("Enter emp last name: ")
+    while True:
+        age = input("Enter age of emp: ")
+        if age.isnumeric() and len(age) <= 2:
+            break
+        else:
+            print("Please enter correct age of length 2 or less and age shud accept number only")
+    while True:
+        email = input("Enter email of emp: ")
+        if ('@' in email and '.' in email and email.index('@') < email.rindex('.')
+            and re.search(r'[A-Za-z]', email) and
+        re.search(r'[0-9]', email)):
+            break
+        else:
+            print("Please enter correct email id -> It shud contain 'alp, number ,@ , . ' as a valid id")
+    emp_detail(name=name,lastname=surname,age=age,email=email)
+
+# print(list1,"\n")
+print("_"*40)
+print("\nUpdated Employee Database: [")
+
+for emp in list1:
+    print(emp)
+
+print("]")
