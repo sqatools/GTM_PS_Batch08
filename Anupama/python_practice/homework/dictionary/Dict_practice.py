@@ -104,3 +104,51 @@ dict1 = {1:'a',2:'b'}
 dict1.update({3:'c'})
 print(dict1)
 print("*"*50)
+
+#Check whether a key exists in the dictionary or not
+D1 = {'city':'pune','state':'maharashtra'}
+count = 0
+
+for key in D1.keys():
+    if key == "Country":
+        count += 1
+
+if count > 0:
+    print("Key exists")
+else:
+    print("Key does not exists")
+print("*"*50)
+
+#Python program to iterate over a dictionary
+D1 = {'food':'burger','type':'fast food'}
+
+for val in D1:
+    print(val,D1[val])
+print("*"*50)
+
+#Insert a key at the beginning of the dictionary
+dict1 = {'course':'python','institute':'sqatools' }
+dict2 = {'name':'omkar'}
+
+dict2.update(dict1)
+
+print(dict2)
+print("*"*50)
+
+#python program to create dictionary where keys are numbers and valurs are squares of keys
+dict1 = {}
+
+for i in range(1,6):
+    dict1[i] = i**2
+
+print(dict1)
+print("*"*50)
+
+#Find the product of all items in the dictionary
+dict1 =  {'a':2,'b':4,'c':5}
+result = 1
+
+for val in dict1.values():
+    result *= val
+
+print(result)
