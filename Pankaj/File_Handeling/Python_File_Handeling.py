@@ -12,18 +12,37 @@
 file = open(filepath, mode)
 """
 
+# import os
+# print("Current working directory:", os.getcwd())
+
+import os
+
+print("Full path to the file:", os.path.abspath("sample.txt"))
+
 
 # red content from file
 def read_file_content(filepath):
     file_obj = open(filepath, "r")
     data = file_obj.read()
+    print("Is file readable: ", file_obj.readable())  # Is file readable:  True
+    print("File Name: ", file_obj.name)  # File Name:  sample.txt
+    print("is file closed : ", file_obj.closed)
     print(data)
+    print("for closing file  : ", file_obj.close())
+    print("is file closed : ", file_obj.closed)
 
 
+read_file_content("sample.txt")
+
+
+# read_file_content("D:\\Python_Automation\\GTM_PS_Batch08\\Pankaj\\File_Handeling\\sample.txt")
+
+
+########## write content ###############
 def write_content_file(filepath, new_content):
-    file_obj = open(filepath, "w")
-    file_obj.write(new_content)
-    file_obj.close()
+    file = open(filepath, "w")
+    file.write(new_content)
+    file.close()
 
 
-write_content_file("Hello its done")
+write_content_file("sample.txt", "Adding new line to file")
