@@ -36,7 +36,7 @@ def read_file_content(filepath):
 # read_file_content("sample.txt")
 
 # ) way to call function if text file is outside the folder.
-read_file_content("C:\\Python Automation\\Python_Variables\\File_Handeling\\sample.txt")
+read_file_content("D:\\Python_Automation\\GTM_PS_Batch08\\Pankaj\\File_Handeling\\sample.txt")
 
 
 # Write content to the file with write mode.
