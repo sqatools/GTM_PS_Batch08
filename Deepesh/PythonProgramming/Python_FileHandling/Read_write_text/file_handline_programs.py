@@ -49,7 +49,7 @@ def replace_word_from_file(filepath, word1, word2):
     with open(filepath, "w") as file:
         file.write(updated_content)
 
-replace_word_from_file("read_data.txt", "Python", "JAVA")
+#replace_word_from_file("read_data.txt", "Python", "JAVA")
 
 
 #Q3 : Read content from file1 and file2 and add content to the file3.
