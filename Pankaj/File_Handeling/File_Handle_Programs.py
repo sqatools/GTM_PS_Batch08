@@ -28,4 +28,19 @@ emails, phones = read_email_phone("ReadData.txt")
 print("Emails: ", emails)
 # Emails:  ['user2@yahoo.com', 'user1@gmail.com', 'user2@facebook.com']
 print("Phone Number :", phones)
+
+
 # Phone Number : ['8845465644', '5445465644', '9954656447']
+
+
+# 2. Replace the specific word in file
+def word_replace(filepath, word1, word2):
+    with open(filepath, "r") as file:
+        file_data = file.read()
+
+    updated_content = file_data.replace(word1, word2)
+    with open(filepath, "w") as file:
+        file.write(updated_content)
+
+
+word_replace("ReadData.txt", "Python", "Java")
