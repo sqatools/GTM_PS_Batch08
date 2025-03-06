@@ -33,7 +33,8 @@ for a, b in zip( list1, list2 ):
     dict1[a] = b
 print( dict1 )
 
-# 7).  Python Dictionary program to store squares of even and cubes of odd numbers in a dictionary using dictionary comprehension.
+# 7).  Python Dictionary program to store squares of even and cubes of odd numbers in a dictionary using dictionary
+# comprehension.
 list1 = [4, 5, 6, 2, 1, 7, 11]
 dict1 = {val: pow( val, 2 ) if val % 2 == 0 else pow( val, 3 ) for val in list1}
 print( dict1 )
