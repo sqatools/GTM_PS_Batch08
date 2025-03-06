@@ -131,6 +131,82 @@ print("_"*100)
 
 ########################################################################################################
 print("15). Python program to find the minimum element in a set.")
+set15={2,3,6,12,4,5,1}
+minval=min(set15)
+print(f"Minimum value using min function is {minval}")
+
+#Another method by converting to list
+set15={2,3,6,12,4,5,1,8,9}
+l3=sorted(list(set15))
+print(f"Minimum value is {l3[0]}")
+print("_"*100)
+##########################################################################################################
+print("16). Python program to find the sum of elements in a set.")
+set16={3,5,6,8,1,9}
+sum1=sum(set16)
+print(f"Sum using sum function is {sum1}")
+
+set16={3,5,6,8,1,9}
+sum2=0
+for s in set16:
+    sum2=sum2+s
+print(f"The sum using logic is {sum2}")
+print("_"*100)
+
+####################################################################################################
+print("17). Python program to find the average of elements in a set.")
+set17={1,2,3,3,4,5,6,7}
+sum3=0
+for s in set17:
+    sum3+=s
+l=len(set17)
+avg1=sum3/l
+print(f"The average of numbers is {avg1}")
+print("_"*100)
+####################################################################################################
+print("18). Python program to check if all elements in a set are even.")
+set18={8,4,6,2,10,8}
+count1=0
+for x in set18:
+    if x%2!=0:
+        count1+=1
+
+if count1>0:
+    print("All elements in a set are not even")
+else:
+    print("All elements in a set are even")
+print("_"*100)
+####################################################################################################
+print("19). Python program to check if all elements in a set are odd.")
+set19={3,7,5,9}
+count2=0
+for x in set19:
+    if x%2==0:
+        count2+=1
+print(count2)
+if count2>0:
+    print("All elements in the set are not odd")
+else:
+    print("All elements in the set are odd")
+print("_"*100)
+#######################################################################################################
+print("20). Python program to check if all elements in a set are prime.")
+set20={2,3,5,7,11}
+count3=0
+for x in set20:
+    if x==1:
+        break
+    a=x//2
+    for y in range(2,a+1):
+        if x%y==0:
+            count3=count3+1
+if count3>0 or x==1:
+    print("All elements in the set are not prime")
+else:
+    print("All elements in the set are prime")
+print("_"*100)
+
+
 
 
 

@@ -29,7 +29,7 @@ def read_file_content(file_path):
 
 
 # read file from current location
-#read_file_content("read_data.txt")
+#read_file_content("read_data_new.txt")
 
 # read file from different location
 # read_file_content("E:\\Filesdata\\count_name.txt")
@@ -43,7 +43,7 @@ def write_content_to_file(file_path, new_content):
     file_obj.write(new_content)
     file_obj.close()
 
-write_content_to_file("new_file.txt", "Hello Good Morning")
+write_content_to_file("new_file_new.txt", "Hello Good Morning")
 
 
 
