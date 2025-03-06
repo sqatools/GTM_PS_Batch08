@@ -217,7 +217,37 @@ for y in range(len(s2)):
         if dict12[x]==s2[y]:
             dict12_2[x]=dict12[x]
 
-print(dict12_2)
+print("Method 1: ",dict12_2)
+#Method 2-Same logic as above using list
+dict12= {'d' : 14, 'b' : 52,  'a': 13, 'c': 1 }
+l1=[]
+for k,v in dict12.items():
+    l1.append(v)
+l1.sort()
+dict12_1={}
+for x in l1:
+        for k,v in dict12.items():
+            if v==x:
+                dict12_1.update({k:v})
+print("Method 2-Using list with dict",dict12_1)
+#Method 3- Using list (Sir's logic) where we first get the items in pairs in a list, inside a tuple.
+#then we compare each item in the list with other items in the list and interchange then if the latter value is less.
+#Then we convert the list into dictionary
+dict12= {'d' : 14, 'b' : 52,  'a': 13, 'c': 1 }
+print(dict12)
+l2=[]
+for k,v in dict12.items():
+    l2.append((k,v))
+print(l2)
+for x in range(len(l2)):
+    for y in range(x+1,len(l2)):
+        if l2[y][1]<l2[x][1]:
+            a,b=l2.index(l2[x]),l2.index(l2[y])
+            l2[a],l2[b]=l2[b],l2[a]
+        else:
+            continue
+dict12_3=dict(l2)
+print("Method 3: ",dict12_3)
 print("_"*100)
 #####################################################################################
 print("13). Python Dictionary program to add a key in a dictionary.")

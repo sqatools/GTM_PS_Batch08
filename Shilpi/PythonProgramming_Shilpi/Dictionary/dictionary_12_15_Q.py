@@ -28,6 +28,25 @@ for x in l1:
                 dict12_1.update({k:v})
 print(dict12_1)
 
+print("12). Python Dictionary program to sort a dictionary in python using values.")
+dict12= {'d' : 14, 'b' : 52,  'a': 13, 'c': 1 }
+l2=[]
+dict12_1={}
+for k,v in dict12.items():
+    l2.append((k,v))
+print(dict12)
+print(l2)
+for x in range(len(l2)):
+    for y in range(x+1,len(l2)):
+        if l2[y][1]<l2[x][1]:
+            a,b=l2.index(l2[x]),l2.index(l2[y])
+            l2[a],l2[b]=l2[b],l2[a]
+        else:
+            continue
+
+dict12_3=dict(l2)
+print(dict12_3)
+
 
 
 
