@@ -166,70 +166,228 @@ elif ch == 8:
             print(f"{num} is Not in range")
     num = 20
     num_given_range(num)
-'''
-9). Python function program that takes a list and returns a new list with unique elements of the first list.
-Input : [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
-Output : [2, 3, 1, 4, 6 ]
 
-Solution
-10). Python function program that take a number as a parameter and checks whether the number is prime or not.
-Input : 7
-Output : True
+elif ch == 9:
+    '''
+    9). Python function program that takes a list and returns a new list with unique elements of the first list.
+    Input : [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
+    Output : [2, 3, 1, 4, 6 ]
+    '''
+    def unique_element_list(first_list):
+        unique_list = []
+        for i in first_list:
+            if i not in unique_list:
+                unique_list.append(i)
+            else:
+                continue
+        return unique_list
 
-Solution
-11). Python function program to find the even numbers from a given list.
-Input : [1, 2, 3, 4, 5, 6, 7, 8, 9]
-Output : [2, 4, 6, 8]
 
-Solution
-12). Python function program to create and print a list where the values are squares of numbers between 1 to 10.
-Input: 1 to 10
-Output: 1, 4, 9, 16, 25, 36, 49, 64, 81
+    inp_var_9 = [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
+    result_unique_list = unique_element_list(inp_var_9)
 
-Solution
-13). Python function program to execute a string containing Python code.
+    print("The list elements are: ", inp_var_9)
+    print("The unique elements of the first list: ", result_unique_list)
 
-Solution
-14). Python function program to access a function inside a function.
+elif ch ==10:
+    '''
+    10). Python function program that take a number as a parameter and checks whether the number is prime or not.
+    Input : 7
+    Output : True
+    '''
 
-Solution
-15). Python function program to find the LCM of two numbers.
-Input: 12, 20
-Output: 60
+    prime_num = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+    def prime_number(num3):
+        count = 0
+        if num3 == 0 or num3 ==1:
+            count = count + num3
+            print("not a prime number: ",count)
+        elif num3 ==2:
+            count = count + num3
+            print("True, Its a prime number", count)
+            #print("True")
+        elif num3 >2:
+            if num3%2==1:
+                count = count + num3
+                #print("Its a prime number: ",count)
+                if count in prime_num:
+                    print("True, Number is prime", count)
+                else:
+                    print("False, Number not in prime number list", count)
+            else:
+                count = num3
+                #print("Not a prime: ",count)
+                if count not in prime_num:
+                    print("False, Number not a prime number", count)
+                else:
+                    print("True, Number available in prime number", count)
+        else:
+            print("Not a prime number", count)
 
-Solution
-16). Python function program to calculate the sum of numbers from 0 to 10.
-Output: 55
 
-Solution
+    num3 = int(input("Enter the number to check whether it is prime: "))
 
+    prime_number(num3)
+
+    #option 2: Not working
+
+    def prime_number(num3):
+        count = 0
+        for i in range(2, num3):
+            if num3%i == 0:
+                count = count + 1
+            else:
+                count = 0
+        if count > 0:
+            print("False, not a prime")
+        else:
+            print("True, prime")
+
+    num4 = int(input("Enter the number to check prime: "))
+    prime_number(num4)
+
+elif ch == 11:
+        '''
+        11). Python function program to find the even numbers from a given list.
+        Input : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        Output : [2, 4, 6, 8]
+        '''
+
+        def even_num(list4):
+            even = []
+            for i in range(len(list4)):
+                if list4[i]%2==0:
+                    even.append(list4[i])
+                else:
+                    continue
+            return even
+        list_var_11 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        print("The given list are: ", list_var_11)
+        even_num_result = even_num(list_var_11)
+        print("The even numbers from a given list: ", even_num_result)
+
+elif ch == 12:
+    '''
+    12). Python function program to create and print a list where the values are squares of numbers between 1 to 10.
+    Input: 1 to 10
+    Output: 1, 4, 9, 16, 25, 36, 49, 64, 81
+    '''
+    def square_num(num5):
+        square = []
+        for i in range(1, num5):
+            square.append(i**2)
+        return square
+    num5 = int(input("Enter the number to check square: "))
+    result_square = square_num(num5)
+    print("The list of value: ", result_square)
+
+elif ch == 13:
+    '''
+    13). Python function program to execute a string containing Python code.
+    '''
+    #DOUBT
+
+elif ch==14:
+        '''
+        14). Python function program to access a function inside a function.
+        '''
+        #Doubt
+
+elif ch == 15:
+        '''
+        15). Python function program to find the LCM of two numbers.
+        Input: 12, 20
+        Output: 60
+        '''
+        def lcm(num1, num2):
+            if num1 > num2:
+                greater = num1
+            else:
+                greater = num2
+
+            while (True):
+                if ((greater % num1 == 0) and (greater % num2 == 0)):
+                    lcm = greater
+                    break
+                greater += 1
+
+            print(f"L.C.M of {num1} and {num2}: {lcm}")
+
+
+        num1 = int(input("Enter number 1: "))
+        num2 = int(input("Enter number 2: "))
+        lcm(num1, num2)
+
+elif ch == 16:
+    '''
+    16). Python function program to calculate the sum of numbers from 0 to 10.
+    Output: 55
+    
+    Solution
+    '''
+
+elif ch == 17:
+    '''
 17). Python function program to find the HCF of two numbers.
 Input: 24 , 54
 Output: 6
 
 Solution
+    '''
+
+elif ch == 18:
+    '''
 18). Python function program to create a function with *args as parameters.
 Input: 5, 6, 8, 7
 Output: 125 216 512 343
 
 Solution
+    '''
+
+elif ch ==19:
+    '''
 19). Python function program to get the factorial of a given number.
 Input: 5
 Output: 120
 
 Solution
+    '''
+
+elif ch ==20:
+    '''
 20). Python function program to get the Fibonacci series up to the given number.
 Input: 10
 Output: 1 1 2 3 5 8 13 21 34
 
 Solution
+    '''
+elif ch ==21:
+    '''
 21). Python function program to check whether a combination of two numbers has a sum of 10 from the given list.
 Input : [2, 5, 6, 4, 7, 3, 8, 9, 1]
 Output : True
 
-Solution
-22). Python function program to get unique values from the given list.
-Input : [4, 6, 1, 7, 6, 1, 5]
-Output : [4, 6, 7, 5]
-
 '''
+
+elif ch == 22:
+    '''
+    22). Python function program to get unique values from the given list.
+    Input : [4, 6, 1, 7, 6, 1, 5]
+    Output : [4, 6, 7, 5]
+
+    '''
+
+    def unique_value_list(list22):
+        unique_list = []
+
+        for i in list22:
+            if i not in unique_list:
+                unique_list.append(i)
+            else:
+                continue
+        return unique_list
+
+    list_var_22 = [4,6,1,7,6,1,5]
+    print("The input list values are: ", list_var_22)
+    result_unique_list = unique_value_list(list_var_22)
+    print("Unique values are: ", result_unique_list)
