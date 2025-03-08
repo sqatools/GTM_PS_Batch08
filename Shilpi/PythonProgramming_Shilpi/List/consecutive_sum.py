@@ -20,21 +20,25 @@
 #
 # consecutive_sum(6,[2,3,1,5,1,6,2])
 
-k=6
-list1=[2,3,1,2,4,6,7]                #[2,8,2,3,1,6,4]
-for x in range(0,len(list1)):
+k=10
+#list1=[2,3,1,2,4,6,7]                #
+list1 = [2,8,2,3,1,6,4]
+for x in range(0,len(list1)): #0, 1
     c=0
     l1=[]
-    for y in range(x,len(list1)):
-        c=c+list1[y]
-        if c==k:
+    for y in range(x,len(list1)):# 0, 1,2, 3
+        c=c+list1[y] #  2, 5, 6, 8
+        if c==k: # 2 ==6 | 5 == 6 | 6 == 6 | 8 == 6 |
+            #             (x=0, y=2+1)
             for n in range(x,y+1):
                 l1.append(list1[n])
-            if sum(l1)==k and len(l1)!=1:
-                print(l1)
-            else:
-                c=0
-                l1=[]
+            if len(l1)!=1:
+                print(l1)  # [2, 3, 1]
+            # else:
+            #     c=0
+            #     l1=[]
+        else:
+            continue
 
         #      for n in range(x,y):
         #          l1.append(list1[n])
