@@ -13,4 +13,4 @@ def replace_word_from_file(filepath, word1, word2):
         file1 = file.read()
         print("\nUpdated file content:\n", file1)
 
-replace_word_from_file("read_data.txt", "Java", "Python")
+replace_word_from_file("read_data.txt", "Java", "")
