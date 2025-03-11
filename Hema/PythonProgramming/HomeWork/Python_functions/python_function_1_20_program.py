@@ -293,6 +293,36 @@ elif ch==14:
         '''
         #Doubt
 
+        def calculator_operation():
+            num1 = int(input('Enter any number: '))
+            num2 = int(input('Enter second number: '))
+
+            choice = int(input("Enter the operation choice to perform, Add(1), Subtract(2)\n"
+                               ",Multiplication(3),Division(4),Floor division(5): "))
+
+            if choice == 1:
+                print("Performing addition operation")
+                result = num1 + num2
+            elif choice ==2:
+                print("Performing subtraction operation")
+                result = num1 - num2
+            elif choice == 3:
+                print("Performing multiplication operation")
+                result = num1 * num2
+            elif choice == 4:
+                print("Performing division operation")
+                result = num1/num2
+            elif choice == 5:
+                print("Performing floor division operation")
+                result = num1%num2
+            else:
+                print("invalid operation")
+
+            return result
+
+        cal_result = calculator_operation()
+        print(cal_result)
+
 elif ch == 15:
         '''
         15). Python function program to find the LCM of two numbers.
@@ -325,6 +355,16 @@ elif ch == 16:
     
     Solution
     '''
+    def cal_sum_num(n):
+        sum = 0
+        for i in range(n+1):
+            sum  = sum + i
+        return sum
+
+    #n = int(input('Enter the range number to calculate sum of it: '))
+    n = 10
+    result_sum = cal_sum_num(n)
+    print(f"The sum of numbers of range of {n} is: ", result_sum)
 
 elif ch == 17:
     '''
@@ -343,7 +383,13 @@ Output: 125 216 512 343
 
 Solution
     '''
-
+    def func_param_arg(*args):
+        list_var_18 = []
+        for i in args:
+            list_var_18.append(i**3)
+        return list_var_18
+    output = func_param_arg(5,6,8,7)
+    print(output)
 elif ch ==19:
     '''
 19). Python function program to get the factorial of a given number.
@@ -352,15 +398,62 @@ Output: 120
 
 Solution
     '''
+    def fact(n):
+        num =1
+        for i in range(1, n+1):
+            num = num * i
+        return num
 
+    n =5
+    result = fact(n)
+    print("factorial of given number: ", result)
+
+    #option 2:
+    def fac(n1):
+        count = 1
+        while n1 > 1:
+            count = count * n1
+            n1= n1-1
+        return count
+
+    result1 = fac(5)
+    print(result1)
 elif ch ==20:
     '''
 20). Python function program to get the Fibonacci series up to the given number.
 Input: 10
 Output: 1 1 2 3 5 8 13 21 34
-
-Solution
     '''
+    # def fib(n):
+    #     fib = []
+    #     sum = 0
+    #     for i in range(1,n+1):
+    #         # if i<=0:
+    #         #     print("Invalid number")
+    #         # # elif i == 1:
+    #         #     fib = fib + i
+    #         #     print(fib)
+    #         #if i>=1:
+    #         print(i)
+    #         temp = i
+    #         print("temp: ", temp)
+    #         sum = temp + sum
+    #         print("sum: ",sum)
+    #         i = sum
+    #         print("i: ",i)
+    #         #fib.append([sum,])
+            #print(temp)
+    def fib(n):
+        n1,n2=0,1
+
+        for i in range(1,n+1):
+            print(n2, end=",")
+
+            n1,n2 = n2,n1+n2
+
+    n = 10
+    fib(n)
+
 elif ch ==21:
     '''
 21). Python function program to check whether a combination of two numbers has a sum of 10 from the given list.
@@ -368,6 +461,27 @@ Input : [2, 5, 6, 4, 7, 3, 8, 9, 1]
 Output : True
 
 '''
+
+    def comb_two_num(set_num):
+        list_var_21 = []
+        sum=10
+        list_set_num = list(set_num)
+        for i in range(len(list_set_num)):
+            #print(list_set_num[i])
+            for j in range(i+1,len(list_set_num)):
+                #print(list_set_num[j])
+                if list_set_num[i]+list_set_num[j] == sum:
+                    list_var_21.append([list_set_num[i],list_set_num[j],])
+                    #print("True, the combination numbers are: ", list_var_21)
+                else:
+                    continue
+
+        print()
+        return 'True, the combination numbers has a sum of 10 are:  ',list_var_21
+    set_var_21 = [2,5,6,4,7,3,8,9,1]
+    result = comb_two_num(set_var_21)
+    print(result)
+
 
 elif ch == 22:
     '''
