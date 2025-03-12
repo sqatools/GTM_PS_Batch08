@@ -1,0 +1,40 @@
+1. First 3 lines: Overwriting new content to the file. Now previous data will be lost and new text will be overwritten8
+2.Appending Contents to existing file
+3.Appending Contents to existing file
+4.Appending Contents to existing file
+5.Appending Contents to existing file
+6.Appending Contents to existing file
+7.Appending Contents to existing file
+8.Appending Contents to existing file
+9.Appending Contents to existing file
+10.Appending Contents to existing file
+11.Appending Contents to existing file
+12.Appending Contents to existing file
+13.Appending Contents to existing file
+14.Appending Contents to existing file
+15.Appending Contents to existing file
+16.Appending Contents to existing file
+17.Appending Contents to existing file
+18.Appending Contents to existing file
+19.Appending Contents to existing file
+20.Appending Contents to existing file
+21.Appending Contents to existing file
+22.Appending Contents to existing file
+23.Appending Contents to existing file
+24.Appending Contents to existing file
+25.Appending Contents to existing file
+26.Appending Contents to existing file
+27.Appending Contents to existing file
+28.Appending Contents to existing file
+29.Appending Contents to existing file
+30.Appending Contents to existing file
+31.1Appending Contents to existing file
+32.Appending Contents to existing file
+33.Last 3 lines: Appending Contents to existing file
+34.Appending Contents to existing file
+35.Appending Contents to existing file
+
+suha@gmail.com
+sanu@gmail.com
+Pruthvi@gmail.com
+Gia@gmail.com
