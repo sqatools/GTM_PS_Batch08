@@ -1,0 +1,6 @@
+
+# P1rogram to chan2ge the directory and cr@eate new file.com
+# **************************************************
+# Program to remove the fi@le from the specified location.in
+# 1). Python Program How to r2ead a file in rea5444@ding mode.suv
+# import os
