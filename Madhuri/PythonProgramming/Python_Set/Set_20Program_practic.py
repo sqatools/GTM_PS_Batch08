@@ -183,7 +183,7 @@ else:
 
 """
 
-#20)24). Python program to remove all elements from a set.
+#20). Python program to remove all elements from a set.
 
 
 set4 = {1,2,4,5}
