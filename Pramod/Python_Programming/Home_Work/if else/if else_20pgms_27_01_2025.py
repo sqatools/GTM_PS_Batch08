@@ -1,3 +1,4 @@
+'''
 #1)Python program to check given number is divided by 3 or not.
 n=2
 if n%3==0:
@@ -80,6 +81,26 @@ if c % 7 == 0:
 else:
     print("The number is not divisible by 7, so substract 50. ", "=", c - 50)
 # The number is not divisible by 7, so substract 50.  = -46
+'''
+# 9) Program to check whether the number is a prime number.
+num=int(input("Enter the number:"))
+count=0
+for i in range(2,num):
+    if num%i==0:
+        count+=1
+        if count>0:
+            print("It is  a prime number")
+        else:
+            print("It is  not a prime number")
+
+#10 Python program to check a given number is part of the Fibonacci series from 1 to 10.
+fib = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+num=int(input("Enter the fb number"))
+if num in fib:
+    print("the number comes under fib series ")
+else:
+    print("the number does not comes under fib series ")
+
 
 
 

@@ -1,0 +1,39 @@
+1) Python program to get the median of given numbers.
+Note: all the numbers should be arranged in ascending order
+
+2)19). Python program to check whether the given number is an Armstrong number or not.
+Example: 153 = 1*1*1 + 5*5*5 + 3*3*3
+
+3) Python program to  HCF and LCM 
+
+4) Python program to convert Decimal to Binary.
+
+5)Python program to get the current date.
+6)Python program to generate a random string with a specific length
+.8) Python program to check for the anagram.
+Note: rearrangement of the letters of a word to another word, using all the original letters exactly once.
+9)Python program to check leap year.
+
+12)Python program to get the Fibonacci series between 0 to 50
+13)Python program to get the factorial of the given number.
+14)Python program to calculate days between 2 dates.
+Input date : (2023, 1, 5) (2023, 1, 22)
+15)Python program to print the current date in the given format
+Output: 2023 Jan 05
+Note: Use the DateTime library
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -346,3 +346,297 @@ Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 4]
         else:
             continue
     print("to remove consecutive duplicates of given lists: ", dup_list_21)
+
+elif ch == 200:
+    list_c = [55, 66, 33, 22, 12]
+    sum = 0
+
+    for i in list_c:
+        sum = sum + i
+
+    avg = sum/len(list_c)
+
+    print(avg)
+
+    list_inp_14 = [9,42,33,21,28,25]
+    final_out_14 = []
+
+    for i in list_inp_14:
+        if i % 3 == 0 and i % 7 == 0:
+            final_out_14.append(i)
+        else:
+            continue
+
+    print("List of elements which are divisible by 3 and 7: ", final_out_14)
+
+elif ch == 22:
+    '''
+    45). Python program to create a sublist of numbers and their squares from 1 to 10.
+Output : [[1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81], [10, 100]]
+
+    '''
+    result_22 = [[x, x**2] for x in range(1,11)]
+    print(result_22)
+
+elif ch == 23:
+    '''
+    95). Python program to remove the 2nd character of each word from a given list.
+Input: [‘Hello’, ‘student’, ‘are’, ‘learning’, ‘Python’, ‘Its’, ‘Python’, ‘Language’]
+Output: [‘Hllo’, ‘sudent’, ‘ae’, ‘larning’, ‘Pthon’, ‘Is’, ‘Pthon’, ‘Lnguage’]
+    '''
+    inp_var_23 = ['Hello', 'student', 'are', 'learning', 'Python', 'Its', 'Python', 'Language']
+    output_23 = []
+    for i in inp_var_23:
+        #print(i, end=" ")
+        output_23.append(i[:1]+i[2:])
+
+    print(output_23)
+
+elif ch == 24:
+    '''
+    94). Python program to convert the 3rd character of each word to a capital case from the given list.
+Input: [‘Hello’, ‘student’, ‘are’, ‘learning’, ‘Python’, ‘Its’, ‘Python’, ‘Language’]
+Output: [‘HelLo’, ‘stuDent’, ‘are’, ‘leaRning’, ‘PytHon’, ‘Its’, ‘PytHon’, ‘LanGuage’]
+    '''
+    inp_var_24 = ['Hello', 'student', 'are', 'learning', 'Python', 'Its', 'Python', 'Language']
+    output_24 = []
+
+    for i in inp_var_24:
+        if len(i) > 3:
+            output_24.append(i[:3]+i[3].upper()+i[4:])
+        else:
+            output_24.append(i)
+
+    print(output_24)
+
+elif ch == 25:
+    '''
+    93). Python program to replace ‘Java’ with ‘Python’ from the given list.
+Input: [‘Hello’, ‘student’, ‘are’, ‘learning’, ‘Python’, ‘Its’, ‘Python’, ‘Language’]
+Output: [‘Hello’, ‘student’, ‘are’, ‘learning’, ‘Java’, ‘Its’, ‘Java’, ‘Language’]
+    '''
+    inp_var_25 = ['Hello', 'student', 'are', 'learning', 'Python', 'Its', 'Python', 'Language']
+
+    output_25 = []
+
+    for i in range(len(inp_var_25)):
+
+        if inp_var_25[i] == 'Python':
+            inp_var_25[i] = 'Java'
+
+    print(inp_var_25)
+
+elif ch == 26:
+    '''
+    92). Python program to create a dictionary from a sublist in a given list.
+Input: [[‘a’, 5], [‘b’, 8], [‘c’, 11], [‘d’, 14], [‘e’, 23]]
+Output: {‘a’: 5, ‘b’: 8, ‘c’: 11, ‘d’: 14, ‘e’: 23}
+    '''
+    inp_var_26 = [['a', 5], ['b', 8], ['c', 11], ['d', 14], ['e', 23]]
+    #result =
+    output_26 = dict()
+    #var_26 = []
+    # for i in inp_var_26:
+    #     for j in i:
+    #         #print(i," ", j)
+    #         print({i[0]: i[1]})
+    #         #var_26.append(output_26)
+    #         #print()
+    # print(var_26)
+    # out_27 = tuple()
+    # print(out_27, type(out_27))
+    for i in inp_var_26:
+        #result = {i[0]:i[1]}
+        #var_26.append(result)
+        output_26[i[0]] = i[1]
+    #print(var_26)
+    print(output_26) #{'a': 5, 'b': 8, 'c': 11, 'd': 14, 'e': 23}
+
+elif ch == 27:
+    '''
+    8). Python program to print a combination of 2 elements from the list whose sum is 10.
+    '''
+    var_27 = [2,5,8,1,5,7,3,9]
+    num_27 = 10
+    sum1 = []
+    out_27 = []
+    for i in range(len(var_27)):
+        for j in range(i+1, len(var_27)):
+            #sum = var_27[i] + var_27[j]
+            #if sum == num_27:
+            if var_27[i]+var_27[j] == num_27:
+                sum1.append((var_27[i], var_27[j]))
+            else:
+                continue
+    print(sum1)
+    # for k in range(len(sum1)):
+    #     if sum1[k] == num_27:
+    #         out_27.append(sum1)
+    #         continue
+    #     else:
+    #         out_27.append(k)
+    # print(out_27)
+
+    #doubt in class
+
+    #Given a list of non - negative numbers and a target integer k, , check if the array has a continuous subarray of
+    #size at least 2 that sums up to k
+
+    # Example 1:
+
+    # Input: [23, 2,4, 6, 7], k=6
+    #
+    # Output: True
+    #
+    # Explanation: Because [2, 4] is a continuous subarray of size 2 and sums up to 6
+    # in_list_1 = [23, 2, 4, 6, 7]
+    # k = 6
+    # count = 0
+    #
+    # for i in range(0, len(in_list_1)):
+    #     if in_list_1[i] < k:
+    #         count += in_list_1[i]
+    #         j = i + 1
+    #         while count < k:
+    #             count += in_list_1[j]
+    #             j += 1
+    #             if count == k:
+    #                 print("True")
+    #                 break
+    #             else:
+    #                 count = 0
+    #     else:
+    #         continue
+
+elif ch == 28:
+    '''
+    13). Python program to reverse a list with a while loop.
+    '''
+    list_28=[1,2,3,4,5,6,7]
+    #solution 1:
+    count = 0
+    while count <= len(list_28):
+        temp = list_28[len(list_28)-1::-1]
+        count=count+1
+    print(temp)
+
+    #solution2:
+    count1 = len(list_28)-1
+    out_28=[]
+    while count1 >=0:
+        out_28.append(list_28[count1])
+        count1=count1-1
+    print(out_28)
+
+elif ch==29:
+    '''
+    16). Python program to copy or clone one list to another list.
+    '''
+    list_var_29 = [1.2,3,9,8,7]
+    cop_list_var_29 = list_var_29.copy()
+    print("Deep copy value is: ", cop_list_var_29)
+
+    print("updating values")
+    list_var_29.append(20)
+    print("original list value after updating new value: ", list_var_29)
+    print("Deep copy list value is: ", cop_list_var_29)
+
+elif ch==30:
+    '''
+    17). Python program to return True if two lists have any common member.
+    '''
+    list_30 =[1,2,3,4]
+    list_30_1 = [1,2,3,4]
+    list_30_2 = ['a', 'b','c','d']
+    list_30_3 = [1,2,5,6]
+    if list_30 == list_30_1:
+        print(bool(list_30 == list_30_1))
+    else:
+        print("False")
+
+    if list_30 == list_30_2:
+        print('True')
+    else:
+        print(bool(list_30 == list_30_2))
+    if list_30 == list_30_3:
+        print("True")
+    else:
+        print("False")
+
+elif ch==31:
+    '''
+    18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.
+    '''
+    #solution 1:
+
+    list_var_31 = [1,2,3,4,5,6,7]
+    list_var_1_31 = [1,3,6]
+
+    out_31=[]
+    for i in range(len(list_var_31)):
+        if list_var_31[i]== 1 or list_var_31[i] == 3 or list_var_31[i] == 6:
+            continue
+        else:
+            out_31.append(list_var_31[i])
+    print(out_31)
+
+    #solution 2:
+
+    out_31_1 = []
+    for i in range(len(list_var_31)):
+        if list_var_31[i] in list_var_1_31:
+            continue
+        else:
+            out_31_1.append(list_var_31[i])
+    print(out_31_1)
+
+elif ch ==32:
+    '''
+    19). Python program to remove negative values from the list.
+    '''
+    list_var_32 = [1, -5, 3, 6, -8, 9, -10]
+    out_32 = []
+    for i in range(len(list_var_32)):
+        if list_var_32[i] < 0:
+            continue
+        else:
+            out_32.append(list_var_32[i])
+    print(out_32)
+
+elif ch == 33:
+    '''
+    21). Python program to check whether the given list is palindrome or not. (should be equal from both sides).
+    '''
+    list_var_33 =[2,4,6,6,4,2]
+    list_2_var_33 = []
+    count = len(list_var_33)-1
+    while count >= 0:
+        list_2_var_33.append(list_var_33[count])
+        count = count -1
+    print(list_2_var_33)
+    print(list_var_33)
+    if list_2_var_33 == list_var_33:
+        print("Its palindrome")
+    else:
+        print("Its not a palindrome")
+
+elif ch ==34:
+    '''
+    89). Python program to get the list of all palindrome strings from the given list.
+Input: [‘data’, ‘python’, ‘oko’, ‘test’, ‘ete’]
+Output: [‘oko’, ‘ete’]
+    '''
+    inp_var_89 = ['data', 'python', 'oko', 'test', 'ete']
+    out_var_89 = []
+    rev_var_28 = []
+    # count = len(inp_var_89)-1
+    # while count>=0:
+    #     rev_var_28.append(inp_var_89[count])
+    #     count = count -1
+    rev_var_28 = inp_var_89[::-1]
+    for i in range(len(inp_var_89)):
+        for j in range(len(rev_var_28)):
+            if inp_var_89[i] == rev_var_28[j]:
+                out_var_89.append(inp_var_89[i])
+
+    print(out_var_89)
