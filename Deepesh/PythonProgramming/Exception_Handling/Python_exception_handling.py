@@ -179,3 +179,9 @@ def use_custom_exception():
 
 
 use_custom_exception()
+
+
+def greeting():
+    pass
+
+#
