@@ -5,7 +5,12 @@ object : Object is an entity through which we can access all the property/attrib
         -> we can create  n number of object of the class
         -> we can access all method/variable with any of the object in the class
 method : when we define any function inside the class then it becomes method with self as first parameter
-         1. instance method
+         1. instance method : when we defined any method we self as first parameter, then it is called
+            instance method.
+
+         -> Instance variable value can be change while creating the variable
+         -> Instance variable value we can change outside of the class with help of
+            setter(__setattr__) and getter(__getattribute__)
          2. class method
          3.static method
 constructor : constructor initialize the memory for the object of the class being created
@@ -88,11 +93,49 @@ class UserDetails:
         self.show_user_email()
         self.show_phone_num()
 
+    @classmethod
+    def show_class_city_name_variable(cls):
 
-obj_a = UserDetails("Jaini", "manoj")
-# obj_a.show_first_name()
+    @staticmethod
+    def get_factorials(num1):
+        fact = 1
+        for i in range(num1, 0, -1):
+            fact =fact*i
+
+        print(f"factorials: {num1}", fact)
+
+
+obj_a = UserDetails("manoj", "jaini")
+obj_a.show_first_name()
 # access method with object
 obj_a.get_all_details_of_user()
 
 # access class variable with class name
 print("User city name:", UserDetails.user_city)
+
+
+
+# get instance variable value with getter
+first_name_value = obj_a.__getattribute__("first_name")
+print("first name variable name :", first_name_value)
+
+# set instance variable with setter
+obj_a.__setattr__("first_name", "SQATools")
+print("New value of first_name :", obj_a.first_name)
+
+# setting new value to class variable
+obj_a.__setattr__("user_city :", "kolkata")
+print("class variable value :", obj_a.user_city)
+
+UserDetails.user_city = "Bangalore"
+print(" class variable value :", obj_a.user_city)
+
+
+# call the class method with obj
+obj_a.show_class_city_name_variable()
+
+# call class method with class name
+UserDetails.show_class_city_name_variable()
+
+# call the static method with class name
+UserDetails.get_factorials(5)
