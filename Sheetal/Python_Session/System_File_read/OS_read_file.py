@@ -131,7 +131,3 @@ print("modification time :", os.path.getmtime(path9)) # 1615561501.6832726
 os.system("control")
 os.system("dir E:\\Filesdata")
 os.system("notepad.exe")
-
-##################################
-# get CPU count on the system
-print("CPU count:", os.cpu_count()) # CPU count: 8

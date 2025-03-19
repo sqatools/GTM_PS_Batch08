@@ -41,28 +41,50 @@ print("""Given a list of non-negative numbers and a target integer k,
 ,check if the array has a continuous subarray of size at least 2 that sums up to k
 """)
 
-in_list_1 = [23, 2,4, 6, 7]
+in_list_1 = [23, 2,4, 6,3,3, 7]
 k=6
 count =0
 
-for i in range(0, len(in_list_1)):
+for i in range(len(in_list_1)-1):
     if in_list_1[i] < k:
         count += in_list_1[i]
         j = i+1
         while count < k:
             count += in_list_1[j]
-            j += 1
+            # j += 1
             if count == k:
-                print("True")
+                print("True",count,"=",in_list_1[i:j+1])
                 break
-            else:
-                count = 0
+            elif count > k:
+                break
+
+            j += 1
     else:
         continue
 
 
 #Example 1:
 
+print("_"*50)
+
+print("""Given a list of non-negative numbers and a target integer k,
+check if the array has a continuous subarray of size at least 2 that sums up to k.
+""")
+
+in_list_1 = [23, 2, 4, 6, 3, 3, 7,2,2,1,1]
+k = 6
+
+# Iterate through the list to check subarrays of size >= 2
+for i in range(len(in_list_1) - 1):  # loop up to the second last element
+    count = in_list_1[i]  # start with the current element
+    for j in range(i + 1, len(in_list_1)):  # loop through subsequent elements
+        count += in_list_1[j]  # add elements to the subarray
+
+        if count == k:  # check if the sum is equal to k
+            print("True, subarray:", in_list_1[i:j + 1], "sum =", count)
+            break  # break after finding the subarray
+        elif count > k:  # break early if the sum exceeds k
+            break
 
 #
 # Output: True

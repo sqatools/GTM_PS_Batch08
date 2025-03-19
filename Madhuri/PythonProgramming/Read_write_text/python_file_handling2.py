@@ -5,14 +5,15 @@
 # write mode (w) : -> we can open file in write mode if we want to update the content of the file.
                    -> When we file in write mode and add some content to the file, then previous content
                       will overwrite in new content.
-                      
-# append mode (a) : -> We can open file in append mode to update the content of the file, and 
+
+# append mode (a) : -> We can open file in append mode to update the content of the file, and
                        append mode add new content to the file at end of the file.
                     ->  Append mode keep the original data as well as updated content.
 
 # Note :  function to open file:
 file = open(filepath, mode)
 """
+
 
 # seek(no_byte, offset) method : seek method help us to set the cursor position in the file.
 # there are three offset value
@@ -37,7 +38,6 @@ def read_file_with_seek_method(filepath):
 read_file_with_seek_method("read_data.txt")
 
 
-
 def read_file_with_seek_offset_1(filepath):
     with open(filepath, "rb") as file:
         print("default cursor position :", file.tell())
@@ -60,5 +60,6 @@ def read_file_with_seek_offset_2(filepath):
         data = file.read()
         print(data)
         print(file.tell())
+
 
 read_file_with_seek_offset_2("read_data.txt")
