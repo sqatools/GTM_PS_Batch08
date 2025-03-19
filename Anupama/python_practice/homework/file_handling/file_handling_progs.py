@@ -51,5 +51,22 @@ def replace_word_from_file(filepath, word1, word2):
 
 #replace_word_from_file("read_data.txt", "Python", "JAVA")
 
+filepath1= "/C:\PythonAutomation\Anu_AutomationCode\GTM_PS_Batch08\Anupama\python_practice\homework\file handling\read_write_excel\text1;
+filepath2 ="C:\PythonAutomation\Anu_AutomationCode\GTM_PS_Batch08\Anupama\python_practice\homework\file handling\file_handling_progs.py":
+filepath3 ="C:\PythonAutomation\Anu_AutomationCode\GTM_PS_Batch08\Anupama\python_practice\homework\file handling\read_write_excel\text3.txt"
+
 
 #Q3 : Read content from file1 and file2 and add content to the file3.
+with open(filepath1, 'r') as file1:
+    content1 = text1.read()
+
+with open(filepath2, 'r') as file2:
+    content2 = text2.read()
+
+combined_content = content1 + content2
+
+
+with open(filepath3,'w') as file3:
+    text3.write(combined_content)
+
+print("Content from file1 and file2 has been successfully added to file3.")
