@@ -182,3 +182,40 @@ print("_" * 50)
 set_12.intersection_update(set_11)
 print("set11 :", set_11)  # {'b', 'c', 'a'}
 print("set_12:", set_12)  # {'r', 's', 'q', 'b', 'p', 'c', 'a'}
+
+#****program to union two sets
+a={1,3,6,8}
+b={'d','e','f','g',3}
+print('union of set a and b:', a.union(b))
+print('*'*50)
+
+#program to print identical values from two sets
+def identical_items(set1, set2):
+    print('Intersection using intersection():', set1.intersection(set2))
+
+identical_items({2,5,6,7,8}, (2,5,79,8))
+print('*'*50)
+
+
+#Find Common elements in three Lists using Sets
+a = [1, 2, 3, 4]
+b = [2, 3, 5, 6]
+c = [1, 2, 3, 7]
+d=[2,3,4,6,7,9]
+
+res = set(a).intersection(b, c,d)
+print(f"Common elements: {res}")
+print('*'*50)
+
+#find no. of vowels in given string
+s = "Python Programming"
+vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+count=0
+for ch in s:
+    if ch in vowels:
+        count= count+1
+print("no of vovels: ",count)
+
+
+
+
