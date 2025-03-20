@@ -87,6 +87,9 @@ class UserDetails:
     def show_phone_num(self):
         print("user phone number:", self.phone_num)
 
+    def show_country_name(self):
+        print("country name :", self.country)
+
     def get_all_details_of_user(self):
         self.show_last_name()
         self.show_first_name()
@@ -95,6 +98,8 @@ class UserDetails:
 
     @classmethod
     def show_class_city_name_variable(cls):
+        print(cls.user_city)
+        UserDetails.get_factorials(6)
 
     @staticmethod
     def get_factorials(num1):
@@ -106,7 +111,7 @@ class UserDetails:
 
 
 obj_a = UserDetails("manoj", "jaini")
-obj_a.show_first_name()
+#obj_a.show_first_name()
 # access method with object
 obj_a.get_all_details_of_user()
 
