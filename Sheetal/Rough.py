@@ -197,10 +197,10 @@ import json
 # print(os.getcwd())
 # # D:\PythonAutomation\GTM_PS_Batch08\Sheetal
 # os.chdir("D:\PythonAutomation\GTM_PS_Batch08\Sheetal")
-# os.mkdir("GT5")
+# os.mkdir("Exceptional_handling")
 # os.chdir("D:\Python_Selenium_Course")
 # print(os.getcwd())
-# os.mkdir("GT5")
+# os.mkdir("Exceptional_handling")
 # # os.makedirs(r"D:\Python_Selenium_Course\GT2\GT3")
 # print(os.getcwd())
 # dta_list =os.listdir(os.getcwd())
