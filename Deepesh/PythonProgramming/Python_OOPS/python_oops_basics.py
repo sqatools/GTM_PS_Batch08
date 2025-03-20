@@ -114,7 +114,7 @@ class UserDetails:
         print("Country Name :", self.country)
 
 
-    def get_all_details_of_user(self):
+    def get_all_details_of_user(self, num1):
         self.show_first_name()
         self.show_last_name()
         self.show_user_email()
@@ -133,7 +133,6 @@ class UserDetails:
         fact = 1
         for i in range(num1, 0, -1):
             fact = fact*i
-
         print(f"factorials of : {num1}", fact)
         # factorials of : 5 120
 
