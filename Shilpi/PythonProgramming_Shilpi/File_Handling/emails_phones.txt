@@ -1,0 +1,12 @@
+Here are the emails of all the employees with phone numbers:
+Name: Rahul
+email: rahul123@gmail.com
+phone: 9023786439
+
+Name: Tina
+email: tina@yahoo.com
+phone: 4038746098
+
+Name:Anjali
+email: anjali@gmail.com
+phone: 2786539025

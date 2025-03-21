@@ -34,7 +34,7 @@ def read_file_with_seek_method(filepath):
         print("new cursor position :", file.tell())
 
 
-#read_file_with_seek_method("read_data.txt")
+read_file_with_seek_method("read_data.txt")
 
 
 
@@ -51,7 +51,7 @@ def read_file_with_seek_offset_1(filepath):
         print("new cursor position :", file.tell())
 
 
-#read_file_with_seek_offset_1("read_data.txt")
+read_file_with_seek_offset_1("read_data.txt")
 
 
 def read_file_with_seek_offset_2(filepath):

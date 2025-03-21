@@ -1,0 +1,5 @@
+Line1 : Two roads diverged in a yellow wood,
+Line2 : And sorry I could not travel both
+Line3 : And be one traveler, long I stood
+Line4 : And looked down one as far as I could
+Line5 : To where it bent in the undergrowth ;
