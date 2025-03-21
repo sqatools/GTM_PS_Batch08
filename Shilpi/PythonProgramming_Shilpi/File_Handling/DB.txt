@@ -1,0 +1,7 @@
+STU_1={"Name":"Sanjivani","Mobile"=9881234561,"E-mail"="sanjivani@gmail.com"}
+STU_2={"Name":"Ashwini","Mobile"=9921323451,"E-mail"="ashwini@gmail.com"}
+STU_3={"Name":"Shilpi","Mobile"=9883332221,"E-mail"="shilpi@gmail.com"}
+STU_4={"Name":"Rahul","Mobile"=7888456734,"E-mail"="naamtohsunahoga@gmail.com"}
+STU_5={"Name":"Anjali","Mobile"=8945666777,"E-mail"="anjali@gmail.com"}
+STU_6={"Name":"Tina","Mobile"=9087654321,"E-mail"="tina@gmail.com"}
+STU_7={"Name":"Rani","Mobile"=89347183274,"E-mail"="rani@gmail.com"}
