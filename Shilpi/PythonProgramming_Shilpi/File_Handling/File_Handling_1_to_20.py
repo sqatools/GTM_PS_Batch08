@@ -307,7 +307,10 @@ def Add_student(filepathDB):
                         if a==0:
                             studentnumber=1
                             str_stu_num=str(studentnumber)
-                            file.write('\n' + 'STU_' + str_stu_num + '=' + '{' + '"Name"' + ':' + '"' + name1 + '"' + ',' + '"Mobile"' + '=' + mobile1 + ',' + '"E-mail"' + '=' + '"' + mail1 + '"' + '}')
+                            dict1 = {'Name' : name1, 'mobile': mobile1, 'mail': mail1}
+                            line  = f"STU_{str_stu_num}={dict1}\n"
+                            file.write(line)
+                            #file.write('\n' + 'STU_' + str_stu_num + '=' + '{' + '"Name"' + ':' + '"' + name1 + '"' + ',' + '"Mobile"' + '=' + mobile1 + ',' + '"E-mail"' + '=' + '"' + mail1 + '"' + '}')
                             a=a+1
                             a=a+1
                             continue
