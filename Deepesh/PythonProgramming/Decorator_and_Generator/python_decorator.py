@@ -22,7 +22,6 @@ def greeting(msg):
 greeting("Good Morning")
 
 
-
 @decorator_function
 def show_greeting_msg(msg):
     return msg
