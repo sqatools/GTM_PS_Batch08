@@ -180,7 +180,7 @@ def count_word(filepath):
 word,countofword=count_word("readcontent.txt")
 print(f"The count of {word} is {countofword}")
 print("_"*100)
-"""
+
 #######################################################################################################
 print("11). Python file program to read a random line from a file.")
 import random
@@ -287,6 +287,7 @@ print("16). Python file program to consider a text file as a DB file and store a
 def Add_student(filepathDB):
     with open(filepathDB,"r") as file:
         data5=file.readlines()
+        a=len(data5)
         for x in range(len(data5)):
             d1=data5[x].split("=")
             print(d1)
@@ -298,37 +299,50 @@ def Add_student(filepathDB):
             print("Press ctrl+D when you are done adding the information")
             try:
                 while True:
-                    dict1={}
                     name1=input("Enter Student Name : ")
                     mobile1=input("Enter Mobile number : ")
                     mail1=input("Enter e-mail id : ")
-                    dict1["Name"]=name1
-                    dict1["Mobile"] = mobile1
-                    dict1["E-mail"] = mail1
-                    print(dict1)
-                    with open(filepathDB, "a") as file:
-                        studentnumber += 1
-                        str_stu_num = str(studentnumber)
-                        file.write('\n'+'STU_' + str_stu_num + '=' + '{' + '"Name"' + ':' + '"'+name1 + '"'+',' + '"Mobile"' + '=' + mobile1 + ',' + '"E-mail"' + '=' + '"'+mail1 + '"'+'}')
 
+                    with open(filepathDB, "a") as file:
+                        if a==0:
+                            studentnumber=1
+                            str_stu_num=str(studentnumber)
+                            dict1 = {'Name' : name1, 'mobile': mobile1, 'mail': mail1}
+                            line  = f"STU_{str_stu_num}={dict1}\n"
+                            file.write(line)
+                            #file.write('\n' + 'STU_' + str_stu_num + '=' + '{' + '"Name"' + ':' + '"' + name1 + '"' + ',' + '"Mobile"' + '=' + mobile1 + ',' + '"E-mail"' + '=' + '"' + mail1 + '"' + '}')
+                            a=a+1
+                            a=a+1
+                            continue
+                        elif a>0:
+                            studentnumber += 1
+                            str_stu_num = str(studentnumber)
+                            file.write('\n'+'STU_' + str_stu_num + '=' + '{' + '"Name"' + ':' + '"'+name1 + '"'+',' + '"Mobile"' + '=' + mobile1 + ',' + '"E-mail"' + '=' + '"'+mail1 + '"'+'}')
+                            continue
             except EOFError:
                 pass
-def
-
-
-
-
-
-
-
-
 
 Add_student("DB.txt")
 
 print("_"*100)
 
-
-
 #####################################################################################################################
 print("17). Python file program to create n number of text files with given strings.")
 
+def create_text_file():
+    n1=int(input("Enter the value of n: "))
+    for x in range(n1):
+        filename1=input(f"Enter filename {x+1} : ")
+        filenamefinal=filename1+".txt"
+        with open(filenamefinal,"w") as file:
+            file.write("")
+
+create_text_file()
+print("_"*100)
+"""
+##################################################################################################################
+print("18). Python file program to generate text files with all alphabets.  e.g. A.txt , B.txt, C.txt….. Z.txt")
+def create_text_files_alphabets():
+
+
+create_text_files_alphabets()
