@@ -141,16 +141,51 @@ def is_prime(a):
 number = int(input("Enter a number: "))
 print(is_prime(number))
 
-#program to find the factorial value of a given number"""
+#program to find the factorial value of a given number
 
 def find_fact(a):
     result=1
     for b in range(1,a+1):
        result *= b
-       return result
-num= int(input("enter a number to get it's factorial: "))
-
+    return result
+num= int(input("Enter a number to get it's factorial: "))
 
 print(f"Factorial of {num} is {find_fact(num)}")
+
+
+#program to find number of consonents in a given string*******
+def no_consonants(a_string):
+    vow="aeiouAEIOU"
+    count=0
+
+    for char in a_string:
+        if char.isalpha() and char not in vow:
+            count=count+1
+    return count
+
+b_string= input("Enter a string: ")
+print("Number of consonants is ",no_consonants(b_string))"""
+
+#program to find the fibbonacci series upto a given number**
+def fib(times):
+    n1,n2=0,1
+    count=0
+    if times<=0:
+        print("Please enter a positive number.")
+    elif times==1:
+        print(n1)
+    else:
+        while count <times:
+            print(n1)
+            n3=n1+n2
+            n1=n2
+            n2=n3
+            count=count+1
+terms=int(input("Enter the no of terms for fibbonaci value: "))
+print(f"Fibbonaci value upto term {terms} is {fib(terms)}")
+
+
+
+
 
 
