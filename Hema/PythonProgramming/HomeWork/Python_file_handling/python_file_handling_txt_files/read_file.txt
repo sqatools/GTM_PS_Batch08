@@ -1,0 +1,7 @@
+Python File Handling Programs refers to the process of manipulating files on a computer using Python programming language.
+In Python, you can perform various operations on files such as reading, writing, appending, and deleting files.
+
+To perform file handling in Python, you first need to open a file.
+The open() function is used to open a file. It takes two parameters
+the file name (along with the path, if necessary) and the mode in which you want to open the file.
+
