@@ -6,8 +6,18 @@ import time
 
 from selenium import webdriver
 
+browser = 'edge'
+
 # Initiate a webdriver
-driver = webdriver.Chrome()
+if browser.lower() == 'chrome':
+    driver = webdriver.Chrome()
+elif browser.lower() == 'firefox':
+    driver = webdriver.Firefox()
+elif browser.lower() == 'edge':
+    driver = webdriver.Edge()
+
+
+
 # maximize browser window
 driver.maximize_window()
 # set implicit wait
