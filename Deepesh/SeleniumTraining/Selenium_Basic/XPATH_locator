@@ -1,0 +1,32 @@
+XPath is locator to indentify any element with the help DOM structure PATH.
+
+# There are 2 types of XPath
+1. Absolute XPath: Absolute xpath follows entire DOM structure to indentify the element.
+                   (This is not recommended xpath)
+    e.g. /html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[4]/span/span[1]/label
+
+2. Relative XPath: This XPath identify the element with the help of there attributes.
+
+      .e.g  //tagname[@attribute='value']
+
+      -> //input[@aria-label="First name"]
+      -> //input[@aria-label="Surname"]
+      -> //select[@aria-label="Day"]
+      -> //select[@aria-label="Month"]
+      -> //select[@aria-label="Year"]
+      -> //input[@value="1"]
+      -> //span[@data-name="gender_wrapper"]/span[1]//input
+      -> (//span[@data-name="gender_wrapper"]//input)[1]
+      -> //input[@aria-label="Mobile number or email address"]
+      -> //input[@aria-label="New password"]
+
+      Notes :
+      -> If we have multiple matching elements with same attribute and all sibling to each other
+         means all element belongs to same parent element, then we can use direct indexing to indentify one of they
+
+         //span[@data-name="gender_wrapper"]/span[1]
+
+      -> If we have multiple matching elements with same attribute and all belongs to different tree structure
+         means all element does not belongs to same parent, then we have to wrap the xpath the round bracket and use indexing
+
+         (//span[@data-name="gender_wrapper"]//input)[1]
