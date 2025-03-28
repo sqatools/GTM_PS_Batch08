@@ -19,7 +19,7 @@ variables :  1. instance variable: instance variable that we declare with self k
                     that variable we have to call method.
 
                 ->  Instance variable value can be changed while creating the variable.
-                ->  Instance variable value we can change outside of the class with the help of
+                ->  Instance variable value we can change outside the class with the help of
                     setter(__setattr__) and getter (__getattribute__)
 
              2. class variable: The variable that we declare on class level and has to assign initial value.
@@ -31,12 +31,12 @@ variables :  1. instance variable: instance variable that we declare with self k
 
 constructor : Constructor which initialize the memory for the object of the class being created.
               we define the constructor with __init__ name
-              ->  Constructor initialize automatically whenever will create a object of the class
+              ->  Constructor initialize automatically whenever will create an object of the class
                   no need to call the constructor.
 
               There are 2 types of constructor
               1.  Default constructor/: Default constructor being called internally whenever we create an object of the class.
-              2.  Parametrize constructor : parametrize constructor accept the parameter and we can provide
+              2.  Parametrize constructor : parametrize constructor accept the parameter, and we can provide
                   values to the parameters during while creating the object of the class
 
 
