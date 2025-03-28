@@ -31,5 +31,7 @@ if current_url == url:
     driver.find_element(By.XPATH,"//input[@type='radio' and @value= '1']").click()
     driver.find_element(By.NAME,"reg_email__").send_keys(9999977665)
     driver.find_element(By.ID,"password_step_input").send_keys("user2")
-    time.sleep(5)
+
+time.sleep(5)
+
 driver.close()
