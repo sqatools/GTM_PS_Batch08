@@ -7,6 +7,8 @@ XPath is locator to indentify any element with the help DOM structure PATH.
 
 2. Relative XPath: This XPath identify the element with the help of there attributes.
 
+      # https://www.facebook.com
+
       .e.g  //tagname[@attribute='value']
 
       -> //input[@aria-label="First name"]
