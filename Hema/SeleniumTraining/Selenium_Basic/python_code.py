@@ -7,5 +7,3 @@
 data_list= ['First name', 'Surname', 'Day', 'Month', 'Year']
 for data in data_list:
     print(f"//select[@aria-label='{data}']")
-
-#

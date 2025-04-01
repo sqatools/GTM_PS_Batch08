@@ -7,6 +7,8 @@ XPath is locator to indentify any element with the help DOM structure PATH.
 
 2. Relative XPath: This XPath identify the element with the help of there attributes.
 
+      # https://www.facebook.com
+
       .e.g  //tagname[@attribute='value']
 
       -> //input[@aria-label="First name"]
@@ -15,10 +17,13 @@ XPath is locator to indentify any element with the help DOM structure PATH.
       -> //select[@aria-label="Month"]
       -> //select[@aria-label="Year"]
       -> //input[@value="1"]
+
+      # Took parent element help to identify the target element.
       -> //span[@data-name="gender_wrapper"]/span[1]//input
       -> (//span[@data-name="gender_wrapper"]//input)[1]
       -> //input[@aria-label="Mobile number or email address"]
       -> //input[@aria-label="New password"]
+      -> //button[@name="websubmit"]
 
       Notes :
       -> If we have multiple matching elements with same attribute and all sibling to each other
@@ -27,6 +32,69 @@ XPath is locator to indentify any element with the help DOM structure PATH.
          //span[@data-name="gender_wrapper"]/span[1]
 
       -> If we have multiple matching elements with same attribute and all belongs to different tree structure
-         means all element does not belongs to same parent, then we have to wrap the xpath the round bracket and use indexing
+         means all element does not belongs to same parent, then we have to wrap the xpath with the round
+         bracket and use indexing.
 
          (//span[@data-name="gender_wrapper"]//input)[1]
+
+     # identify element without the tagname
+          //*[@attribute='value']
+       -> //*[@aria-label='Mobile number or email address']
+
+
+
+# XPath Methods:
+
+1.  text() method:   text method helps to indentify the element with help of text visible on UI for any element.
+
+                      e.g. //taganame[text()='text value']         or //*[text()='text value']
+                     -> //div[text()='Create a new account']
+                     -> //button[text()='Sign Up']
+
+
+
+2.  contains method: contains method helps to identify the element with the help partial text/attribute value
+                     e.g. //tagname[contains(@attribute, 'partial attr value')]
+                          //tagname[contains(text(), 'partial text value')]
+
+                          -> //input[contains(@aria-label,'t name')]
+                          -> //input[contains(@aria-label, 'Mobile number')]
+
+                          -> //a[contains(text(), 'Already have an')]
+                          -> //a[contains(text(), 'Messe')]
+
+
+
+3.  AND / OR condition :  while creating the xpath we can consider the multiple attribute as well
+                          with the help of AND/OR condition
+                          # AND :  in this case both the condition should be true
+                          e.g.
+                              ->  //tagname[@attr1='value' and @attrib='value']
+                              ->  //tagname[@attr1='value' and text()='value']
+                              ->  //tagname[contains(@attr1,'value') and text()='value']
+
+                               https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
+                              -> //input[@id='fromcity' and @name='fromcity']
+                              -> //input[contains(@id, 'from') and @name='fromcity']
+                              -> //button[text()='Sign Up' and @name='websubmit']
+
+
+                          # OR : with or condition if any of the condition will match, then it will
+                                  identify the element
+
+                              ->  //tagname[@attr1='value' or @attrib='value']
+                              ->  //tagname[@attr1='value' or text()='value']
+                              ->  //tagname[contains(@attr1,'value') or text()='value']
+
+                              # or condition will use, when want to indentify the list of element
+                               -> //button[text()='Sign Up' or @name='websubmit']
+                              -> //*[@name='firstname' or text()='Male']
+
+
+
+
+4.  start-with method. start-with method help to indentify element with start value of attribute
+                           e.g.   //tagname[start-with(@attribute, 'initial_name']
+                                 -> //input[starts-with(@id, 'billing_ph')]
+                                 -> //a[starts-with(text(), 'Pytest')]
+                                 -> //a[starts-with(text(), 'API')]
