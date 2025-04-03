@@ -69,6 +69,11 @@ def check_element_selected():
     print("element is displayed :", male_radio.is_displayed())  # True
     time.sleep(5)
 
+    hidden_element = driver.find_element(By.XPATH, "//input[@value='en_GB']")
+    print(hidden_element.is_enabled()) # True
+    print(hidden_element.is_displayed()) # False
+
+
 
 # get_current_url_title()
 # time.sleep(5)
