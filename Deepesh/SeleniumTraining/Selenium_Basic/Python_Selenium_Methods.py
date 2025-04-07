@@ -55,9 +55,6 @@ def get_text_and_attribute_value():
     print(username_field)
     print("place holder value :", username_field.get_attribute("placeholder"))
 
-
-
-
 def check_element_selected():
     driver.find_element(By.LINK_TEXT, "Create new account").click()
     male_radio = driver.find_element(By.XPATH, "//input[@value='2']")
