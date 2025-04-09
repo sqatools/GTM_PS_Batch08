@@ -8,23 +8,24 @@ from selenium import webdriver
 
 browser = 'firefox'
 
+# Initiate a webdriver
+if browser.lower() == 'chrome':
+    driver = webdriver.Chrome()
+elif browser.lower() == 'firefox':
+    driver = webdriver.Firefox()
+elif browser.lower() == 'edge':
+    driver = webdriver.Edge()
 
-driver_list = [webdriver.Chrome(),webdriver.Firefox(),webdriver.Edge()]
+# maximize browser window
+driver.maximize_window()
+# set implicit wait
+driver.implicitly_wait(10)
 
-for driver in driver_list:
-    # maximize browser window
-    driver.maximize_window()
-    # set implicit wait
-    driver.implicitly_wait(10)
+# launch website URL on browser
+driver.get("https://www.facebook.com")
 
-    # launch website URL on browser
-    driver.get("https://www.facebook.com")
-
-    # set sleep time
-    time.sleep(5)
-    driver.close()
-
-
-
+# set sleep time
+time.sleep(5)
+driver.close()
 
 
