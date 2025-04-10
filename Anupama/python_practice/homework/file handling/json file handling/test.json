@@ -1,8 +1,0 @@
-{
-  "Name": "A",
-  "lastname": "gupta,",
-  "email": "abc@abc.com",
-  "phone": 9876543578,
-  "social": "www.facebook.com/aashu",
-  "hobbies": ["cricket", "football","baseball",{"name": "heera","age": 34}]
-}

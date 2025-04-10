@@ -1,0 +1,2 @@
+allows to receive email abc@company.com  temporary address  def123@gmail.com that self-destructed after a certain time elapses.
+It is also known by names lik welcome@company.com

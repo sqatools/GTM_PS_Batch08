@@ -190,6 +190,10 @@
 import os
 import shutil
 import json
+
+from shankar.PythonProgramming.If_else_problems import character
+
+
 #
 # print(os.getpid())
 # print(os.path)
@@ -197,10 +201,10 @@ import json
 # print(os.getcwd())
 # # D:\PythonAutomation\GTM_PS_Batch08\Sheetal
 # os.chdir("D:\PythonAutomation\GTM_PS_Batch08\Sheetal")
-# os.mkdir("GT5")
+# os.mkdir("Exceptional_handling")
 # os.chdir("D:\Python_Selenium_Course")
 # print(os.getcwd())
-# os.mkdir("GT5")
+# os.mkdir("Exceptional_handling")
 # # os.makedirs(r"D:\Python_Selenium_Course\GT2\GT3")
 # print(os.getcwd())
 # dta_list =os.listdir(os.getcwd())
@@ -309,3 +313,62 @@ import json
 #     main()
 #
 
+
+# w.r.p.p count vowel from given string; string = "Python Programming"
+
+def volclass():
+    vowel = "aeiouAEIOU"
+    string = "Python Programming"
+    count = 0
+    for vol in string:
+        if vol in vowel:
+            count +=1
+        else:
+            continue
+    return count
+
+result = volclass()
+print("The count of vowel from the string is: ", result)
+
+count = 0
+def volclass(string):
+    vowel = "aeiouAEIOU"
+
+    global count
+    count = sum(1 for vol in string if vol in vowel )
+    # return count
+string1 = "Python Programming"
+volclass(string1)
+print("The count of vowel from the string is: ", count)
+
+count = 0
+def volclass():
+    vowel = "aeiouAEIOU"
+    string = "Python Programming"
+    global count
+    for vol in string:
+        if vol in vowel:
+            count +=1
+        else:
+            continue
+    return count
+
+volclass()
+print("The count of vowel from the string is: ", count)
+
+# 3.W.r.p.p print first repeated charcter from given string.string = "Python Programming"
+# from collections import Counter
+
+def repeatst(str1):
+    seen = {}
+    for i,chr in enumerate(str1):
+        if chr in seen:
+            print(f"The first occurance of character: {chr} is at the index : {seen[chr]-1} and second index is at: {i}")
+            return
+
+        else:
+            seen[chr] = i
+
+
+
+repeatst("Python Programming")

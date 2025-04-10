@@ -1,4 +1,9 @@
-# decorator :  decorator enhance the functionality of the code without changing the existing feature.
+# decorator :  decorator enhance the functionality of the code without
+#              changing the existing feature.
+#              ->  decorator is the external function that we have call with any function
+#                  using @.
+#              ->  When we call any function which is associated with decorator, will initiate the
+#                  decorator function first.
 
 def decorator_function(func):
     def inner(param):
@@ -15,7 +20,6 @@ def greeting(msg):
 
 
 greeting("Good Morning")
-
 
 
 @decorator_function

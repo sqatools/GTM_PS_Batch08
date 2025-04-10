@@ -1,0 +1,5 @@
+
+STU_1={"Name":"Ram","Mobile"=231237812312,"E-mail"="ram@gmail.com"}
+STU_2={"Name":"sita","Mobile"=11112902901920129,"E-mail"="sita@gmail.com"}
+STU_3={"Name":"laxman","Mobile"=9938838383838,"E-mail"="laxman@gmail.com"}
+STU_4={"Name":"rani","Mobile"=36278361273612,"E-mail"="rani@gmail.com"}
