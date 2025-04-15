@@ -1,0 +1,18 @@
+# installation of Pytest framework
+->  pip install pytest
+
+# write pytest test file
+# Each test file in pytest framework should start with test_ prefix.
+# Each test function has to start with test_ prefix in test file.
+
+# command to execute pytest test file
+->  python -m pytest -v test_facebook_cases.py
+# -v :  verbose # provide details information in result output
+
+# command to execute specific test case in Pytest.
+-> python -m pytest -v .\PytestBasic\test_facebook_cases.py::test_subtraction
+-> python -m pytest -v -k "test_subtraction" .\PytestBasic\test_facebook_cases.py
+
+
+
+

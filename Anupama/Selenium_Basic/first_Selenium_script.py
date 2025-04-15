@@ -5,7 +5,6 @@
 import time
 
 from selenium import webdriver
-
 # Initiate a webdriver
 driver = webdriver.Chrome()
 # maximize browser window
@@ -19,3 +18,4 @@ driver.get("https://www.facebook.com")
 # Set sleep time
 time.sleep(5)
 driver.close()
+
