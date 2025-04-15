@@ -59,8 +59,10 @@ def facebook_dropdown_in_create_account():
 
 def facebook_radio_button_in_create_account():
 
-    genders = driver.find_elements(By.XPATH, "//span[@data-type='radio']/span")
+    #genders = driver.find_elements(By.XPATH, "//span[@data-type='radio']/span")
+    genders = driver.find_elements(By.XPATH, "//span[@data-type='radio']//label")
     print(len(genders))
+
 
     female_radio_button = driver.find_element(By.XPATH, "//input[@value='1']")
     male_radio_button = driver.find_element(By.XPATH, "//input[@value='2']")
@@ -68,10 +70,14 @@ def facebook_radio_button_in_create_account():
 
     get_first_name = "abcd"
 
-    if get_first_name == "abcd":
-        male_radio_button.click()
-    else:
-        print("invalid option")
+    for gender in genders:
+        print("the value of genders are: \n",gender.text)
+        if get_first_name == "abcd":
+            male_radio_button.click()
+        else:
+            print("invalid option")
+
+
 
     time.sleep(2)
 
