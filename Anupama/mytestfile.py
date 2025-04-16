@@ -15,7 +15,7 @@ for row in range(0, 7):
 unit = 155
 total_bill=0
 if unit<=100:
-    total_bill= total_bill+ unit*20"""
+    total_bill= total_bill+ unit*20
 
 
 def num():
@@ -27,4 +27,21 @@ def num():
 
 a = 10
 num()
-print(a)
+print(a)"""
+
+
+def find_word(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            words = file.read().split()
+            longest_word = max(words, key=len)
+            return longest_word
+    except FileNotFoundError:
+        return "File not found. Please check the file path."
+    except Exception as e:
+        return f"An error occurred: {e}"
+
+# Example usage
+file_path = 'myfile.txt'
+longest_word = find_word(file_path)
+print(f"The longest word in the file is: {longest_word}")

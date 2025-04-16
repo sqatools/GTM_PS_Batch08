@@ -14,5 +14,21 @@
 -> python -m pytest -v -k "test_subtraction" .\PytestBasic\test_facebook_cases.py
 
 
+###################################
+# add marker to the test and create a group
+@pytest.mark.sanity
+# here we are sanity test cases group
+
+# execute test cases with markers.
+ python -m pytest -v -m "smoke" .\PytestBasic\test_feature_cases.py
+
+-m :  this look for specific marker test cases.
+
+# command to execute multiple markers test cases with OR condition
+-> python -m pytest -v -m "smoke or sanity" .\PytestBasic\test_feature_cases.py
+
+
+# command to execute multiple markers test cases with AND condition
+-> python -m pytest -v -m "smoke and sanity" .\PytestBasic\test_feature_cases.py
 
 
