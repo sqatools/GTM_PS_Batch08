@@ -32,3 +32,29 @@
 -> python -m pytest -v -m "smoke and sanity" .\PytestBasic\test_feature_cases.py
 
 
+# provide skip makers in the test with below decorator.
+@pytest.mark.skip   # unconditional markers
+@pytest.mark.skipif(env == 'PROD', reason='reason of test cases skip')
+
+
+# Provide parameterize marker in the test cases to execute one test function with multipele values.
+@pytest.mark.parametrize("username, password",[('user1', 'pass1'), ('user2', 'password2'), ('user3', 'pass3')])
+def test_login(username, password):
+    print("username :", username)
+    print("password :", password)
+
+
+
+# command to show print output in the console.
+python -m pytest -v -s .\test_parametrize_cases_file.py
+
+# -v :  verbose
+# -s :  console output
+
+#######################################
+# Command to execute only last failure test cases.
+-> python -m pytest --lf
+# --lf :  last failure
+
+
+

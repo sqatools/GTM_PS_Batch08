@@ -1,5 +1,8 @@
 import pytest
 
+
+env = "TEST"
+
 # test functions or test cases
 @pytest.mark.smoke
 def test_addition():
@@ -8,12 +11,14 @@ def test_addition():
     assert n1+n2 == 90
 
 @pytest.mark.smoke
+@pytest.mark.skip
 def test_multiplication():
     n1 = 500
     n2 = 5
     assert n1*n2 == 2500
 
 @pytest.mark.smoke
+@pytest.mark.skip   #unconditional skip
 def test_division():
     n1 = 50
     n2 = 10
@@ -27,6 +32,7 @@ def test_power_operation():
 
 
 @pytest.mark.sanity
+@pytest.mark.skipif(env == 'PROD', reason="feature is not available in PROD ENV")
 def test_subtraction():
     n1 = 500
     n2 = 600
@@ -46,6 +52,7 @@ def test_multiplication_fun2():
     n2 = 5
     assert n1*n2 == 2500
 
+@pytest.mark.skipif(env == 'PROD', reason="feature is not available in PROD ENV")
 @pytest.mark.regression
 def test_division_fun3():
     n1 = 50
@@ -62,4 +69,4 @@ def test_power_operation_fun4():
 def test_subtraction_fun5():
     n1 = 500
     n2 = 600
-    assert n2 - n1 == 200
+    assert n2 - n1 == 100
