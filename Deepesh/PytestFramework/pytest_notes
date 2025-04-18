@@ -57,4 +57,19 @@ python -m pytest -v -s .\test_parametrize_cases_file.py
 # --lf :  last failure
 
 
+#############################################
+# generate HTML report by installing package pytest-html
+    ->  pip install pytest-html
 
+
+# command to generate HTML report.
+    ->  python -m pytest -v .\PytestBasic\ --html=report.html
+
+# install htmp report package to generate graph based report.
+    ->  pip install pytest-html-reporter
+
+    # command to generate graph based report.
+   -> python -m pytest -v .\PytestBasic\ --html-report=./graph_report/graph_report.html
+
+   # command to change the report title
+   -> python -m pytest -v .\PytestBasic\ --html-report=./graph_report/graph_report2.html --title='Automation Project Report'
