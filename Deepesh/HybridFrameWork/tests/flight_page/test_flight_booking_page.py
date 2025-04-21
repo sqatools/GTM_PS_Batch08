@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 from modules.flight_booking_page.flight_page_class import FlightPage
+from modules.flight_booking_page.flight_booking_test_data import *
+from utilities.utility_tools import Utils
 import time
 import pytest
 
@@ -9,13 +11,17 @@ class TestFlightBooking:
     def setup(self):
         # create object of FlightPage class
         self.fp = FlightPage(self.driver)
+        self.util = Utils()
+        self.json_data = self.util.read_json(json_file_path)
 
     def test_src_dest_city(self):
         # launch goibibo website
-        self.driver.get("https://www.goibibo.com/")
-        time.sleep(5)
-        self.fp.select_source_city("Mumbai, India")
-        self.fp.select_dest_city("New Delhi, India")
+        self.fp.select_source_city(source_city_name)
+        self.fp.select_dest_city(dest_city_name)
+
+    def test_select_travel_date(self):
+        self.fp.select_travel_date( self.json_data['travel_date'])
         time.sleep(10)
+
 
 

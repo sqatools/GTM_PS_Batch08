@@ -19,3 +19,9 @@ class FlightPage(SeleniumBase):
         dest_dropdown_locator = (By.XPATH, f"//span[contains(text(), '{dest_city}')]")
         self.click_element(dest_dropdown_locator)
 
+    def select_travel_date(self, travel_date):
+        self.click_element(departure_data_locator)
+        date_loc = (By.XPATH, f"//div[contains(@aria-label,'{travel_date}')]")
+        self.click_element(date_loc)
+
+
