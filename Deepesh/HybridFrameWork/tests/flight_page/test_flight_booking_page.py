@@ -14,12 +14,14 @@ class TestFlightBooking:
         self.util = Utils()
         self.json_data = self.util.read_json(json_file_path)
 
-    def test_src_dest_city(self):
+    def test_src_dest_city(self, request):
+        self.fp.log.info(f"Test Name: {request.node.name}")
         # launch goibibo website
         self.fp.select_source_city(source_city_name)
         self.fp.select_dest_city(dest_city_name)
 
-    def test_select_travel_date(self):
+    def test_select_travel_date(self, request):
+        self.fp.log.info(f"Test Name: {request.node.name}")
         self.fp.select_travel_date( self.json_data['travel_date'])
         time.sleep(10)
 
