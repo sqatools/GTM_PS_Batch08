@@ -6,4 +6,5 @@ Framework Functionality as Per Good Quality
 ->  Automation Report (HTML Report) # Done
 ->  Re-try failure (Auto re-run failed test cases)
 ->  Parallel execution.
+->  headless mode execution
 
