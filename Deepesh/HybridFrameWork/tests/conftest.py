@@ -13,6 +13,16 @@ def get_driver(request):
     yield
     driver.close()
 
+@pytest.fixture(scope='class')
+def get_driver_facebook(request):
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.implicitly_wait(10)
+    driver.get(goibibo_url)
+    request.cls.driver = driver
+    yield
+    driver.close()
+
 def pytest_configure(config):
     util = Utils()
     unique_name = util.generate_unique_name()
