@@ -5,3 +5,4 @@ dest_city_name = "New Delhi, India"
 
 cur_path = os.getcwd()
 json_file_path = os.path.join(cur_path, 'modules/flight_booking_page/flight_booking_data.json')
+passed_images = os.path.join(os.getcwd(), "logs/p_images")

@@ -19,10 +19,12 @@ class TestFlightBooking:
         # launch goibibo website
         self.fp.select_source_city(source_city_name)
         self.fp.select_dest_city(dest_city_name)
+        self.fp.capture_screenshot()
 
     def test_select_travel_date(self, request):
         self.fp.log.info(f"Test Name: {request.node.name}")
         self.fp.select_travel_date( self.json_data['travel_date'])
+        self.fp.capture_screenshot(passed_images)
         time.sleep(10)
 
 

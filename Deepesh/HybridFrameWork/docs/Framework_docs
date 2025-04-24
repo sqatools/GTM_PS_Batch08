@@ -1,10 +1,9 @@
 Framework Functionality as Per Good Quality
 ->  Logging # Done
-->  screenshot capture
+->  screenshot capture : Done
 ->  framework configuration (pytest.ini) # Done
 ->  read external file (json, excel) Data Driven Framework # Done
 ->  Automation Report (HTML Report) # Done
 ->  Re-try failure (Auto re-run failed test cases)
 ->  Parallel execution.
-->  headless mode execution
-
+->  headless mode execution.
