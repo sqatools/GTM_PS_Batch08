@@ -21,3 +21,5 @@ python -m pytest -v -k "test_login_functionality" .\tests\flight_page\test_fligh
 #Execute test cases parallelly
 ->  install python module pytest-xdist
 ->  pip install pytest-xdist
+
+python -m pytest -v -n 2 .\tests\flight_page\test_flight_booking_page_new.py --html=logs/report.html --username='student' --password='Password123'
