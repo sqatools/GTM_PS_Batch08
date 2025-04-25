@@ -26,4 +26,4 @@ python -m pytest -v -n 2 .\tests\flight_page\test_flight_booking_page_new.py --h
 
 
 # windows command to get number of CPU cores
-wmic cpu get NumberOfCores
+-> wmic cpu get NumberOfCores
