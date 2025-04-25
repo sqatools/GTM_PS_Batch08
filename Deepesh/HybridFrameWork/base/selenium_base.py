@@ -52,6 +52,7 @@ class SeleniumBase:
         try:
             self.log.info(f"enter text : {value} to element: {locator}")
             element = self.get_element(locator)
+            element.clear()
             element.send_keys(value)
         except Exception as e:
             self.log.debug(f"unable enter text: {e}")
