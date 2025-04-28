@@ -1,0 +1,46 @@
+API (Application Programming Interface) :  API is the interface between presentation layer and business layer
+to take request from client and pass it to the server, and send reponse back to the client with required status
+code.
+
+Presentation layer
+       |
+Business Layer (API)
+       |
+Database Layer
+
+
+# Categories of API Users
+ -> Public APIs :  These are open to anyone and can be accessed without specific authorization or credetials
+ -> Parter APIs :  These are designed for integration with specific business partners and typically required some
+                  form of authentication.
+ -> Internal APIs : These are used within an organization and are not intended for external access.
+
+
+Types of API as per Architecture.
+1) REST (Representation State Transfer) API: A widely used architectural style that defines how data in exchange
+   over the internet.
+
+2) SOAP (Simple Object Access Protocol) API: A more traditional protocol that uses XML messages for communication.
+
+#########################################
+Communication Protocol of API :  HTTP
+
+HTTP Methods
+
+1. GET Method :   get information with the help of target API end point.
+2. POST Method :  post method create new entry to the data base.
+3. PUT Method :   put method update exiting content or create new one.
+4. PATCH Method :  patch method update the specific field of existing data.
+5. DELETE Method :  Delete method delete existing details.
+
+Response codes
+100 - 199 :  Information status code
+200 - 299 :  Success status code
+300 - 399 :  Redirectional status code
+400 - 499 :  client error status code
+500 - 599 :  server error status code
+
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#information_responses
+
+Free API URL :
+https://restful-api.dev/

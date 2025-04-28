@@ -5,8 +5,11 @@ Framework Functionality as Per Good Quality
 ->  read external file (json, excel) Data Driven Framework # Done
 ->  Automation Report (HTML Report) # Done
 ->  Re-try failure (Auto re-run failed test cases)
-->  Parallel execution.
+#   -> python -m pytest --lf
+#   --lf :  last failure
+->  Parallel execution. : Done
 ->  headless mode execution. : Done
+->  custom command line parameters : Done
 
 
 
