@@ -5,7 +5,7 @@ from utilities.utility_tools import Utils
 import time
 import pytest
 
-@pytest.mark.usefixtures("get_driver")
+@pytest.mark.usefixtures("get_driver_goibibo")
 class TestFlightBooking:
     @pytest.fixture(scope='function', autouse=True)
     def setup(self):
@@ -21,11 +21,19 @@ class TestFlightBooking:
         self.fp.select_dest_city(dest_city_name)
         self.fp.capture_screenshot()
 
-    def test_select_travel_date(self, request):
+        #def test_select_travel_date(self, request):
         self.fp.log.info(f"Test Name: {request.node.name}")
         self.fp.select_travel_date( self.json_data['travel_date'])
         self.fp.capture_screenshot(passed_images)
         time.sleep(10)
+
+
+    def test_login_functionality(self, get_user_cred):
+        user_creds = get_user_cred
+        self.driver.get("https://practicetestautomation.com/practice-test-login/")
+        self.fp.login_to_student_website(username=user_creds[0], password=user_creds[1])
+        self.fp.capture_screenshot(passed_images)
+
 
 
 

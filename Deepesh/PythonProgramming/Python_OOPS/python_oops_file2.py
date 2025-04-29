@@ -23,6 +23,10 @@ class ITCompany:
     def show_company_name(cls):
         print("company name :", cls.comp_name)
 
+
+    def my_company_name(self):
+        print("compnay name :", self.comp_name)
+
     @staticmethod
     def print_table(num1):
         for i in range(1, 11):
