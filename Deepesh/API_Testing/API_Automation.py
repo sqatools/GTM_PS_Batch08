@@ -86,7 +86,7 @@ def update_data_entry_with_post(id):
     response = requests.request("PUT", url, headers=headers, data=payload)
     print(response.text)
 
-update_data_entry_with_post("ff808181932badb60196876cbb431a03")
+#update_data_entry_with_post("ff808181932badb60196876cbb431a03")
 
 
 def create_new_entry_with_post_payload(request_data):
@@ -132,8 +132,8 @@ request_data_list = [
     },
 ]
 print("_"*50)
-for request_body in request_data_list:
-    create_new_entry_with_post_payload(request_body)
+# for request_body in request_data_list:
+#     create_new_entry_with_post_payload(request_body)
 
 
 
@@ -163,5 +163,17 @@ def delete_data_from_database(id):
     print(response.text)
     
 
-delete_data_from_database("ff808181932badb60196876cbb431a03")
-get_single_id_details("ff808181932badb60196876cbb431a03")
+#delete_data_from_database("ff808181932badb60196876cbb431a03")
+#get_single_id_details("ff808181932badb60196876cbb431a03")
+
+
+from requests.auth import HTTPBasicAuth
+
+# API with Authentication
+def login_to_git_with_auth(username, password):
+    response = requests.request("GET", "https://api.github.com/user", auth=HTTPBasicAuth(username, password))
+    print(response.content)
+    print(response.status_code)
+
+
+#login_to_git_with_auth()
