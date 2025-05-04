@@ -1,0 +1,1 @@
+This is a sample file containing some words to find the longest word.
