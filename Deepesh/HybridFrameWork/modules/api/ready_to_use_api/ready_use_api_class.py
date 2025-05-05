@@ -83,5 +83,10 @@ class ReadyToUseAPI(APIBase):
         self.log.info(f"status_code :{delete_st_code}")
         return delete_response, delete_st_code, object_id
 
+    def api_access_with_token(self):
+        response, st_code = self.get_method(url=token_api_url, headers=auth_headers)
+        self.log.info(f"response: {response}")
+        self.log.info(f"status_code :{st_code}")
+        return response, st_code
 
 

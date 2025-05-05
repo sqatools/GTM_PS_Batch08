@@ -65,3 +65,8 @@ post_payload3 = json.dumps({
         "Hard disk size": "3 TB"
       }
     })
+
+
+token_api_url = "https://gorest.co.in/public/v2/users"
+access_token = "e8a8639a8982b5c05c84a755a385a72f229072a0da16025f92935606fa41ec86"
+auth_headers = {'Authorization': f"Bearer {access_token}"}

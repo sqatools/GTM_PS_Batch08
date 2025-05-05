@@ -177,3 +177,15 @@ def login_to_git_with_auth(username, password):
 
 
 #login_to_git_with_auth()
+
+
+def go_test_auth_with_token():
+    url = "https://gorest.co.in/public/v2/users"
+    access_token = "e8a8639a8982b5c05c84a755a385a72f229072a0da16025f92935606fa41ec86"
+    headers = {'Authorization': f"Bearer {access_token}"}
+    response = requests.request("GET", url, headers=headers)
+    print(response.content)
+    print(response.status_code)
+
+
+go_test_auth_with_token()

@@ -55,5 +55,12 @@ class TestReadyToUseAPI:
         assert 'has been deleted' in response['message']
 
 
+    def test_users_details_with_bearer_token(self):
+        response, st_code = self.r_api.api_access_with_token()
+        assert response
+        assert st_code == 200
+
+
+
 
 
