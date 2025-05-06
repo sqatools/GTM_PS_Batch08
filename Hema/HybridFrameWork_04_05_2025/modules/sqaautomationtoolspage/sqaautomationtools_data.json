@@ -1,0 +1,20 @@
+{
+  "first_name": "latha",
+  "last_name": "govind",
+  "dob": "08-05-2013",
+  "gender": "Female",
+  "trip": "One Way",
+  "from_city": "bangalore",
+  "to_city": "mumbai",
+  "depart_date": "08-02-2025",
+  "return_date": "11-05-2025",
+  "visa_date": "06-05-2025",
+  "receive": "Email",
+  "billing_name": "govind",
+  "phone_num": "8794651328",
+  "email_addr": "abcd12@gmail.com",
+  "street_addr": "6, govind street",
+  "country": "India",
+  "postal": "600078"
+
+}
