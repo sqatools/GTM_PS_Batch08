@@ -1,0 +1,29 @@
+Framework Functionality as Per Good Quality
+->  Logging # Done
+->  screenshot capture : Done
+->  framework configuration (pytest.ini) # Done
+->  read external file (json, excel) Data Driven Framework # Done
+->  Automation Report (HTML Report) # Done
+->  Re-try failure (Auto re-run failed test cases)
+->  Parallel execution.
+->  headless mode execution. : Done
+
+
+
+# command to execute the with commandline custom options
+python -m pytest -v .\tests\flight_page\test_flight_booking_page_new.py --html=logs/report.html --browser=edge --headless=True
+
+
+# provide user credentials from command line
+python -m pytest -v -k "test_login_functionality" .\tests\flight_page\test_flight_booking_page_new.py --html=logs/report.html --username='student' --password='Password123'
+
+
+#Execute test cases parallelly
+->  install python module pytest-xdist
+->  pip install pytest-xdist
+
+python -m pytest -v -n 2 .\tests\flight_page\test_flight_booking_page_new.py --html=logs/report.html --username='student' --password='Password123'
+
+
+# windows command to get number of CPU cores
+-> wmic cpu get NumberOfCores

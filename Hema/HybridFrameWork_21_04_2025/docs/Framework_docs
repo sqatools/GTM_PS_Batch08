@@ -1,0 +1,12 @@
+Framework Functionality as Per Good Quality
+->  Logging
+->  screenshot capture
+->  framework configuration (pytest.ini)
+->  read external file (json, excel) Data Driven Framework # Done
+->  Automation Report (HTML Report)
+->  Re-try failure (Auto re-run failed test cases)
+->  Parallel execution.
+
+
+
+
