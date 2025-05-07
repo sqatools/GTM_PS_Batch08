@@ -17,6 +17,7 @@ class TestFlightBooking:
     def test_src_dest_city(self, request):
         self.fp.log.info(f"Test Name: {request.node.name}")
         # launch goibibo website
+        self.fp.close_popup()
         self.fp.select_source_city(source_city_name)
         self.fp.select_dest_city(dest_city_name)
         self.fp.capture_screenshot()
