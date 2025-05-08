@@ -245,7 +245,7 @@ for value in list1:
     #(5, 85, 60)
     #(1,4,8)
 
-'20.WAP Python program to convert the 3rd character of each word to a capital case from the given list.
+#'20.WAP Python program to convert the 3rd character of each word to a capital case from the given list.
 #Input: [‘Hello’, ‘student’, ‘are’, ‘learning’, ‘Python’, ‘Its’, ‘Python’, ‘Language’]
 #Output: [‘HelLo’, ‘stuDent’, ‘are’, ‘leaRning’, ‘PytHon’, ‘Its’, ‘PytHon’, ‘LanGuage’]
 
