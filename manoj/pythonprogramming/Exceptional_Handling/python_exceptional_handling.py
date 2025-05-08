@@ -1,4 +1,3 @@
-
 # handle exception error msg
 def basic_exception_handling():
     try:
@@ -34,7 +33,7 @@ def raise_explicit_exception():
 
 #######################
 # try-except-else block.
-# finally : finally block of code will execute anyway,
+# finally : finally block of code will execute anyway.
 def try_except_else_block_handling(num1, num2):
     try:
        x = num1
@@ -73,6 +72,9 @@ try_except_else_block_handling(7, 'hello')
 
 #################################3
 # handle multiple exception: user can define different error msg for different exception
+
+
+
 def handle_multiple_exception(num1, num2, num3, filepath):
     try:
         addition = num1+num2
@@ -101,5 +103,98 @@ def handle_multiple_exception(num1, num2, num3, filepath):
         raise e
 
 
-handle_multiple_exception(5, 6, 10.,  'read_data.txt')
+# handle_multiple_exception(5, 6, 10.,  'read_data.txt')
 
+
+
+
+def handle_multiple_exception(num1, num2, num3, filepath):
+    try:
+        addition = num1+num2
+        print("addition :", addition)
+
+        #multiplication
+        mul = num1*num2
+        print("multiplication :", mul)
+
+        # division
+        divide = num2//num3
+        print("division error :", divide)
+
+        # read file
+        with open(filepath) as file:
+            data = file.read()
+            print(data)
+        # comapare value
+        assert num1 == num2
+    except TypeError:
+        print("both the values should be integer")
+    except ZeroDivisionError:
+        print("can not divide number with zero")
+    except FileNotFoundError:
+        print("Can not find the file path specified")
+    except AssertionError:
+        print("Both values are not equal")
+    except Exception as e:
+        print("Raising generic message")
+
+# handle_multiple_exception(5, 6, 10.,  'read_data.txt')
+
+def handle_nested_level_exception(num1, num2, num3, filepath):
+    try:
+        addition = num1 + num2
+        print("addition :", addition)
+
+        # multiplication
+        mul = num1 * num2
+        print("multiplication :", mul)
+        try:
+           # division
+           divide = num2 // num3
+           print("division error :", divide)
+
+           # read file
+           with open(filepath) as file:
+               data = file.read()
+               print(data)
+
+
+           #comapare value
+           assert num1 == num2
+        except Exception as e:
+           print("Inner exception:", e)
+           raise
+        finally:
+            print("Inner finally")
+
+    except TypeError:
+        print("outer Exception: both the values should be integer")
+
+    finally:
+            print("Outer finally")
+
+
+#handle_nested_level_exception('hello', 20, 30, "read_data.txt")
+
+
+############################
+# custom exception
+
+class custom_exception(Exception):
+    def __init__(self):
+        print("Raising custom exception")
+
+
+def use_custom_exception():
+    for i in range(10):
+        if i == 5:
+            raise custom_exception
+        else:
+            continue
+
+use_custom_exception()
+
+def greeting():
+    pass
+
+greeting()

@@ -1,0 +1,75 @@
+# installation of Pytest framework
+->  pip install pytest
+
+# write pytest test file
+# Each test file in pytest framework should start with test_ prefix.
+# Each test function has to start with test_ prefix in test file.
+
+# command to execute pytest test file
+->  python -m pytest -v test_facebook_cases.py
+# -v :  verbose # provide details information in result output
+
+# command to execute specific test case in Pytest.
+-> python -m pytest -v .\PytestBasic\test_facebook_cases.py::test_subtraction
+-> python -m pytest -v -k "test_subtraction" .\PytestBasic\test_facebook_cases.py
+
+
+###################################
+# add marker to the test and create a group
+@pytest.mark.sanity
+# here we are sanity test cases group
+
+# execute test cases with markers.
+ python -m pytest -v -m "smoke" .\PytestBasic\test_feature_cases.py
+
+-m :  this look for specific marker test cases.
+
+# command to execute multiple markers test cases with OR condition
+-> python -m pytest -v -m "smoke or sanity" .\PytestBasic\test_feature_cases.py
+
+
+# command to execute multiple markers test cases with AND condition
+-> python -m pytest -v -m "smoke and sanity" .\PytestBasic\test_feature_cases.py
+
+
+# provide skip makers in the test with below decorator.
+@pytest.mark.skip   # unconditional markers
+@pytest.mark.skipif(env == 'PROD', reason='reason of test cases skip')
+
+
+# Provide parameterize marker in the test cases to execute one test function with multipele values.
+@pytest.mark.parametrize("username, password",[('user1', 'pass1'), ('user2', 'password2'), ('user3', 'pass3')])
+def test_login(username, password):
+    print("username :", username)
+    print("password :", password)
+
+
+
+# command to show print output in the console.
+python -m pytest -v -s .\test_parametrize_cases_file.py
+
+# -v :  verbose
+# -s :  console output
+
+#######################################
+# Command to execute only last failure test cases.
+-> python -m pytest --lf
+# --lf :  last failure
+
+
+#############################################
+# generate HTML report by installing package pytest-html
+    ->  pip install pytest-html
+
+
+# command to generate HTML report.
+    ->  python -m pytest -v .\PytestBasic\ --html=report.html
+
+# install htmp report package to generate graph based report.
+    ->  pip install pytest-html-reporter
+
+    # command to generate graph based report.
+   -> python -m pytest -v .\PytestBasic\ --html-report=./graph_report/graph_report.html
+
+   # command to change the report title
+   -> python -m pytest -v .\PytestBasic\ --html-report=./graph_report/graph_report2.html --title='Automation Project Report'

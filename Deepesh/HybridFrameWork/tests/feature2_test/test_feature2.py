@@ -1,0 +1,66 @@
+import pytest
+
+class TestFeature2:
+    # test functions or test cases
+    @pytest.mark.smoke
+    def test_addition(self):
+        n1 = 40
+        n2 = 50
+        assert n1+n2 == 90
+
+    @pytest.mark.smoke
+    def test_multiplication(self):
+        n1 = 500
+        n2 = 5
+        assert n1*n2 == 2500
+
+    @pytest.mark.smoke
+    def test_division(self):
+        n1 = 50
+        n2 = 10
+        assert n1//n2 == 50
+
+    @pytest.mark.sanity
+    @pytest.mark.xfail
+    def test_power_operation(self):
+        n1 = 5
+        assert n1**2 == 30
+
+
+    @pytest.mark.sanity
+    def test_subtraction(self):
+        n1 = 500
+        n2 = 600
+        assert n2 - n1 == 100
+
+    @pytest.mark.smoke
+    @pytest.mark.sanity
+    @pytest.mark.xfail
+    def test_addition_fun1(self):
+        n1 = 40
+        n2 = 50
+        assert n1+n2 == 90
+
+    @pytest.mark.regression
+    def test_multiplication_fun2(self):
+        n1 = 500
+        n2 = 5
+        assert n1*n2 == 2500
+
+    @pytest.mark.regression
+    def test_division_fun3(self):
+        n1 = 50
+        n2 = 10
+        assert n1//n2 == 5
+
+    @pytest.mark.regression
+    def test_power_operation_fun4(self):
+        n1 = 5
+        assert n1**2 == 25
+
+
+    @pytest.mark.regression
+    def test_subtraction_fun5(self):
+        n1 = 500
+        n2 = 600
+        assert n2 - n1 == 200
