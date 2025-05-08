@@ -1,0 +1,10 @@
+{
+  "source_city" : "Bangalore",
+  "dest_city" : "Kolkata",
+  "travel_date" : "Apr 30 2025",
+  "adults" : 2,
+  "child" : 1,
+  "infants" : 1,
+  "travel_class" : "Economy"
+
+}
