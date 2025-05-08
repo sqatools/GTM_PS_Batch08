@@ -6,10 +6,10 @@ tup = (41, 15, 69, 55)
 print("Maximum value: ",max(tup))
 
 """2.Python tuple program to find the minimum value from a tuple.
-Input = (36,5,79,25)
+Input = (36,15,79,25)
 Output = 5"""
 
-tup = (36,5,79,25)
+tup = (36,15,79,25)
 print("Minimum value: ",min(tup))
 
 """3.Python tuple program to create a tuple with different datatypes.
