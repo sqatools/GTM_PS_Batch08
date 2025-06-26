@@ -49,7 +49,7 @@ num = 3
 for i in range(1,4):
     fact = fact* i
 print (fact)
-'''
+
 
 char = "o"
 letter = 'aissh'
@@ -58,3 +58,15 @@ if char in letter:
     print("present ")
 else :
     print(" no ")
+
+
+j= [10,30,20]
+
+a= input('enter string')
+b = a[::-1]
+print( "reverse = " , b)
+'''
+
+for j in range(5):
+    print(j)
+
