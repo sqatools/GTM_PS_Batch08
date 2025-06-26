@@ -82,5 +82,3 @@ for data in data_list:
 
 ############################
 # check current path is exist or not
-
-path3
