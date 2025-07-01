@@ -1,0 +1,4 @@
+2025-06-26 20:58:44 [INFO] (api_base.py:13) Get Method
+2025-06-26 20:58:44 [INFO] (api_base.py:14) URL: https://api.restful-api.dev/objects
+2025-06-26 20:58:44 [INFO] (api_base.py:15) headers: {}
+2025-06-26 20:58:44 [INFO] (api_base.py:16) payload: {}

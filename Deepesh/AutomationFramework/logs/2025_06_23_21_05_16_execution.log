@@ -1,0 +1,63 @@
+2025-06-23 21:05:34 [INFO] (test_bus_booking.py:21) TEST CASE: test_navigate_to_bus
+2025-06-23 21:05:34 [INFO] (bus_booking_page_class.py:11) Open URL: https://www.goibibo.com/bus/
+2025-06-23 21:05:42 [INFO] (test_bus_booking.py:25) TEST CASE: test_select_src_city
+2025-06-23 21:05:42 [INFO] (bus_booking_page_class.py:15) select source city: Mumbai, Maharashtra
+2025-06-23 21:05:42 [INFO] (selenium_base.py:24) entering text  Mumbai, Maharashtra, on element in this locator: ('name', 'autosuggestBusSRPSrcHomeName')
+2025-06-23 21:05:42 [INFO] (selenium_base.py:14) Getting element with this locator: ('name', 'autosuggestBusSRPSrcHomeName')
+2025-06-23 21:05:43 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='Mumbai, Maharashtra']//parent::li")
+2025-06-23 21:05:43 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='Mumbai, Maharashtra']//parent::li")
+2025-06-23 21:05:44 [INFO] (test_bus_booking.py:29) TEST CASE: test_select_dest_city
+2025-06-23 21:05:44 [INFO] (bus_booking_page_class.py:21) select dest city: Pune, Maharashtra
+2025-06-23 21:05:44 [INFO] (selenium_base.py:24) entering text  Pune, Maharashtra, on element in this locator: ('id', 'autosuggestBusSRPDestHome')
+2025-06-23 21:05:44 [INFO] (selenium_base.py:14) Getting element with this locator: ('id', 'autosuggestBusSRPDestHome')
+2025-06-23 21:05:44 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='Pune, Maharashtra']//parent::li")
+2025-06-23 21:05:44 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='Pune, Maharashtra']//parent::li")
+2025-06-23 21:05:45 [INFO] (test_bus_booking.py:33) TEST CASE: test_select_depart_date
+2025-06-23 21:05:45 [INFO] (bus_booking_page_class.py:27) select depart date: 25
+2025-06-23 21:05:45 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//input[@placeholder='Pick a date']")
+2025-06-23 21:05:45 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@placeholder='Pick a date']")
+2025-06-23 21:05:45 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='25']//parent::li")
+2025-06-23 21:05:45 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='25']//parent::li")
+2025-06-23 21:05:46 [INFO] (test_bus_booking.py:37) TEST CASE: test_click_to_search_button
+2025-06-23 21:05:46 [INFO] (bus_booking_page_class.py:33) click to search button
+2025-06-23 21:05:46 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//button[@data-testid='searchBusBtn']")
+2025-06-23 21:05:46 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//button[@data-testid='searchBusBtn']")
+2025-06-23 21:06:07 [INFO] (test_bus_booking.py:41) TEST CASE: test_select_bus_to_travel
+2025-06-23 21:06:07 [INFO] (bus_booking_page_class.py:37) Selecting bus to book the seat
+2025-06-23 21:06:07 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "(//p[text()='Zingbus Plus']//parent::div//parent::div//span[text()='SELECT SEAT'])[1]")
+2025-06-23 21:06:07 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "(//p[text()='Zingbus Plus']//parent::div//parent::div//span[text()='SELECT SEAT'])[1]")
+2025-06-23 21:06:11 [INFO] (bus_booking_page_class.py:42) Selecting boarding point : Kalamboli
+2025-06-23 21:06:11 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//p[text()='Boarding Point']//parent::div//p[text()='Kalamboli']//ancestor::label/label")
+2025-06-23 21:06:11 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//p[text()='Boarding Point']//parent::div//p[text()='Kalamboli']//ancestor::label/label")
+2025-06-23 21:06:17 [INFO] (bus_booking_page_class.py:48) Selecting dropping point : Wakad
+2025-06-23 21:06:17 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//p[text()='Dropping Point']//parent::div//p[text()='Wakad']//ancestor::label/label")
+2025-06-23 21:06:17 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//p[text()='Dropping Point']//parent::div//p[text()='Wakad']//ancestor::label/label")
+2025-06-23 21:06:18 [INFO] (bus_booking_page_class.py:54) Selecting 1st available sleeper seat
+2025-06-23 21:06:18 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "(//span[text()='UPPER']//ancestor::div[contains(@class, 'BusBerthstyles')]//*[contains(@class, 'BusSleeperIcon')])[1]")
+2025-06-23 21:06:18 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "(//span[text()='UPPER']//ancestor::div[contains(@class, 'BusBerthstyles')]//*[contains(@class, 'BusSleeperIcon')])[1]")
+2025-06-23 21:06:25 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//button[text()='CONTINUE']")
+2025-06-23 21:06:25 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//button[text()='CONTINUE']")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:24) entering text  Rahul, on element in this locator: ('xpath', "//input[@data-val='name']")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@data-val='name']")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:24) entering text  35, on element in this locator: ('xpath', "//input[@data-val='age']")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@data-val='age']")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='Male']//parent::li")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='Male']//parent::li")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:24) entering text  rahul@gmail.com, on element in this locator: ('xpath', "//input[@data-val='email']")
+2025-06-23 21:06:32 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@data-val='email']")
+2025-06-23 21:06:33 [INFO] (selenium_base.py:24) entering text  89908098687, on element in this locator: ('xpath', "//input[@data-val='contactNum']")
+2025-06-23 21:06:33 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@data-val='contactNum']")
+2025-06-23 21:06:33 [INFO] (selenium_base.py:24) entering text  Mumbai, Boriwali, on element in this locator: ('id', 'Billing Address')
+2025-06-23 21:06:33 [INFO] (selenium_base.py:14) Getting element with this locator: ('id', 'Billing Address')
+2025-06-23 21:06:34 [INFO] (selenium_base.py:24) entering text  450020, on element in this locator: ('id', 'Pincode')
+2025-06-23 21:06:34 [INFO] (selenium_base.py:14) Getting element with this locator: ('id', 'Pincode')
+2025-06-23 21:06:34 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//label[text()='State']//parent::div")
+2025-06-23 21:06:34 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//label[text()='State']//parent::div")
+2025-06-23 21:06:34 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//li[text()='Maharashtra']")
+2025-06-23 21:06:34 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//li[text()='Maharashtra']")
+2025-06-23 21:06:35 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='Personal']//preceding-sibling::span")
+2025-06-23 21:06:35 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='Personal']//preceding-sibling::span")
+2025-06-23 21:06:35 [INFO] (selenium_base.py:24) entering text  789873, on element in this locator: ('xpath', "//input[@placeholder='Got A Promocode? Enter']")
+2025-06-23 21:06:35 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@placeholder='Got A Promocode? Enter']")
+2025-06-23 21:06:35 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//button[contains(@class, 'PayButton')]")
+2025-06-23 21:06:35 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//button[contains(@class, 'PayButton')]")

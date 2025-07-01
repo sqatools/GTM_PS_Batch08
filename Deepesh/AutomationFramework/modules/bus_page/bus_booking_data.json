@@ -1,0 +1,15 @@
+{
+    "select_bus_name": "Zingbus Plus",
+    "boarding_point" : "Kalamboli",
+    "dropping_point" : "Wakad",
+    "passenger_name" : "Rahul",
+    "age" : 35,
+    "email" : "rahul@gmail.com",
+    "phone" : 89908098687,
+    "address" : "Mumbai, Boriwali",
+    "pincode" : 450020,
+    "state_name" : "Maharashtra",
+    "flight_type" : "Personal",
+    "gender" : "Male",
+    "promo_code": "789873"
+}

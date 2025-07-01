@@ -1,0 +1,26 @@
+from selenium.webdriver.common.by import By
+
+from_city_input_field = (By.NAME, "autosuggestBusSRPSrcHomeName")
+dest_city_input_field = (By.ID, "autosuggestBusSRPDestHome")
+booking_date_loc = (By.XPATH, "//input[@placeholder='Pick a date']")
+search_btn = (By.XPATH, "//button[@data-testid='searchBusBtn']")
+
+select_bus = (By.XPATH, "//p[text()='N.T New Aakash']//parent::div//parent::div//span[text()='SELECT SEAT']")
+boarding_point = (By.XPATH, "//p[text()='Boarding Point']//parent::div//p[text()='Kandivali (e) - samta nagar']//ancestor::label/label")
+dropping_point = (By.XPATH, "//p[text()='Dropping Point']//parent::div//p[text()='Nigadi']//ancestor::label/label")
+seat_selection = (By.XPATH, "(//span[text()='UPPER']//ancestor::div[contains(@class, 'BusBerthstyles')]//div[contains(@class, 'SeatWithTooltipstyles__BusSleeper')])[1]")
+continue_button = (By.XPATH, "//button[text()='CONTINUE']")
+name_field_loc = (By.XPATH, "//input[@data-val='name']")
+age_field_loc = (By.XPATH, "//input[@data-val='age']")
+male_gender = (By.XPATH, "//span[text()='Male']//parent::li")
+female_gender = (By.XPATH, "//span[text()='Female']//parent::li")
+email_field = (By.XPATH, "//input[@data-val='email']")
+phone_number_field = (By.XPATH, "//input[@data-val='contactNum']")
+billing_Address = (By.ID, "Billing Address")
+billing_pincode = (By.ID, "Pincode")
+state_dropdown = (By.XPATH, "//label[text()='State']//parent::div")
+state_name = (By.XPATH, "//li[text()='Arunachal Pradesh']")
+type_radio_button = (By.XPATH, "//span[text()='Business']//preceding-sibling::span")
+promo_field = (By.XPATH, "//input[@placeholder='Got A Promocode? Enter']")
+pay_button = (By.XPATH, "//button[contains(@class, 'PayButton')]")
+

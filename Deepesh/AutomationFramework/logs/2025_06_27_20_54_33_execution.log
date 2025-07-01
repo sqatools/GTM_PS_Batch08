@@ -1,0 +1,70 @@
+2025-06-27 20:54:36 [INFO] (api_base.py:13) Get Method
+2025-06-27 20:54:36 [INFO] (api_base.py:14) URL: https://api.restful-api.dev/objects
+2025-06-27 20:54:36 [INFO] (api_base.py:15) headers: {}
+2025-06-27 20:54:36 [INFO] (api_base.py:16) payload: {}
+2025-06-27 20:54:36 [INFO] (api_base.py:17) response: [{'id': '1', 'name': 'Google Pixel 6 Pro', 'data': {'color': 'Cloudy White', 'capacity': '128 GB'}}, {'id': '2', 'name': 'Apple iPhone 12 Mini, 256GB, Blue', 'data': None}, {'id': '3', 'name': 'Apple iPhone 12 Pro Max', 'data': {'color': 'Cloudy White', 'capacity GB': 512}}, {'id': '4', 'name': 'Apple iPhone 11, 64GB', 'data': {'price': 389.99, 'color': 'Purple'}}, {'id': '5', 'name': 'Samsung Galaxy Z Fold2', 'data': {'price': 689.99, 'color': 'Brown'}}, {'id': '6', 'name': 'Apple AirPods', 'data': {'generation': '3rd', 'price': 120}}, {'id': '7', 'name': 'Apple MacBook Pro 16', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}, {'id': '8', 'name': 'Apple Watch Series 8', 'data': {'Strap Colour': 'Elderberry', 'Case Size': '41mm'}}, {'id': '9', 'name': 'Beats Studio3 Wireless', 'data': {'Color': 'Red', 'Description': 'High-performance wireless noise cancelling headphones'}}, {'id': '10', 'name': 'Apple iPad Mini 5th Gen', 'data': {'Capacity': '64 GB', 'Screen size': 7.9}}, {'id': '11', 'name': 'Apple iPad Mini 5th Gen', 'data': {'Capacity': '254 GB', 'Screen size': 7.9}}, {'id': '12', 'name': 'Apple iPad Air', 'data': {'Generation': '4th', 'Price': '419.99', 'Capacity': '64 GB'}}, {'id': '13', 'name': 'Apple iPad Air', 'data': {'Generation': '4th', 'Price': '519.99', 'Capacity': '256 GB'}}]
+2025-06-27 20:54:36 [INFO] (api_base.py:18) status code: 200
+2025-06-27 20:54:37 [INFO] (api_base.py:13) Get Method
+2025-06-27 20:54:37 [INFO] (api_base.py:14) URL: https://api.restful-api.dev/objects?id=5&id=7&id=9&
+2025-06-27 20:54:37 [INFO] (api_base.py:15) headers: {}
+2025-06-27 20:54:37 [INFO] (api_base.py:16) payload: {}
+2025-06-27 20:54:37 [INFO] (api_base.py:17) response: [{'id': '5', 'name': 'Samsung Galaxy Z Fold2', 'data': {'price': 689.99, 'color': 'Brown'}}, {'id': '7', 'name': 'Apple MacBook Pro 16', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}, {'id': '9', 'name': 'Beats Studio3 Wireless', 'data': {'Color': 'Red', 'Description': 'High-performance wireless noise cancelling headphones'}}]
+2025-06-27 20:54:37 [INFO] (api_base.py:18) status code: 200
+2025-06-27 20:54:39 [INFO] (api_base.py:13) Get Method
+2025-06-27 20:54:39 [INFO] (api_base.py:14) URL: https://api.restful-api.dev/objects/4
+2025-06-27 20:54:39 [INFO] (api_base.py:15) headers: {}
+2025-06-27 20:54:39 [INFO] (api_base.py:16) payload: {}
+2025-06-27 20:54:39 [INFO] (api_base.py:17) response: {'id': '4', 'name': 'Apple iPhone 11, 64GB', 'data': {'price': 389.99, 'color': 'Purple'}}
+2025-06-27 20:54:39 [INFO] (api_base.py:18) status code: 200
+2025-06-27 20:54:41 [INFO] (api_base.py:25) POST Method
+2025-06-27 20:54:41 [INFO] (api_base.py:26) URL: https://api.restful-api.dev/objects
+2025-06-27 20:54:41 [INFO] (api_base.py:27) headers: {'Content-Type': 'application/json'}
+2025-06-27 20:54:41 [INFO] (api_base.py:28) payload: {"name": "Apple MacBook Pro 16", "data": {"year": 2019, "price": 1849.99, "CPU model": "Intel Core i9", "Hard disk size": "1 TB"}}
+2025-06-27 20:54:41 [INFO] (api_base.py:29) response: {'id': 'ff8081819782e69e0197b1fdabe70877', 'name': 'Apple MacBook Pro 16', 'createdAt': '2025-06-27T15:24:41.319+00:00', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
+2025-06-27 20:54:41 [INFO] (api_base.py:30) status code: 200
+2025-06-27 20:54:41 [INFO] (ready_api_class.py:25) new object id: ff8081819782e69e0197b1fdabe70877
+2025-06-27 20:54:44 [INFO] (api_base.py:25) POST Method
+2025-06-27 20:54:44 [INFO] (api_base.py:26) URL: https://api.restful-api.dev/objects
+2025-06-27 20:54:44 [INFO] (api_base.py:27) headers: {'Content-Type': 'application/json'}
+2025-06-27 20:54:44 [INFO] (api_base.py:28) payload: {"name": "Apple MacBook Pro 16", "data": {"year": 2019, "price": 1849.99, "CPU model": "Intel Core i9", "Hard disk size": "1 TB"}}
+2025-06-27 20:54:44 [INFO] (api_base.py:29) response: {'id': 'ff8081819782e69e0197b1fdb7800878', 'name': 'Apple MacBook Pro 16', 'createdAt': '2025-06-27T15:24:44.288+00:00', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
+2025-06-27 20:54:44 [INFO] (api_base.py:30) status code: 200
+2025-06-27 20:54:44 [INFO] (ready_api_class.py:32) new object id: ff8081819782e69e0197b1fdb7800878
+2025-06-27 20:54:47 [INFO] (api_base.py:37) PUT Method
+2025-06-27 20:54:47 [INFO] (api_base.py:38) URL: https://api.restful-api.dev/objects/ff8081819782e69e0197b1fdb7800878
+2025-06-27 20:54:47 [INFO] (api_base.py:39) headers: {'Content-Type': 'application/json'}
+2025-06-27 20:54:47 [INFO] (api_base.py:40) payload: {"name": "Apple MacBook Pro 20", "data": {"year": 2019, "price": 2049.99, "CPU model": "Intel Core i9", "Hard disk size": "2 TB", "color": "silver"}}
+2025-06-27 20:54:47 [INFO] (api_base.py:41) response: {'id': 'ff8081819782e69e0197b1fdb7800878', 'name': 'Apple MacBook Pro 20', 'updatedAt': '2025-06-27T15:24:47.116+00:00', 'data': {'year': 2019, 'price': 2049.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '2 TB', 'color': 'silver'}}
+2025-06-27 20:54:47 [INFO] (api_base.py:42) status code: 200
+2025-06-27 20:54:50 [INFO] (api_base.py:25) POST Method
+2025-06-27 20:54:50 [INFO] (api_base.py:26) URL: https://api.restful-api.dev/objects
+2025-06-27 20:54:50 [INFO] (api_base.py:27) headers: {'Content-Type': 'application/json'}
+2025-06-27 20:54:50 [INFO] (api_base.py:28) payload: {"name": "Apple MacBook Pro 16", "data": {"year": 2019, "price": 1849.99, "CPU model": "Intel Core i9", "Hard disk size": "1 TB"}}
+2025-06-27 20:54:50 [INFO] (api_base.py:29) response: {'id': 'ff8081819782e69e0197b1fdcd6e0879', 'name': 'Apple MacBook Pro 16', 'createdAt': '2025-06-27T15:24:49.902+00:00', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
+2025-06-27 20:54:50 [INFO] (api_base.py:30) status code: 200
+2025-06-27 20:54:50 [INFO] (ready_api_class.py:40) new object id: ff8081819782e69e0197b1fdcd6e0879
+2025-06-27 20:54:52 [INFO] (api_base.py:50) PATCH Method
+2025-06-27 20:54:52 [INFO] (api_base.py:51) URL: https://api.restful-api.dev/objects/ff8081819782e69e0197b1fdcd6e0879
+2025-06-27 20:54:52 [INFO] (api_base.py:52) headers: {'Content-Type': 'application/json'}
+2025-06-27 20:54:52 [INFO] (api_base.py:53) payload: {"name": "Apple MacBook Pro 25 (Updated Name)"}
+2025-06-27 20:54:52 [INFO] (api_base.py:54) response: {'id': 'ff8081819782e69e0197b1fdcd6e0879', 'name': 'Apple MacBook Pro 25 (Updated Name)', 'updatedAt': '2025-06-27T15:24:52.565+00:00', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
+2025-06-27 20:54:52 [INFO] (api_base.py:55) status code: 200
+2025-06-27 20:54:55 [INFO] (api_base.py:25) POST Method
+2025-06-27 20:54:55 [INFO] (api_base.py:26) URL: https://api.restful-api.dev/objects
+2025-06-27 20:54:55 [INFO] (api_base.py:27) headers: {'Content-Type': 'application/json'}
+2025-06-27 20:54:55 [INFO] (api_base.py:28) payload: {"name": "Apple MacBook Pro 16", "data": {"year": 2019, "price": 1849.99, "CPU model": "Intel Core i9", "Hard disk size": "1 TB"}}
+2025-06-27 20:54:55 [INFO] (api_base.py:29) response: {'id': 'ff8081819782e69e0197b1fde20c087a', 'name': 'Apple MacBook Pro 16', 'createdAt': '2025-06-27T15:24:55.181+00:00', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
+2025-06-27 20:54:55 [INFO] (api_base.py:30) status code: 200
+2025-06-27 20:54:55 [INFO] (ready_api_class.py:48) new object id: ff8081819782e69e0197b1fde20c087a
+2025-06-27 20:54:57 [INFO] (api_base.py:63) DELETE Method
+2025-06-27 20:54:57 [INFO] (api_base.py:64) URL: https://api.restful-api.dev/objects/ff8081819782e69e0197b1fde20c087a
+2025-06-27 20:54:57 [INFO] (api_base.py:65) headers: {}
+2025-06-27 20:54:57 [INFO] (api_base.py:66) payload: {}
+2025-06-27 20:54:57 [INFO] (api_base.py:67) response: {'message': 'Object with id = ff8081819782e69e0197b1fde20c087a has been deleted.'}
+2025-06-27 20:54:57 [INFO] (api_base.py:68) status code: 200
+2025-06-27 20:55:00 [INFO] (api_base.py:13) Get Method
+2025-06-27 20:55:00 [INFO] (api_base.py:14) URL: https://gorest.co.in/public/v2/users
+2025-06-27 20:55:00 [INFO] (api_base.py:15) headers: {'Authorization': '2fcabc17443f5e15070811c38f35b257838683a00fa76ef22471ebd4001ab7b5'}
+2025-06-27 20:55:00 [INFO] (api_base.py:16) payload: {}
+2025-06-27 20:55:00 [INFO] (api_base.py:17) response: [{'id': 7970558, 'name': 'Chatur Dhawan II', 'email': 'ii_dhawan_chatur@mraz-homenick.test', 'gender': 'female', 'status': 'active'}, {'id': 7970557, 'name': 'Abhaya Ahuja', 'email': 'ahuja_abhaya@hahn-borer.test', 'gender': 'female', 'status': 'inactive'}, {'id': 7970556, 'name': 'Fr. Chitramala Panicker', 'email': 'panicker_fr_chitramala@mcclure.test', 'gender': 'male', 'status': 'inactive'}, {'id': 7970555, 'name': 'Fr. Parvati Gupta', 'email': 'parvati_gupta_fr@mosciski.test', 'gender': 'male', 'status': 'inactive'}, {'id': 7970554, 'name': 'Bilwa Reddy', 'email': 'bilwa_reddy@christiansen-robel.test', 'gender': 'male', 'status': 'active'}, {'id': 7970553, 'name': 'Chaturaanan Bhat', 'email': 'bhat_chaturaanan@adams.example', 'gender': 'male', 'status': 'inactive'}, {'id': 7970552, 'name': 'Eshana Arora', 'email': 'arora_eshana@sawayn-wehner.example', 'gender': 'female', 'status': 'active'}, {'id': 7970551, 'name': 'Rupinder Ahuja', 'email': 'ahuja_rupinder@haley-reichel.test', 'gender': 'male', 'status': 'inactive'}, {'id': 7970550, 'name': 'Susheel Mehrotra', 'email': 'susheel_mehrotra@erdman.example', 'gender': 'male', 'status': 'inactive'}, {'id': 7970549, 'name': 'Prof. Suman Chattopadhyay', 'email': 'suman_prof_chattopadhyay@zulauf-sipes.test', 'gender': 'male', 'status': 'inactive'}]
+2025-06-27 20:55:00 [INFO] (api_base.py:18) status code: 200

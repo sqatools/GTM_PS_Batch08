@@ -1,0 +1,24 @@
+2025-06-18 20:22:40 [INFO] (test_bus_booking.py:16) TEST CASE: test_navigate_to__bus
+2025-06-18 20:22:40 [INFO] (bus_booking_page_class.py:10) Open URL: https://www.goibibo.com/bus/
+2025-06-18 20:22:49 [INFO] (test_bus_booking.py:20) TEST CASE: test_select_src_city
+2025-06-18 20:22:49 [INFO] (bus_booking_page_class.py:14) select source city: Mumbai, Maharashtra
+2025-06-18 20:22:49 [INFO] (selenium_base.py:24) entering text  Mumbai, Maharashtra, on element in this locator: ('name', 'autosuggestBusSRPSrcHomeName')
+2025-06-18 20:22:49 [INFO] (selenium_base.py:14) Getting element with this locator: ('name', 'autosuggestBusSRPSrcHomeName')
+2025-06-18 20:22:50 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='Mumbai, Maharashtra']//parent::li")
+2025-06-18 20:22:50 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='Mumbai, Maharashtra']//parent::li")
+2025-06-18 20:22:51 [INFO] (test_bus_booking.py:24) TEST CASE: test_select_dest_city
+2025-06-18 20:22:51 [INFO] (bus_booking_page_class.py:20) select dest city: Pune, Maharashtra
+2025-06-18 20:22:51 [INFO] (selenium_base.py:24) entering text  Pune, Maharashtra, on element in this locator: ('id', 'autosuggestBusSRPDestHome')
+2025-06-18 20:22:51 [INFO] (selenium_base.py:14) Getting element with this locator: ('id', 'autosuggestBusSRPDestHome')
+2025-06-18 20:22:52 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='Pune, Maharashtra']//parent::li")
+2025-06-18 20:22:52 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='Pune, Maharashtra']//parent::li")
+2025-06-18 20:22:53 [INFO] (test_bus_booking.py:28) TEST CASE: test_select_depart_date
+2025-06-18 20:22:53 [INFO] (bus_booking_page_class.py:26) select depart date: 20
+2025-06-18 20:22:53 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//input[@placeholder='Pick a date']")
+2025-06-18 20:22:53 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//input[@placeholder='Pick a date']")
+2025-06-18 20:22:54 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//span[text()='20']//parent::li")
+2025-06-18 20:22:54 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//span[text()='20']//parent::li")
+2025-06-18 20:22:54 [INFO] (test_bus_booking.py:32) TEST CASE: test_click_to_search_button
+2025-06-18 20:22:54 [INFO] (bus_booking_page_class.py:32) click to search button
+2025-06-18 20:22:54 [INFO] (selenium_base.py:19) clicking on element with this locator: ('xpath', "//button[@data-testid='searchBusBtn']")
+2025-06-18 20:22:54 [INFO] (selenium_base.py:14) Getting element with this locator: ('xpath', "//button[@data-testid='searchBusBtn']")
