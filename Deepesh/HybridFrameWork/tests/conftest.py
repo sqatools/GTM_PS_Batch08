@@ -48,7 +48,6 @@ def get_driver_facebook(request):
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.implicitly_wait(10)
-    driver.get(goibibo_url)
     request.cls.driver = driver
     yield
     driver.close()

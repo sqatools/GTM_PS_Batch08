@@ -6,6 +6,7 @@ def read_file(filepath):
     file.close()
 read_file( "Pfile.txt" )
 """
+import random
 
 '''
 # 2). Python file program to overwrite the existing file content.
@@ -63,6 +64,8 @@ def customised_func(filepath):
 
 
 
+
+
 customised_func( "Pfile.txt" )
 '''
 '''
@@ -95,7 +98,115 @@ odd_file_func( "Pfile.txt", "oddfile.txt" )
 
 '''
 
-def read_file(filepath):
+"""
+# 8). Python file program to read a file line by line and store it in a list.
+def Linebyline_func(filepath):
     file = open( filepath, "r" )
-    file.read()
+    list1 = []
+    while (1):
+        data_file = file.readlines()
+        list1.append( data_file )
+        if not data_file:
+            break
+    print(list1)
     file.close()
+
+
+Linebyline_func( "Pfile.txt", )
+"""
+
+""""
+#  9). Python file program to find the longest word in a file.
+def max_word_func(filepath):
+    file = open( filepath, 'r' )
+    file_data = file.read()
+    word_list = file_data.split()
+    word_len = 0
+    longest_word = ""
+    for word in word_list:
+        if len( word ) > word_len:
+            word_len = len( word )
+            longest_word = word
+    print( "longest word is:", longest_word )
+    print( "max_length is :", word_len )
+    file.close()
+
+
+max_word_func( "oddfile.txt" )
+"""
+
+"""
+# 10). Python file program to get the count of a specific word in a file.
+def specific_word_func(filepath):
+    file = open( filepath, 'r' )
+    file_data = file.read().split()
+    count = 0
+    for word in file_data:
+        if "are" in word:
+            count += 1
+    print( count )
+    file.close()
+
+
+specific_word_func( "oddfile.txt" )
+"""
+
+"""
+# 11). Python file program to read a random line from a file.
+def randomm_word_func(filepath):
+    file = open( filepath, 'r' )
+    file_data = file.read().split()
+    res1 = random.choice(file_data)
+    print(res1)
+    file.close()
+
+    
+randomm_word_func( "oddfile.txt" )
+"""
+
+"""
+# 12). Python file program to copy the file’s contents to another file after converting it to lowercase.
+def copy_content_func(readfile, appfile):
+    read_file = open( readfile, 'r' )
+    data_file = read_file.readlines()
+    read_file.close()
+    file2 = open( appfile, 'a' )
+    for word in data_file:
+        file2.write( word.lower() )
+    file2.close()
+
+
+copy_content_func( "oddfile.txt", "Pfile.txt" )
+
+"""
+
+"""
+# 13). Python file program to copy the file’s contents to another file after converting it to uppercase.
+def copy_upper_content_func(readfile, appfile):
+    read_file = open( readfile, 'r' )
+    data_file = read_file.readlines()
+    read_file.close()
+    file2 = open( appfile, 'a' )
+    for word in data_file:
+        file2.write( word.upper() )
+    file2.close()
+
+
+copy_upper_content_func( "oddfile.txt", "Pfile.txt" )
+
+"""
+
+'''
+# 14). Python file program to count all the words from a file.
+def count_all_word_func(filepath):
+    file = open( filepath, 'r' )
+    total_word = file.read().split()
+    count = 0
+    for word in total_word:
+        count += 1
+    print( count )
+    file.close()
+
+
+count_all_word_func( "oddfile.txt" )
+'''
