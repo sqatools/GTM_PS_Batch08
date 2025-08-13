@@ -37,6 +37,7 @@ class SeleniumBase:
     def enter_text(self, locator, value):
         self.log.info( f"enter text :{value} to element:{locator}" )
         element = self.get_element( locator )
+        element.clear()
         element.send_keys( value )
 
     def get_text(self, locator):

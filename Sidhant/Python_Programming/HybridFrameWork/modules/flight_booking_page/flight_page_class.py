@@ -28,3 +28,9 @@ class FlightPage(SeleniumBase):
         time.sleep( 5 )
         self.click_element(date_location)
 
+    def login_to_student_website(self, username, password):
+        self.enter_text(username_field, username)
+        self.enter_text(password_field, password)
+        self.click_element(submit_btn)
+        head_text = self.get_text(success_msg_loc )
+        assert head_text == "Logged In Successfully"
