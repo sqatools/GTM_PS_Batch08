@@ -188,4 +188,16 @@ def go_test_auth_with_token():
     print(response.status_code)
 
 
-go_test_auth_with_token()
+#go_test_auth_with_token()
+
+from request.auth import HTTPBasicAuth
+
+# API with Authentication
+
+def login_to_git_with_auth(username,password):
+    response = requests.request("GET","https://api.github.com/user",auth=HTTPBasicAuth(username, password))
+    print(response.content)
+    print(response.status_code)
+
+login_to_git_with_auth('sid-co','Sidhant2041')
+

@@ -14,8 +14,7 @@ class ReadyToUseAPI(APIBase):
         new_url = f"{main_api_url}?"
         for id_val in id_list:
             new_url = new_url + f"id={id_val}&"
-
-        response, st_code = self.get_method(url=new_url[:-1])
+        response, st_code = self.get_method(url=new_url[:-1])  #[:-1] will trim of last & in url
         self.log.info(f"response: {response}")
         self.log.info(f"status_code :{st_code}")
         return response, st_code
