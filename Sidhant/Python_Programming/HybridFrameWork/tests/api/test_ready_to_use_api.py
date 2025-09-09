@@ -47,3 +47,8 @@ class TestReadyToUseAPI:
         assert len(response) == 1
         assert st_code == 200
         assert response['message'] == f"Object with id = {obj_id} has been deleted."
+
+    def test_users_details_with_bearer_token(self):
+        response, st_code = self.r_api.api_access_with_token()
+        assert response
+        assert st_code == 200

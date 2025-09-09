@@ -171,3 +171,15 @@ def delete_data_from_database(id):
     print(response.text)
 
 # delete_data_from_database("ff8081819782e69e0198a6229f98120d")
+
+
+def go_test_auth_with_token():
+    url = "https://gorest.co.in/public/v2/users"
+    access_token = "a2d5ede9046d79af9f2b53535b33ecb5861b9e1b48c1a53bd035b76b486734f4"
+    headers = {'Authorization': f"Bearer {access_token}"}
+    response = requests.request("GET", url, headers=headers)
+    print(response.content)
+    print(response.status_code)
+
+
+go_test_auth_with_token()
