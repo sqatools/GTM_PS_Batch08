@@ -32,6 +32,13 @@ class FlightPage(SeleniumBase):
         time.sleep(5)
         self.click_element(date_location)
 
+    def select_Travel_and_class(self):
+        self.log.warning(f"select travel and class: ")
+        self.click_element(travel_class_loc)
+        time.sleep(5)
+        self.click_element(flight_class_loc )
+        time.sleep(4)
+
     def login_to_student_website(self, username, password):
         self.enter_text(username_field, username)
         self.enter_text(password_field, password)

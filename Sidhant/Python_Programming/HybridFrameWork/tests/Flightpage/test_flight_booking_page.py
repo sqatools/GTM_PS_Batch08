@@ -6,25 +6,29 @@ import time
 import pytest
 
 
-@pytest.mark.usefixtures( "get_driver" )
+@pytest.mark.usefixtures("get_driver")
 class TestFlightBooking:
-    @pytest.fixture( scope='function', autouse=True )
+    @pytest.fixture(scope='function', autouse=True)
     def setup(self):
         # create object of FlightPage class
-        self.fp = FlightPage( self.driver )
+        self.fp = FlightPage(self.driver)
         self.util = Utils()
-        self.json_data = self.util.read_json( json_file_path )
+        self.json_data = self.util.read_json(json_file_path)
 
-    def test_src_dest_city(self,request):
+    def test_src_dest_city(self, request):
         # launch goibibo website
         self.fp.log.info(f"Test Name: {request.node.name}")
         self.fp.close_popup()
-        time.sleep( 6 )
-        self.fp.select_source_city( "Mumbai, India" )
-        self.fp.select_dest_city( "New Delhi, India" )
+        time.sleep(6)
+        self.fp.select_source_city("Mumbai, India")
+        self.fp.select_dest_city("New Delhi, India")
         self.fp.capture_screenshot()
 
-
     def test_select_travel_data(self):
-        self.fp.select_travel_date( self.json_data['travel_date'] )
-        time.sleep(20)
+        self.fp.select_travel_date(self.json_data['travel_date'])
+        time.sleep(10)
+
+    def test_travel_class(self):
+        self.fp.select_Travel_and_class()
+        time.sleep(5)
+        self.fp.capture_screenshot()

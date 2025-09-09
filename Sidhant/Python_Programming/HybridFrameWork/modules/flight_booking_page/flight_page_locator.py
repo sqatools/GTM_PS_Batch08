@@ -11,4 +11,6 @@ username_field = (By.XPATH, "//input[@id='username']")
 password_field = (By.XPATH, "//input[@id='password']")
 submit_btn = (By.XPATH, "//button[@id='submit']")
 success_msg_loc =(By.XPATH,"//h1[@class='post-title']")
+travel_class_loc = (By.XPATH, "//span[text()='Travellers & Class']//parent::div")
+flight_class_loc = (By.XPATH, "//li[text()='premium economy']")
 
