@@ -5,7 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import time
 
-driver=webdriver.Chrome()
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(10)
 driver.get("https://www.goibibo.com/bus/")

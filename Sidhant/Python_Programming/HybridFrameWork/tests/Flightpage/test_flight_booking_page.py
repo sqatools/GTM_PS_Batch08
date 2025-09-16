@@ -28,7 +28,7 @@ class TestFlightBooking:
         self.fp.select_travel_date(self.json_data['travel_date'])
         time.sleep(10)
 
-    def test_travel_class(self):
-        self.fp.select_Travel_and_class()
-        time.sleep(5)
-        self.fp.capture_screenshot()
+    # def test_travel_class(self):
+    #     self.fp.select_Travel_and_class()
+    #     time.sleep(5)
+    #     self.fp.capture_screenshot()

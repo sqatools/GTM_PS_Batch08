@@ -9,9 +9,9 @@ class APIBase:
         self.log = logging.getLogger(__name__)
 
     def get_method(self, url, headers=None, payload=None):
-        self.log.info(f"URL:{url}")
-        self.log.info(f"Payload:{payload}")
-        self.log.info(f"Headers:{headers}")
+        self.log.info(f"URL: {url}")
+        self.log.info(f"Payload: {payload}")
+        self.log.info(f"Headers: {headers}")
         response = requests.request("GET", url, headers=headers, data=payload)
         return response.json(),response.status_code
 

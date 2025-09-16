@@ -37,7 +37,15 @@ class FlightPage(SeleniumBase):
         self.click_element(travel_class_loc)
         time.sleep(5)
         self.click_element(flight_class_loc )
-        time.sleep(4)
+        time.sleep(5)
+        for _ in range(3):
+            self.click_element(adult_btn_addon)
+            time.sleep(4)
+
+
+
+
+
 
     def login_to_student_website(self, username, password):
         self.enter_text(username_field, username)

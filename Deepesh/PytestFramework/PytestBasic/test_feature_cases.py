@@ -61,3 +61,6 @@ def test_subtraction_fun5():
     n1 = 500
     n2 = 600
     assert n2 - n1 == 100
+
+
+test_subtraction_fun5()
