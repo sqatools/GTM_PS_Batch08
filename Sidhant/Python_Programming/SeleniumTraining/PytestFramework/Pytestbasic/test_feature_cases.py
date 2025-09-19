@@ -15,6 +15,13 @@ def test_multiplication():
     assert n1 * n2 == 720
 
 
+@pytest.mark.smoke
+def test_divison():
+    n1 = 40
+    n2 = 10
+    assert n1 // n2 == 4
+
+
 @pytest.mark.sanity
 def test_subtraction():
     n1 = 98
