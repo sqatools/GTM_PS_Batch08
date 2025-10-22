@@ -1,5 +1,6 @@
 import logging
 import os
+import time
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
@@ -39,6 +40,8 @@ class SeleniumBase:
     def click_element(self, locator):
         try:
             element = self.get_element(locator)
+            time.sleep(3)
+
             element.click()
         except Exception as e:
             self.log.debug(f"unable to click {e}")
@@ -50,13 +53,13 @@ class SeleniumBase:
             self.log.info(f"enter text: {value} to element: {locator}")
             element = self.get_element(locator)
             element.clear()
+            time.sleep(2)
             element.send_keys(value)
 
         except Exception as e:
             self.log.debug(f"unable to click {e}")
             self.capture_screenshot()
             raise
-
 
     def get_text(self, locator):
         try:
@@ -80,5 +83,3 @@ class SeleniumBase:
             self.log.debug(f"Unable to Click {e}")
             self.capture_screenshot()
             raise
-
-

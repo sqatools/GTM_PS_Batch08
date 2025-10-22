@@ -2,8 +2,8 @@
 {
   "source_city" : "Bangalore",
   "dest_city" : "kolkata",
-  "travel_date": "Sep 28 2025",
-  "adults": 2,
+  "travel_date": "Oct 25 2025",
+  "adults": "adults-3",
   "children": 1
 
 }

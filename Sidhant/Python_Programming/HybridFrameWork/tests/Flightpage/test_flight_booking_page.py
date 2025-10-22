@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+
 from modules.flight_booking_page.flight_page_class import FlightPage
 from modules.flight_booking_page.flight_booking_test_data import *
 from utilities.utility_tools import Utils
@@ -19,16 +19,20 @@ class TestFlightBooking:
         # launch goibibo website
         self.fp.log.info(f"Test Name: {request.node.name}")
         self.fp.close_popup()
-        time.sleep(6)
-        self.fp.select_source_city("Mumbai, India")
-        self.fp.select_dest_city("New Delhi, India")
+        time.sleep(2)
+        self.fp.close_popup_second()
+        time.sleep(3)
+        self.fp.select_source_city("Mumbai")
+        self.fp.select_dest_city("New Delhi")
         self.fp.capture_screenshot()
+        time.sleep(6)
 
     def test_select_travel_data(self):
         self.fp.select_travel_date(self.json_data['travel_date'])
         time.sleep(10)
 
-    # def test_travel_class(self):
-    #     self.fp.select_Travel_and_class()
-    #     time.sleep(5)
-    #     self.fp.capture_screenshot()
+    def test_travel_class(self):
+        self.fp.select_Travel_and_class(self.json_data['adults'])
+        time.sleep(5)
+        self.fp.search_btn_All()
+        self.fp.capture_screenshot()

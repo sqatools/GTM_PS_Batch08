@@ -17,7 +17,7 @@ def get_All_objects():
 # get_All_objects()
 
 def get_specific_id_details():
-    url = "https://api.restful-api.dev/objects?id=3&id=5&id=10&id=4"
+    url = "https://api.restful-api.dev/objects?id=3&id=5&id=10&id=5"
 
     payload = {}
     headers = {}
@@ -30,7 +30,7 @@ get_specific_id_details()
 
 
 def get_single_id_details(id):
-    url = f"https://api.restful-api.dev/objects?id=11/{id}"
+    url = f"https://api.restful-api.dev/objects/{id}"
 
     payload = {}
     headers = {}
@@ -39,7 +39,7 @@ def get_single_id_details(id):
     print(response.text)
 
 
-#get_single_id_details("ff8081819782e69e0198abc11eb41fd2")
+get_single_id_details("ff8081819782e69e0199947da2e26a97")
 
 
 def create_new_entry_with_post():
@@ -48,7 +48,7 @@ def create_new_entry_with_post():
     payload = json.dumps({
         "name": "Apple MacBook Pro 16",
         "data": {
-            "year": 2020,  # This is the request data
+            "year": 2020,  # This is the request data in payload
             "price": 2849.99,
             "CPU model": "Intel Core i9",
             "Hard disk size": "1 TB"
@@ -63,7 +63,7 @@ def create_new_entry_with_post():
     print(response.text)
 
 
-# create_new_entry_with_post()
+create_new_entry_with_post()
 
 def update_data_entry_with_post(id):
     url = f"https://api.restful-api.dev/objects/{id}"
@@ -133,8 +133,8 @@ request_data_list = [
 ]
 
 
-# for request_body in request_data_list:
-# create_new_entry_with_post_payloaad(request_body)
+for request_body in request_data_list:
+    create_new_entry_with_post_payloaad(request_body)
 
 
 def update_data_entry_with_patch(id):

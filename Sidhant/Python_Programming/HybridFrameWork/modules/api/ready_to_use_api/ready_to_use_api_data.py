@@ -3,11 +3,11 @@ import json
 main_api_url = "https://api.restful-api.dev/objects"
 user_id = [4, 3, 8]
 
-create_object_payload = json.dumps({
+create_object_payload1 = json.dumps({
     "name": "Apple MacBook Pro 160",
     "data": {
         "year": 2019,
-        "price": 1849.99,
+        "price": 2849.99,
         "CPU model": "Intel Core i9",
         "Hard disk size": "2 TB"
     }
