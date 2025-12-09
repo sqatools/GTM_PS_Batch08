@@ -27,12 +27,21 @@ class TestFlightBooking:
         self.fp.capture_screenshot()
         time.sleep(6)
 
-    def test_select_travel_data(self):
-        self.fp.select_travel_date(self.json_data['travel_date'])
-        time.sleep(10)
+    # def test_select_travel_data(self):
+    #     self.fp.select_travel_date(self.json_data['travel_date'])
+    #     time.sleep(10)
+    #
+    # def test_travel_class(self):
+    #     self.fp.select_Travel_and_class(self.json_data['adults'])
+    #     time.sleep(5)
+    #     self.fp.search_btn_All()
+    #     self.fp.capture_screenshot()
 
-    def test_travel_class(self):
-        self.fp.select_Travel_and_class(self.json_data['adults'])
-        time.sleep(5)
-        self.fp.search_btn_All()
-        self.fp.capture_screenshot()
+    def test_bus_booking_section(self):
+        self.fp.bus_booking_start()
+        self.fp.select_bus_source_city("hamirpur")
+        self.fp.select_bus_destin_city("Chennai, Tamil Nadu")
+        self.fp.bus_travel_date('29')
+
+    
+

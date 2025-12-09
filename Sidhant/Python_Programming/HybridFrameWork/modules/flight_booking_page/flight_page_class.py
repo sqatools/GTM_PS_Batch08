@@ -51,6 +51,7 @@ class FlightPage(SeleniumBase):
         time.sleep(4)
 
     def search_btn_All(self):
+        self.log.critical("Bus Booking Testing")
         self.click_element(search_btn_loc)
         time.sleep(4)
 
@@ -60,6 +61,36 @@ class FlightPage(SeleniumBase):
         self.click_element(submit_btn)
         head_text = self.get_text(success_msg_loc)
         assert head_text == "Logged In Successfully"
+
+    def bus_booking_start(self):
+        self.click_element(bus_btn_loc)
+        time.sleep(3)
+
+    def select_bus_source_city(self, source_city):
+        self.log.warning(f"Enter the bus source location: {source_city}")
+        self.click_element(bus_source_loc)
+        time.sleep(4)
+        self.enter_text(bus_source_loc, source_city)
+        dropdown_locator = (By.XPATH, f"//span[contains(normalize-space(.), '{source_city}')]")
+        self.click_element(dropdown_locator)
+
+    def select_bus_destin_city(self, dest_city):
+        self.log.warning(f"Enter the bus source location: {dest_city}")
+        self.click_element(bus_dest_loc)
+        time.sleep(4)
+        self.enter_text(bus_dest_loc, dest_city)
+        dropdown_locator = (By.XPATH, f"//span[contains(normalize-space(.), '{dest_city}')]")
+        self.click_element(dropdown_locator)
+
+    def bus_travel_date(self, depart_date):
+        self.click_element(bus_select_date)
+        time.sleep(5)
+        date_loc = (By.XPATH, f"//span[text()='{depart_date}']//parent::li")
+        self.click_element(date_loc)
+        time.sleep(5)
+        self.click_element(bus_search_btn)
+        time.sleep(5)
+
 
 
 

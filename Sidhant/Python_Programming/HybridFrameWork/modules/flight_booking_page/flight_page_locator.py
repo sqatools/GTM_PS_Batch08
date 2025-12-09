@@ -22,3 +22,9 @@ travel_class_loc = (By.XPATH, "//span[text()='Travellers & Class']//ancestor::di
 flight_class_loc = (By.XPATH, "//li[text()='Premium Economy']")
 Apply_btn_loc = (By.XPATH, "//button[text()='APPLY']")
 search_btn_loc = (By.XPATH, "//a[text()='Search']")
+#bus_booking
+bus_btn_loc = (By.XPATH, "//span[text()='Bus']")
+bus_source_loc = (By.XPATH, "//label[text()='FROM']//following::input[@placeholder='Enter Source']")
+bus_dest_loc = (By.XPATH, "//label[text()='TO']//following::input[@placeholder='Enter Destination']")
+bus_select_date = (By.XPATH, "//input[@placeholder='Pick a date']")
+bus_search_btn = (By.XPATH, "//button[text()='Search Bus']")
